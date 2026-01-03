@@ -1,6 +1,6 @@
 /*
 
-Copyright 2011, 2022 Thomas F. Morris & OpenRefine committers
+Copyright 2011, 2022 Thomas F. Morris & KLEAR committers
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without

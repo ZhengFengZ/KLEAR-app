@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.qa.scrutinizers;
+package org.klear.wikibase.qa.scrutinizers;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -37,7 +37,7 @@ import org.wikidata.wdtk.datamodel.interfaces.SnakGroup;
 import org.wikidata.wdtk.datamodel.interfaces.Statement;
 import org.wikidata.wdtk.datamodel.interfaces.Value;
 
-import org.openrefine.wikibase.qa.QAWarning;
+import org.klear.wikibase.qa.QAWarning;
 
 /**
  * A scrutinizer that checks the compatibility of the qualifiers and the property of a statement, and looks for

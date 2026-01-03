@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.qa.scrutinizers;
+package org.klear.wikibase.qa.scrutinizers;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import org.wikidata.wdtk.datamodel.interfaces.Snak;
 import org.wikidata.wdtk.datamodel.interfaces.SnakGroup;
 import org.wikidata.wdtk.datamodel.interfaces.Statement;
 
-import org.openrefine.wikibase.qa.QAWarning;
+import org.klear.wikibase.qa.QAWarning;
 
 public class EntityTypeScrutinizer extends SnakScrutinizer {
 

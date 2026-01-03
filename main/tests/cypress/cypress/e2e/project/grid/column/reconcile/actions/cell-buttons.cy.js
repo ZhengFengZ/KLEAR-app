@@ -4,7 +4,7 @@ describe('In-cell reconciliation buttons', () => {
     });
 
     it('Show "Search for match" even if there are no candidates', () => {
-          cy.visitOpenRefine();
+          cy.visitKLEAR();
         cy.navigateTo('Import project');
         cy.get('.grid-layout').should('to.contain', 'Locate an existing Refine project file');
 
@@ -17,7 +17,7 @@ describe('In-cell reconciliation buttons', () => {
     });
     
     it('Display see more / see less when there are candidates', () => {
-        cy.visitOpenRefine();
+        cy.visitKLEAR();
         cy.navigateTo('Import project');
         cy.get('.grid-layout').should('to.contain', 'Locate an existing Refine project file');
 
@@ -53,7 +53,7 @@ describe('In-cell reconciliation buttons', () => {
     });
 
     it('Matching a single cell preserves pagination', () => {
-        cy.visitOpenRefine();
+        cy.visitKLEAR();
         cy.navigateTo('Import project');
         cy.get('.grid-layout').should('to.contain', 'Locate an existing Refine project file');
         cy.get('#project-tar-file-input').selectFile('cypress/fixtures/reconciled-project-no-automatch.zip')

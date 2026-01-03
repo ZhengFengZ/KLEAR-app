@@ -5,17 +5,17 @@
   <artifactId>database</artifactId>
   <packaging>jar</packaging>
 
-  <name>OpenRefine - Database extension</name>
+  <name>KLEAR - Database extension</name>
   <description>Connections to SQL databases for import and export</description>
-  <url>http://openrefine.org/</url>
+  <url>http://klear.org/</url>
   <parent>
-    <groupId>org.openrefine</groupId>
+    <groupId>org.klear</groupId>
     <artifactId>extensions</artifactId>
     <version>3.10-SNAPSHOT</version>
   </parent>
 
   <build>
-    <finalName>openrefine-database</finalName>
+    <finalName>klear-database</finalName>
     <resources>
       <resource>
         <directory>src</directory>
@@ -82,7 +82,7 @@
       <version>${httpcore5.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.openrefine.dependencies</groupId>
+      <groupId>org.klear.dependencies</groupId>
       <artifactId>butterfly</artifactId>
       <version>${butterfly.version}</version>
       <exclusions>

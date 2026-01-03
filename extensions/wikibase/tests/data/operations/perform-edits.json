@@ -8,7 +8,7 @@
     "mode": "row-based",
     "facets": []
   },
-  "tag" : "openrefine-${version}",
+  "tag" : "klear-${version}",
   "maxEditsPerMinute": 60,
   "resultsColumnName": "Wikibase editing results"
 }

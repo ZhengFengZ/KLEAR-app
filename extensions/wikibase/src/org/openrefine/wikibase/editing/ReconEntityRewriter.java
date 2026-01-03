@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.editing;
+package org.klear.wikibase.editing;
 
 import java.util.List;
 import java.util.Set;
@@ -38,16 +38,16 @@ import org.wikidata.wdtk.datamodel.interfaces.MediaInfoIdValue;
 import org.wikidata.wdtk.datamodel.interfaces.MonolingualTextValue;
 import org.wikidata.wdtk.datamodel.interfaces.PropertyIdValue;
 
-import org.openrefine.wikibase.schema.entityvalues.ReconEntityIdValue;
-import org.openrefine.wikibase.schema.entityvalues.ReconItemIdValue;
-import org.openrefine.wikibase.schema.entityvalues.ReconMediaInfoIdValue;
-import org.openrefine.wikibase.schema.entityvalues.ReconPropertyIdValue;
-import org.openrefine.wikibase.schema.exceptions.NewEntityNotCreatedYetException;
-import org.openrefine.wikibase.updates.EntityEdit;
-import org.openrefine.wikibase.updates.ItemEdit;
-import org.openrefine.wikibase.updates.MediaInfoEdit;
-import org.openrefine.wikibase.updates.StatementEdit;
-import org.openrefine.wikibase.updates.TermedStatementEntityEdit;
+import org.klear.wikibase.schema.entityvalues.ReconEntityIdValue;
+import org.klear.wikibase.schema.entityvalues.ReconItemIdValue;
+import org.klear.wikibase.schema.entityvalues.ReconMediaInfoIdValue;
+import org.klear.wikibase.schema.entityvalues.ReconPropertyIdValue;
+import org.klear.wikibase.schema.exceptions.NewEntityNotCreatedYetException;
+import org.klear.wikibase.updates.EntityEdit;
+import org.klear.wikibase.updates.ItemEdit;
+import org.klear.wikibase.updates.MediaInfoEdit;
+import org.klear.wikibase.updates.StatementEdit;
+import org.klear.wikibase.updates.TermedStatementEntityEdit;
 
 /**
  * A class that rewrites an {@link TermedStatementEntityEdit}, replacing reconciled entity id values by their concrete

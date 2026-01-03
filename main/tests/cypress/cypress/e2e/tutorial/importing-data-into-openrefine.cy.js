@@ -5,10 +5,10 @@ describe(__filename, function () {
     cy.addProjectForDeletion();
   });
   
-  it('Create your first OpenRefine project (using provided data)', function () {
+  it('Create your first KLEAR project (using provided data)', function () {
     // For sake of the tutorial we have already downloaded the data into fixtures
-    // Step-1:Once OpenRefine is launched in your browser, click Create project from the left hand menu and select Get data from This Computer
-    cy.visitOpenRefine();
+    // Step-1:Once KLEAR is launched in your browser, click Create project from the left hand menu and select Get data from This Computer
+    cy.visitKLEAR();
     cy.navigateTo('Create project');
     cy.get('#create-project-ui-source-selection-tabs > a')
       .contains('This Computer')

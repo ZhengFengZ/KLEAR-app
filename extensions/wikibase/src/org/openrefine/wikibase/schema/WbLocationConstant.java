@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import java.text.ParseException;
 
@@ -31,8 +31,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import org.wikidata.wdtk.datamodel.helpers.Datamodel;
 import org.wikidata.wdtk.datamodel.interfaces.GlobeCoordinatesValue;
 
-import org.openrefine.wikibase.schema.exceptions.SkipSchemaExpressionException;
-import org.openrefine.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.schema.exceptions.SkipSchemaExpressionException;
+import org.klear.wikibase.schema.validation.ValidationState;
 
 /**
  * A constant for a geographical location. The accepted format is lat,lng or lat/lng.

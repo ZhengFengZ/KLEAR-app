@@ -1,6 +1,6 @@
 describe(__filename, function () {
   it('Check elements on the language page', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.get('.main-layout-panel').contains('Select preferred language');
     cy.get('select#langDD').should('exist');
     cy.get('#set-lang-button').should('exist');
@@ -10,7 +10,7 @@ describe(__filename, function () {
   // It's changing the UI for all subsequent tests
   // If it fails, the interface will remains in German, making subsequent tests fails
   // it('Change the language', function () {
-  // 	cy.visitOpenRefine();
+  // 	cy.visitKLEAR();
   // 	cy.navigateTo('Language settings');
   // 	cy.get('#langDD').select('de');
   // 	cy.get('#set-lang-button').click();

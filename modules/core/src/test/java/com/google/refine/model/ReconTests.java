@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2018, OpenRefine contributors
+ * Copyright (C) 2018, KLEAR contributors
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without
@@ -45,7 +45,7 @@ public class ReconTests {
 
     String fullJson = "{\"id\":1533651559492945033,"
             + "\"judgmentHistoryEntry\":1533651616890,"
-            + "\"service\":\"https://tools.wmflabs.org/openrefine-wikidata/en/api\","
+            + "\"service\":\"https://tools.wmflabs.org/klear-wikidata/en/api\","
             + "\"identifierSpace\":\"http://www.wikidata.org/entity/\","
             + "\"schemaSpace\":\"http://www.wikidata.org/prop/direct/\","
             + "\"j\":\"matched\","
@@ -66,7 +66,7 @@ public class ReconTests {
             + "\"matchRank\":0}";
 
     String jsonNoMatch = "{\"id\":1533651559492945033,"
-            + "\"service\":\"https://tools.wmflabs.org/openrefine-wikidata/en/api\","
+            + "\"service\":\"https://tools.wmflabs.org/klear-wikidata/en/api\","
             + "\"identifierSpace\":\"http://www.wikidata.org/entity/\","
             + "\"schemaSpace\":\"http://www.wikidata.org/prop/direct/\","
             + "\"j\":\"none\","
@@ -87,7 +87,7 @@ public class ReconTests {
     public void serializeReconViewMode() throws Exception {
         Recon r = Recon.loadStreaming(fullJson);
         String shortJson = "{\"id\":1533651559492945033,"
-                + "\"service\":\"https://tools.wmflabs.org/openrefine-wikidata/en/api\","
+                + "\"service\":\"https://tools.wmflabs.org/klear-wikidata/en/api\","
                 + "\"identifierSpace\":\"http://www.wikidata.org/entity/\","
                 + "\"schemaSpace\":\"http://www.wikidata.org/prop/direct/\","
                 + "\"j\":\"matched\","
@@ -111,7 +111,7 @@ public class ReconTests {
     @Test
     public void testsErrorSerialization() throws Exception {
         String json = "{\"id\":1533651559492945033,"
-                + "\"service\":\"https://tools.wmflabs.org/openrefine-wikidata/en/api\","
+                + "\"service\":\"https://tools.wmflabs.org/klear-wikidata/en/api\","
                 + "\"identifierSpace\":\"http://www.wikidata.org/entity/\","
                 + "\"schemaSpace\":\"http://www.wikidata.org/prop/direct/\","
                 + "\"j\":\"none\","
@@ -127,7 +127,7 @@ public class ReconTests {
     @Test
     public void testsErrorWithMatchSerialization() throws Exception {
         String json = "{\"id\":1533651559492945033,"
-                + "\"service\":\"https://tools.wmflabs.org/openrefine-wikidata/en/api\","
+                + "\"service\":\"https://tools.wmflabs.org/klear-wikidata/en/api\","
                 + "\"identifierSpace\":\"http://www.wikidata.org/entity/\","
                 + "\"schemaSpace\":\"http://www.wikidata.org/prop/direct/\","
                 + "\"j\":\"matched\","
@@ -148,7 +148,7 @@ public class ReconTests {
     @Test
     public void testsErrorWithCandidatesDeserialization() throws Exception {
         String json = "{\"id\":1533651559492945033,"
-                + "\"service\":\"https://tools.wmflabs.org/openrefine-wikidata/en/api\","
+                + "\"service\":\"https://tools.wmflabs.org/klear-wikidata/en/api\","
                 + "\"identifierSpace\":\"http://www.wikidata.org/entity/\","
                 + "\"schemaSpace\":\"http://www.wikidata.org/prop/direct/\","
                 + "\"j\":\"none\","
@@ -164,7 +164,7 @@ public class ReconTests {
     }
 
     /**
-     * Test for issue https://github.com/OpenRefine/OpenRefine/issues/3785. Generating many recon objects within a short
+     * Test for issue https://github.com/KLEAR/KLEAR/issues/3785. Generating many recon objects within a short
      * amount of time leads to collisions in id generation.
      */
     @Test

@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.updates;
+package org.klear.wikibase.updates;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,12 +24,12 @@ import org.wikidata.wdtk.datamodel.interfaces.TermUpdate;
 import org.wikidata.wdtk.wikibaseapi.WikibaseDataEditor;
 import org.wikidata.wdtk.wikibaseapi.apierrors.MediaWikiApiErrorException;
 
-import org.openrefine.wikibase.editing.MediaFileUtils;
-import org.openrefine.wikibase.editing.MediaFileUtils.MediaUploadResponse;
-import org.openrefine.wikibase.editing.NewEntityLibrary;
-import org.openrefine.wikibase.editing.ReconEntityRewriter;
-import org.openrefine.wikibase.schema.entityvalues.ReconEntityIdValue;
-import org.openrefine.wikibase.schema.exceptions.NewEntityNotCreatedYetException;
+import org.klear.wikibase.editing.MediaFileUtils;
+import org.klear.wikibase.editing.MediaFileUtils.MediaUploadResponse;
+import org.klear.wikibase.editing.NewEntityLibrary;
+import org.klear.wikibase.editing.ReconEntityRewriter;
+import org.klear.wikibase.schema.entityvalues.ReconEntityIdValue;
+import org.klear.wikibase.schema.exceptions.NewEntityNotCreatedYetException;
 
 /**
  * Represents a candidate edit on a MediaInfo entity.
@@ -274,8 +274,8 @@ public class MediaInfoEdit extends LabeledStatementEntityEdit {
             throws MediaWikiApiErrorException, IOException {
         // Temporary addition of the category (should be configurable)
         String wikitext = this.wikitext;
-        if (!wikitext.contains("[[Category:Uploaded with OpenRefine]]")) {
-            wikitext = wikitext + "\n[[Category:Uploaded with OpenRefine]]";
+        if (!wikitext.contains("[[Category:Uploaded with KLEAR]]")) {
+            wikitext = wikitext + "\n[[Category:Uploaded with KLEAR]]";
         }
 
         // Upload the file

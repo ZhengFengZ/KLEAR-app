@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.schema.entityvalues;
+package org.klear.wikibase.schema.entityvalues;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.wikidata.wdtk.datamodel.implementation.SnakImpl;

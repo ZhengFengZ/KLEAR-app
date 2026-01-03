@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2024, OpenRefine contributors
+ * Copyright (C) 2024, KLEAR contributors
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -70,7 +70,7 @@ public class RowAdditionOperationTests extends RefineTest {
     @BeforeMethod
     public void setUp() {
         // JSON serialization before 3.9.3, which might contain some corrupted cells because of mutability issues,
-        // manifesting themselves in https://github.com/OpenRefine/OpenRefine/issues/7245
+        // manifesting themselves in https://github.com/KLEAR/KLEAR/issues/7245
         legacyJson = "{"
                 + "\"op\":\"core/row-addition\","
                 + "\"rows\":[{\"starred\":false,\"flagged\":false,\"cells\":[{\"foo\":3}]},{\"starred\":false,\"flagged\":false,\"cells\":[]}],"
@@ -139,7 +139,7 @@ public class RowAdditionOperationTests extends RefineTest {
         TestUtils.isSerializedTo(renamed, newJson);
     }
 
-    // regression test for https://github.com/OpenRefine/OpenRefine/issues/7245
+    // regression test for https://github.com/KLEAR/KLEAR/issues/7245
     @Test
     public void mutabilityBugRegressionTest() throws Exception {
         Project project = createProject(new String[] { "foo", "bar" },

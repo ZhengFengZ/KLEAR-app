@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import java.util.Map;
 import java.util.Set;

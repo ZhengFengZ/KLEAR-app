@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema.entityvalues;
+package org.klear.wikibase.schema.entityvalues;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -41,7 +41,7 @@ import com.google.refine.model.Recon;
  * An EntityIdValue that holds not just the id but also the label as fetched by either the reconciliation interface or
  * the suggester and its type, both stored as reconciliation candidates.
  * 
- * This label will be localized depending on the language chosen by the user for OpenRefine's interface. Storing it lets
+ * This label will be localized depending on the language chosen by the user for KLEAR's interface. Storing it lets
  * us reuse it later on without having to re-fetch it.
  * 
  * Storing the types also lets us perform some constraint checks without re-fetching the types of many entities.
@@ -93,7 +93,7 @@ public abstract class ReconEntityIdValue implements PrefetchedEntityIdValue {
     public abstract String getEntityType();
 
     /**
-     * Returns the integer used internally in OpenRefine to identify the new entity.
+     * Returns the integer used internally in KLEAR to identify the new entity.
      * 
      * @return the reconciliation id of the reconciled cell
      */

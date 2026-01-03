@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.schema.strategies;
+package org.klear.wikibase.schema.strategies;
 
 import org.wikidata.wdtk.datamodel.interfaces.Value;
 

@@ -48,7 +48,7 @@ import com.google.common.base.CharMatcher;
 
 import com.google.refine.importing.ImportingJob;
 import com.google.refine.importing.ImportingUtilities;
-import com.google.refine.messages.OpenRefineMessage;
+import com.google.refine.messages.KLEARMessage;
 import com.google.refine.model.Column;
 import com.google.refine.model.ModelException;
 import com.google.refine.model.Project;
@@ -133,7 +133,7 @@ public class ImporterUtilities {
         if (index < currentFileColumnNames.size()) {
             return project.columnModel.getColumnByName(currentFileColumnNames.get(index));
         } else if (index >= currentFileColumnNames.size()) {
-            String prefix = OpenRefineMessage.importer_utilities_column() + " ";
+            String prefix = KLEARMessage.importer_utilities_column() + " ";
             int i = index + 1;
             while (true) {
                 String columnName = prefix + i;

@@ -62,9 +62,9 @@ Cypress.Commands.add('assertTextareaHaveJsonValue', (selector, json) => {
 });
 
 /**
- * Open OpenRefine
+ * Open KLEAR
  */
-Cypress.Commands.add('visitOpenRefine', (options) => {
+Cypress.Commands.add('visitKLEAR', (options) => {
   cy.visit(Cypress.env('OPENREFINE_URL'), options);
 });
 
@@ -180,7 +180,7 @@ Cypress.Commands.add('assertGridEquals', (values) => {
 });
 
 /**
- * Navigate to one of the entries of the main left menu of OpenRefine (Create project, Open Project, Import Project, Language Settings)
+ * Navigate to one of the entries of the main left menu of KLEAR (Create project, Open Project, Import Project, Language Settings)
  */
 Cypress.Commands.add('navigateTo', (target) => {
   cy.get('#action-area-tabs li').contains(target).click();
@@ -275,7 +275,7 @@ Cypress.Commands.add('visitProject', (projectId) => {
 });
 
 /**
- * Load a new project in OpenRefine, and open the project
+ * Load a new project in KLEAR, and open the project
  * The fixture can be
  *   * an arbitrary array that will be loaded in the grid. The first row is for the columns names
  *   * a file referenced in fixtures.js (food.mini | food.small)
@@ -333,7 +333,7 @@ Cypress.Commands.add(
   'loadAndVisitSampleJSONProject',
   (projectName, fixture) => {
     const jsonText = JSON.stringify(fixture)
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Create project');
     cy.get('#create-project-ui-source-selection-tabs > a')
       .contains('Clipboard')

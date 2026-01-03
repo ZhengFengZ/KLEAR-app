@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import static org.testng.Assert.assertEquals;
 
@@ -36,7 +36,7 @@ import org.testng.annotations.Test;
 import com.google.refine.model.Cell;
 import com.google.refine.model.ModelException;
 
-import org.openrefine.wikibase.qa.QAWarning;
+import org.klear.wikibase.qa.QAWarning;
 
 public abstract class WbVariableTest<T> extends WbExpressionTest<T> {
 

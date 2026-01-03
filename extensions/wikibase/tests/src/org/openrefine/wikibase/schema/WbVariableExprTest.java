@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import org.testng.annotations.Test;
 import org.wikidata.wdtk.datamodel.interfaces.StringValue;

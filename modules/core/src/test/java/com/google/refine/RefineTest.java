@@ -71,7 +71,7 @@ import com.google.refine.browsing.EngineConfig;
 import com.google.refine.importing.ImportingJob;
 import com.google.refine.importing.ImportingManager;
 import com.google.refine.io.FileProjectManager;
-import com.google.refine.messages.OpenRefineMessage;
+import com.google.refine.messages.KLEARMessage;
 import com.google.refine.model.AbstractOperation;
 import com.google.refine.model.Cell;
 import com.google.refine.model.Column;
@@ -109,7 +109,7 @@ public class RefineTest {
     public void init() {
         System.setProperty("log4j.configuration", "tests.log4j.properties");
         try {
-            workspaceDir = TestUtils.createTempDirectory("openrefine-test-workspace-dir");
+            workspaceDir = TestUtils.createTempDirectory("klear-test-workspace-dir");
             File jsonPath = new File(workspaceDir, "workspace.json");
             FileUtils.writeStringToFile(jsonPath, "{\"projectIDs\":[]\n" +
                     ",\"preferences\":{\"entries\":{\"scripting.starred-expressions\":" +
@@ -513,7 +513,7 @@ public class RefineTest {
      * way in tests.
      */
     public static String numberedColumn(int index) {
-        return OpenRefineMessage.importer_utilities_column() + " " + index;
+        return KLEARMessage.importer_utilities_column() + " " + index;
     }
 
 }

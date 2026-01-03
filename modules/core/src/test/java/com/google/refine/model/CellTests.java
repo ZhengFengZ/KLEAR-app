@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2018, OpenRefine contributors
+ * Copyright (C) 2018, KLEAR contributors
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without
@@ -47,7 +47,7 @@ public class CellTests {
 
     String reconJson = "{\"id\":1533649346002675326,"
             + "\"judgmentHistoryEntry\":1530278634724,"
-            + "\"service\":\"https://tools.wmflabs.org/openrefine-wikidata/en/api\","
+            + "\"service\":\"https://tools.wmflabs.org/klear-wikidata/en/api\","
             + "\"identifierSpace\":\"http://www.wikidata.org/entity/\","
             + "\"schemaSpace\":\"http://www.wikidata.org/prop/direct/\","
             + "\"j\":\"matched\","

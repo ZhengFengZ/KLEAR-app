@@ -56,7 +56,7 @@ import com.google.refine.browsing.RowVisitor;
 import com.google.refine.expr.ExpressionUtils;
 import com.google.refine.history.Change;
 import com.google.refine.history.HistoryEntry;
-import com.google.refine.messages.OpenRefineMessage;
+import com.google.refine.messages.KLEARMessage;
 import com.google.refine.model.Cell;
 import com.google.refine.model.Column;
 import com.google.refine.model.ColumnsDiff;
@@ -173,7 +173,7 @@ public class ReconOperation extends EngineDependentOperation {
                 "  \"columnName\" : \"" + _columnName + "\",\n" +
                 "  \"expression\" : \"forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \\\"(unreconciled)\\\", \\\"(blank)\\\"))\",\n"
                 +
-                "    \"name\" : \"" + _columnName + ": " + OpenRefineMessage.recon_operation_judgement_facet_name() + "\"\n" +
+                "    \"name\" : \"" + _columnName + ": " + KLEARMessage.recon_operation_judgement_facet_name() + "\"\n" +
                 "    },\n" +
                 "    \"facetOptions\" : {\n" +
                 "      \"scroll\" : true\n" +
@@ -186,7 +186,7 @@ public class ReconOperation extends EngineDependentOperation {
                 "    \"columnName\" : \"" + _columnName + "\",\n" +
                 "    \"expression\" : \"cell.recon.best.score\",\n" +
                 "    \"mode\" : \"range\",\n" +
-                "    \"name\" : \"" + _columnName + ": " + OpenRefineMessage.recon_operation_score_facet_name() + "\"\n" +
+                "    \"name\" : \"" + _columnName + ": " + KLEARMessage.recon_operation_score_facet_name() + "\"\n" +
                 "         },\n" +
                 "         \"facetType\" : \"range\"\n" +
                 "}";

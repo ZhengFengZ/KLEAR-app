@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.exporters;
+package org.klear.wikibase.exporters;
 
 import org.wikidata.wdtk.datamodel.interfaces.NoValueSnak;
 import org.wikidata.wdtk.datamodel.interfaces.PropertyIdValue;

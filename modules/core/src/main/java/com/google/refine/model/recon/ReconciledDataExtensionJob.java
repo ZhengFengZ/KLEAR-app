@@ -165,7 +165,7 @@ public class ReconciledDataExtensionJob {
      * library out of this which could be shared with StandardReconConfig
      *
      * It may also be possible to extract a library to query reconciliation services which could be used outside of
-     * OpenRefine.
+     * KLEAR.
      */
     public Map<String, ReconciledDataExtensionJob.DataExtension> extend(
             Set<String> ids,

@@ -14,7 +14,7 @@ import plistlib
 
 # .. Useful stuff ..............................................................
 
-application = defines.get("app", "OpenRefine.app")  # noqa: F821
+application = defines.get("app", "KLEAR.app")  # noqa: F821
 appname = os.path.basename(application)
 
 

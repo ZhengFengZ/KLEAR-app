@@ -1,6 +1,6 @@
 /*
 
-Copyright 2010, 2023 Google Inc. & OpenRefine contributors
+Copyright 2010, 2023 Google Inc. & KLEAR contributors
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without

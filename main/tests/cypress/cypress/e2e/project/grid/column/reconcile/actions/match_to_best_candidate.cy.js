@@ -4,7 +4,7 @@ describe('Match each cell to its best candidate', () => {
     });
     
     it('Match each cell to its best candidate', () => {
-        cy.visitOpenRefine();
+        cy.visitKLEAR();
         cy.navigateTo('Import project');
         cy.get('.grid-layout').should('to.contain', 'Locate an existing Refine project file');
 

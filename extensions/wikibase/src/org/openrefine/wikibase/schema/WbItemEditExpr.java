@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import java.util.Collections;
 import java.util.HashSet;
@@ -40,16 +40,16 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import org.wikidata.wdtk.datamodel.interfaces.EntityIdValue;
 import org.wikidata.wdtk.datamodel.interfaces.ItemIdValue;
 
-import org.openrefine.wikibase.qa.QAWarning;
-import org.openrefine.wikibase.qa.QAWarning.Severity;
-import org.openrefine.wikibase.schema.exceptions.QAWarningException;
-import org.openrefine.wikibase.schema.exceptions.SkipSchemaExpressionException;
-import org.openrefine.wikibase.schema.validation.PathElement;
-import org.openrefine.wikibase.schema.validation.ValidationState;
-import org.openrefine.wikibase.updates.ItemEdit;
-import org.openrefine.wikibase.updates.ItemEditBuilder;
-import org.openrefine.wikibase.updates.StatementEdit;
-import org.openrefine.wikibase.updates.StatementGroupEdit;
+import org.klear.wikibase.qa.QAWarning;
+import org.klear.wikibase.qa.QAWarning.Severity;
+import org.klear.wikibase.schema.exceptions.QAWarningException;
+import org.klear.wikibase.schema.exceptions.SkipSchemaExpressionException;
+import org.klear.wikibase.schema.validation.PathElement;
+import org.klear.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.updates.ItemEdit;
+import org.klear.wikibase.updates.ItemEditBuilder;
+import org.klear.wikibase.updates.StatementEdit;
+import org.klear.wikibase.updates.StatementGroupEdit;
 
 /**
  * The representation of an item edit, which can contain variables both for its own id and in its contents.

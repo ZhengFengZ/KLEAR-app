@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.operations;
+package org.klear.wikibase.operations;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNull;
@@ -43,8 +43,8 @@ import com.google.refine.model.AbstractOperation;
 import com.google.refine.model.ColumnsDiff;
 import com.google.refine.util.ParsingUtilities;
 
-import org.openrefine.wikibase.schema.WikibaseSchema;
-import org.openrefine.wikibase.testing.TestingData;
+import org.klear.wikibase.schema.WikibaseSchema;
+import org.klear.wikibase.testing.TestingData;
 
 public class SaveWikibaseSchemaOperationTest extends OperationTest {
 

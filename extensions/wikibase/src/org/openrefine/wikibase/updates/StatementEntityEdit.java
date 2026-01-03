@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.updates;
+package org.klear.wikibase.updates;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -8,7 +8,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.wikidata.wdtk.datamodel.interfaces.Statement;
 
-import org.openrefine.wikibase.schema.strategies.StatementEditingMode;
+import org.klear.wikibase.schema.strategies.StatementEditingMode;
 
 /**
  * A candidate edit on an entity which can bear statements.

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2018, OpenRefine contributors
+ * Copyright (C) 2018, KLEAR contributors
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without

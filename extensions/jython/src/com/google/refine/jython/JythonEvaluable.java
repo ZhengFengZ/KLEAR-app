@@ -87,7 +87,7 @@ public class JythonEvaluable implements Evaluable {
     private static PythonInterpreter _engine;
 
     // FIXME(SM): this initialization logic depends on the fact that the JVM's
-    // current working directory is the root of the OpenRefine distributions
+    // current working directory is the root of the KLEAR distributions
     // or the development checkouts. While this works in practice, it would
     // be preferable to have a more reliable address space, but since we
     // don't have access to the servlet context from this class this is

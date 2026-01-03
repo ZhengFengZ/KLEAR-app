@@ -1,7 +1,7 @@
 
-package org.openrefine.wikibase.schema.exceptions;
+package org.klear.wikibase.schema.exceptions;
 
-import org.openrefine.wikibase.qa.QAWarning;
+import org.klear.wikibase.qa.QAWarning;
 
 /**
  * Exception thrown during schema evaluation to report an error as a QA validation warning.

@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import static org.testng.Assert.assertEquals;
 
@@ -25,15 +25,15 @@ import com.google.refine.model.ModelException;
 import com.google.refine.util.ParsingUtilities;
 import com.google.refine.util.TestUtils;
 
-import org.openrefine.wikibase.qa.QAWarning;
-import org.openrefine.wikibase.qa.QAWarning.Severity;
-import org.openrefine.wikibase.schema.entityvalues.ReconMediaInfoIdValue;
-import org.openrefine.wikibase.schema.strategies.StatementEditingMode;
-import org.openrefine.wikibase.schema.strategies.StatementMerger;
-import org.openrefine.wikibase.testing.JacksonSerializationTest;
-import org.openrefine.wikibase.updates.MediaInfoEdit;
-import org.openrefine.wikibase.updates.MediaInfoEditBuilder;
-import org.openrefine.wikibase.updates.StatementEdit;
+import org.klear.wikibase.qa.QAWarning;
+import org.klear.wikibase.qa.QAWarning.Severity;
+import org.klear.wikibase.schema.entityvalues.ReconMediaInfoIdValue;
+import org.klear.wikibase.schema.strategies.StatementEditingMode;
+import org.klear.wikibase.schema.strategies.StatementMerger;
+import org.klear.wikibase.testing.JacksonSerializationTest;
+import org.klear.wikibase.updates.MediaInfoEdit;
+import org.klear.wikibase.updates.MediaInfoEditBuilder;
+import org.klear.wikibase.updates.StatementEdit;
 
 public class WbMediaInfoEditExprTest extends WbExpressionTest<MediaInfoEdit> {
 

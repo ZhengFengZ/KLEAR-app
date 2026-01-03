@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import java.util.Map;
 import java.util.Set;
@@ -32,11 +32,11 @@ import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonSubTypes.Type;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
-import org.openrefine.wikibase.schema.exceptions.QAWarningException;
-import org.openrefine.wikibase.schema.exceptions.SkipSchemaExpressionException;
-import org.openrefine.wikibase.schema.exceptions.SpecialValueNoValueException;
-import org.openrefine.wikibase.schema.exceptions.SpecialValueSomeValueException;
-import org.openrefine.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.schema.exceptions.QAWarningException;
+import org.klear.wikibase.schema.exceptions.SkipSchemaExpressionException;
+import org.klear.wikibase.schema.exceptions.SpecialValueNoValueException;
+import org.klear.wikibase.schema.exceptions.SpecialValueSomeValueException;
+import org.klear.wikibase.schema.validation.ValidationState;
 
 /**
  * The base interface for all expressions, which evaluate to a particular type T in an ExpressionContext.

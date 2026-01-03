@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.qa.scrutinizers;
+package org.klear.wikibase.qa.scrutinizers;
 
 import java.util.HashMap;
 import java.util.List;
@@ -14,10 +14,10 @@ import org.wikidata.wdtk.datamodel.interfaces.TimeValue;
 import org.wikidata.wdtk.datamodel.interfaces.Value;
 import org.wikidata.wdtk.datamodel.interfaces.ValueSnak;
 
-import org.openrefine.wikibase.qa.QAWarning;
-import org.openrefine.wikibase.updates.ItemEdit;
-import org.openrefine.wikibase.updates.MediaInfoEdit;
-import org.openrefine.wikibase.updates.StatementEntityEdit;
+import org.klear.wikibase.qa.QAWarning;
+import org.klear.wikibase.updates.ItemEdit;
+import org.klear.wikibase.updates.MediaInfoEdit;
+import org.klear.wikibase.updates.StatementEntityEdit;
 
 public class DifferenceWithinRangeScrutinizer extends EditScrutinizer {
 

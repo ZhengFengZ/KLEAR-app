@@ -105,14 +105,14 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   display: block;
 }
 
-#openrefine-version {
+#klear-version {
   margin: var(--padding-normal) 0 0 0;
   color: var(--text-tertiary);
   font-size: 80%;
   cursor: pointer;
 }
 
-#openrefine-version svg {
+#klear-version svg {
   height: 16px;
   width: 16px;
   margin-left: var(--padding-tight);

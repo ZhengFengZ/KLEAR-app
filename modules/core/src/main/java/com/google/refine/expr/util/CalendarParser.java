@@ -1610,7 +1610,7 @@ public class CalendarParser {
             state.setYear(tmpYear + (CENTURY_OFFSET - 100));
         }
 
-        // FIXME: This was local time before OpenRefine 3.0 when it changed to UTC for no apparent reason
+        // FIXME: This was local time before KLEAR 3.0 when it changed to UTC for no apparent reason
         GregorianCalendar cal = new GregorianCalendar(TimeZone.getTimeZone("Z"));
 
         state.setCalendar(cal, ignoreChanges);

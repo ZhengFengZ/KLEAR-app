@@ -7,7 +7,7 @@ describe(__filename, function () {
   });
 
   it('Add a new preference', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.get('#project-links a').contains('Preferences').click();
 
     cy.window().then(($win) => {
@@ -21,7 +21,7 @@ describe(__filename, function () {
   });
   
   it('Edit a preference', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
 
     cy.setPreference(testPreferenceName, testPreferenceValue);
 

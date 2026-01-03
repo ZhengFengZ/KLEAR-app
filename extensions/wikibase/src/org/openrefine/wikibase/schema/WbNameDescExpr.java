@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import java.util.Map;
 import java.util.Set;
@@ -33,13 +33,13 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.wikidata.wdtk.datamodel.interfaces.MonolingualTextValue;
 
-import org.openrefine.wikibase.schema.exceptions.QAWarningException;
-import org.openrefine.wikibase.schema.exceptions.SkipSchemaExpressionException;
-import org.openrefine.wikibase.schema.validation.PathElement;
-import org.openrefine.wikibase.schema.validation.PathElement.Type;
-import org.openrefine.wikibase.schema.validation.ValidationState;
-import org.openrefine.wikibase.updates.ItemEditBuilder;
-import org.openrefine.wikibase.updates.MediaInfoEditBuilder;
+import org.klear.wikibase.schema.exceptions.QAWarningException;
+import org.klear.wikibase.schema.exceptions.SkipSchemaExpressionException;
+import org.klear.wikibase.schema.validation.PathElement;
+import org.klear.wikibase.schema.validation.PathElement.Type;
+import org.klear.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.updates.ItemEditBuilder;
+import org.klear.wikibase.updates.MediaInfoEditBuilder;
 
 /**
  * An expression that represent a term (label, description or alias). The structure is slightly different from other

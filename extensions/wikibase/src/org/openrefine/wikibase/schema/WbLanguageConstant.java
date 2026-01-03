@@ -22,15 +22,15 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.wikidata.wdtk.datamodel.interfaces.WikimediaLanguageCodes;
 
-import org.openrefine.wikibase.schema.exceptions.SkipSchemaExpressionException;
-import org.openrefine.wikibase.schema.validation.ValidationState;
-import org.openrefine.wikibase.utils.LanguageCodeStore;
+import org.klear.wikibase.schema.exceptions.SkipSchemaExpressionException;
+import org.klear.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.utils.LanguageCodeStore;
 
 /**
  * A constant that represents a Wikimedia language code.

@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.schema.strategies;
+package org.klear.wikibase.schema.strategies;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -21,7 +21,7 @@ import org.wikidata.wdtk.datamodel.interfaces.Statement;
 import org.wikidata.wdtk.datamodel.interfaces.Value;
 import org.wikidata.wdtk.datamodel.interfaces.ValueSnak;
 
-import org.openrefine.wikibase.schema.WbStatementExpr;
+import org.klear.wikibase.schema.WbStatementExpr;
 
 /**
  * Merging strategy which only looks at the main value of statements (in addition to their property, but that is

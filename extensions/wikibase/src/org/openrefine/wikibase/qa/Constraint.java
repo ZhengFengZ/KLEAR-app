@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.qa;
+package org.klear.wikibase.qa;
 
 import java.util.HashSet;
 import java.util.List;

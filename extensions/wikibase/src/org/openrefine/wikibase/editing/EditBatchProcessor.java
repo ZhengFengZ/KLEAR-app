@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.editing;
+package org.klear.wikibase.editing;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -49,13 +49,13 @@ import org.wikidata.wdtk.wikibaseapi.WikibaseDataFetcher;
 import org.wikidata.wdtk.wikibaseapi.apierrors.MediaWikiApiErrorException;
 import org.wikidata.wdtk.wikibaseapi.apierrors.MediaWikiErrorMessage;
 
-import org.openrefine.wikibase.schema.entityvalues.ReconEntityIdValue;
-import org.openrefine.wikibase.schema.exceptions.NewEntityNotCreatedYetException;
-import org.openrefine.wikibase.updates.EntityEdit;
-import org.openrefine.wikibase.updates.FullMediaInfoUpdate;
-import org.openrefine.wikibase.updates.MediaInfoEdit;
-import org.openrefine.wikibase.updates.scheduler.ImpossibleSchedulingException;
-import org.openrefine.wikibase.updates.scheduler.WikibaseAPIUpdateScheduler;
+import org.klear.wikibase.schema.entityvalues.ReconEntityIdValue;
+import org.klear.wikibase.schema.exceptions.NewEntityNotCreatedYetException;
+import org.klear.wikibase.updates.EntityEdit;
+import org.klear.wikibase.updates.FullMediaInfoUpdate;
+import org.klear.wikibase.updates.MediaInfoEdit;
+import org.klear.wikibase.updates.scheduler.ImpossibleSchedulingException;
+import org.klear.wikibase.updates.scheduler.WikibaseAPIUpdateScheduler;
 
 /**
  * Schedules and performs a list of updates to entities via the API.

@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.qa.scrutinizers;
+package org.klear.wikibase.qa.scrutinizers;
 
 import java.io.File;
 import java.io.IOException;
@@ -12,10 +12,10 @@ import java.util.stream.Collectors;
 
 import org.wikidata.wdtk.wikibaseapi.apierrors.MediaWikiApiErrorException;
 
-import org.openrefine.wikibase.editing.MediaFileUtils;
-import org.openrefine.wikibase.qa.QAWarning;
-import org.openrefine.wikibase.updates.ItemEdit;
-import org.openrefine.wikibase.updates.MediaInfoEdit;
+import org.klear.wikibase.editing.MediaFileUtils;
+import org.klear.wikibase.qa.QAWarning;
+import org.klear.wikibase.updates.ItemEdit;
+import org.klear.wikibase.updates.MediaInfoEdit;
 
 public class FileNameScrutinizer extends EditScrutinizer {
 

@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.commands;
+package org.klear.wikibase.commands;
 
 import static org.apache.commons.lang3.StringUtils.isBlank;
 import static org.apache.commons.lang3.StringUtils.isNotBlank;
@@ -60,7 +60,7 @@ import com.google.refine.commands.Command;
  */
 public class LoginCommand extends Command {
 
-    static final String WIKIBASE_COOKIE_PREFIX = "openrefine-wikibase-";
+    static final String WIKIBASE_COOKIE_PREFIX = "klear-wikibase-";
 
     static final String API_ENDPOINT = "wb-api-endpoint";
 
@@ -256,7 +256,7 @@ public class LoginCommand extends Command {
         Cookie cookie = new Cookie(key, encodedValue);
         cookie.setMaxAge(60 * 60 * 24 * 365); // a year
         cookie.setPath("/");
-        // set to false because OpenRefine doesn't require HTTPS
+        // set to false because KLEAR doesn't require HTTPS
         cookie.setSecure(false);
         response.addCookie(cookie);
     }

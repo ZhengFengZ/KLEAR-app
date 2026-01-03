@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.operations;
+package org.klear.wikibase.operations;
 
 import java.io.IOException;
 import java.io.LineNumberReader;
@@ -44,7 +44,7 @@ import com.google.refine.model.Project;
 import com.google.refine.util.ParsingUtilities;
 import com.google.refine.util.Pool;
 
-import org.openrefine.wikibase.schema.WikibaseSchema;
+import org.klear.wikibase.schema.WikibaseSchema;
 
 public class SaveWikibaseSchemaOperation extends AbstractOperation {
 

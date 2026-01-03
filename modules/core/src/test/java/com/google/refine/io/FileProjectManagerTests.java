@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2018, OpenRefine contributors
+ * Copyright (C) 2018, KLEAR contributors
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without
@@ -57,7 +57,7 @@ public class FileProjectManagerTests {
 
     @BeforeMethod
     public void createDirectory() throws IOException {
-        workspaceDir = TestUtils.createTempDirectory("openrefine-test-workspace-dir");
+        workspaceDir = TestUtils.createTempDirectory("klear-test-workspace-dir");
         workspaceFile = new File(workspaceDir, "workspace.json");
     }
 
@@ -165,7 +165,7 @@ public class FileProjectManagerTests {
     public void testUntarZipSlip() throws IOException {
         FileProjectManager manager = new FileProjectManagerStub(workspaceDir);
 
-        File tempDir = TestUtils.createTempDirectory("openrefine-project-import-zip-slip-test");
+        File tempDir = TestUtils.createTempDirectory("klear-project-import-zip-slip-test");
         try (InputStream stream = FileProjectManagerTests.class.getClassLoader().getResourceAsStream("zip-slip.tar")) {
             File subDir = new File(tempDir, "dest");
             assertThrows(IllegalArgumentException.class, () -> manager.untar(subDir, stream));

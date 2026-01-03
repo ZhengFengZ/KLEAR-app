@@ -16,7 +16,7 @@ describe('Export to QuickStatements', () => {
   }
 
   it('Export to QuickStatements', () => {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Import project');
     cy.get('.grid-layout').should('to.contain', 'Locate an existing Refine project file');
     

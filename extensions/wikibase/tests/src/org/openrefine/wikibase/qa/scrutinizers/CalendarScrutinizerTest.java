@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.qa.scrutinizers;
+package org.klear.wikibase.qa.scrutinizers;
 
 import org.testng.annotations.Test;
 import org.wikidata.wdtk.datamodel.helpers.Datamodel;

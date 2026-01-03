@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -48,15 +48,15 @@ import com.google.refine.model.Project;
 import com.google.refine.model.Row;
 import com.google.refine.util.ParsingUtilities;
 
-import org.openrefine.wikibase.qa.QAWarningStore;
-import org.openrefine.wikibase.schema.exceptions.QAWarningException;
-import org.openrefine.wikibase.schema.exceptions.SkipSchemaExpressionException;
-import org.openrefine.wikibase.schema.validation.PathElement;
-import org.openrefine.wikibase.schema.validation.ValidationState;
-import org.openrefine.wikibase.updates.EntityEdit;
+import org.klear.wikibase.qa.QAWarningStore;
+import org.klear.wikibase.schema.exceptions.QAWarningException;
+import org.klear.wikibase.schema.exceptions.SkipSchemaExpressionException;
+import org.klear.wikibase.schema.validation.PathElement;
+import org.klear.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.updates.EntityEdit;
 
 /**
- * Main class representing a skeleton of Wikibase edits with OpenRefine columns as variables.
+ * Main class representing a skeleton of Wikibase edits with KLEAR columns as variables.
  * 
  * @author Antonin Delpeuch
  *

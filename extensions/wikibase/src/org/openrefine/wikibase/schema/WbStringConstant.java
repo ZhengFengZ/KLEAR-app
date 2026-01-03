@@ -22,14 +22,14 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.wikidata.wdtk.datamodel.helpers.Datamodel;
 import org.wikidata.wdtk.datamodel.interfaces.StringValue;
 
-import org.openrefine.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.schema.validation.ValidationState;
 
 public class WbStringConstant extends WbConstantExpr<StringValue> {
 

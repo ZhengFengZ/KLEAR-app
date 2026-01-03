@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2018, OpenRefine contributors
+ * Copyright (C) 2018, KLEAR contributors
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without
@@ -743,7 +743,7 @@ public class WikitextImporter extends TabularImportingParserBase {
             // Set metadata
             if (vs.caption != null && vs.caption.length() > 0) {
                 metadata.setName(vs.caption);
-                // TODO this does not seem to do anything - maybe we need to pass it to OpenRefine in some other way?
+                // TODO this does not seem to do anything - maybe we need to pass it to KLEAR in some other way?
             }
 
             TabularImportingParserBase.readTable(project, job, dataReader, limit, options, exceptions);

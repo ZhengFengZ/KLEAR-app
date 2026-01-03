@@ -1,4 +1,4 @@
-importPackage(org.openrefine.wikibase.commands);
+importPackage(org.klear.wikibase.commands);
 
 /*
  * Function invoked to initialize the extension.
@@ -6,36 +6,36 @@ importPackage(org.openrefine.wikibase.commands);
 function init() {
     var RefineServlet = Packages.com.google.refine.RefineServlet;
     RefineServlet.registerClassMapping(
-            "org.openrefine.wikibase.operations.SaveWikibaseSchemaOperation$WikibaseSchemaChange",
-            "org.openrefine.wikibase.operations.SaveWikibaseSchemaOperation$WikibaseSchemaChange");
+            "org.klear.wikibase.operations.SaveWikibaseSchemaOperation$WikibaseSchemaChange",
+            "org.klear.wikibase.operations.SaveWikibaseSchemaOperation$WikibaseSchemaChange");
     RefineServlet.registerClassMapping(
-            "org.openrefine.wikibase.operations.PerformWikibaseEditsOperation$PerformWikibaseEditsChange",
-            "org.openrefine.wikibase.operations.PerformWikibaseEditsOperation$PerformWikibaseEditsChange");
+            "org.klear.wikibase.operations.PerformWikibaseEditsOperation$PerformWikibaseEditsChange",
+            "org.klear.wikibase.operations.PerformWikibaseEditsOperation$PerformWikibaseEditsChange");
     
-    RefineServlet.cacheClass(Packages.org.openrefine.wikibase.operations.SaveWikibaseSchemaOperation$WikibaseSchemaChange);
-    RefineServlet.cacheClass(Packages.org.openrefine.wikibase.operations.PerformWikibaseEditsOperation$PerformWikibaseEditsChange);
+    RefineServlet.cacheClass(Packages.org.klear.wikibase.operations.SaveWikibaseSchemaOperation$WikibaseSchemaChange);
+    RefineServlet.cacheClass(Packages.org.klear.wikibase.operations.PerformWikibaseEditsOperation$PerformWikibaseEditsChange);
 
     /*
      *  Attach a Wikibase schema to each project.
      */
     Packages.com.google.refine.model.Project.registerOverlayModel(
         "wikibaseSchema",
-        Packages.org.openrefine.wikibase.schema.WikibaseSchema);
+        Packages.org.klear.wikibase.schema.WikibaseSchema);
     
     /*
      *  Operations
      */
     Packages.com.google.refine.operations.OperationRegistry.registerOperation(
-        module, "save-wikibase-schema", Packages.org.openrefine.wikibase.operations.SaveWikibaseSchemaOperation);
+        module, "save-wikibase-schema", Packages.org.klear.wikibase.operations.SaveWikibaseSchemaOperation);
     Packages.com.google.refine.operations.OperationRegistry.registerOperation(
-        module, "perform-wikibase-edits", Packages.org.openrefine.wikibase.operations.PerformWikibaseEditsOperation);
+        module, "perform-wikibase-edits", Packages.org.klear.wikibase.operations.PerformWikibaseEditsOperation);
     
     /*
      *  Exporters
      */
     var ExporterRegistry = Packages.com.google.refine.exporters.ExporterRegistry;
-    var QSExporter = Packages.org.openrefine.wikibase.exporters.QuickStatementsExporter;
-    var SchemaExporter = Packages.org.openrefine.wikibase.exporters.SchemaExporter;
+    var QSExporter = Packages.org.klear.wikibase.exporters.QuickStatementsExporter;
+    var SchemaExporter = Packages.org.klear.wikibase.exporters.SchemaExporter;
     
     ExporterRegistry.registerExporter("quickstatements", new QSExporter());
     ExporterRegistry.registerExporter("wikibase-schema", new SchemaExporter());
@@ -54,7 +54,7 @@ function init() {
      * GREL functions
      */
     var CFR = Packages.com.google.refine.grel.ControlFunctionRegistry;
-    CFR.registerFunction("wikibaseIssues", new Packages.org.openrefine.wikibase.functions.WikibaseIssuesFunction());
+    CFR.registerFunction("wikibaseIssues", new Packages.org.klear.wikibase.functions.WikibaseIssuesFunction());
 
     /*
      * Resources

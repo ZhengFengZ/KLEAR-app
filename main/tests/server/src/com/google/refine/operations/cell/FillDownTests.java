@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2018, OpenRefine contributors
+ * Copyright (C) 2018, KLEAR contributors
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without
@@ -171,7 +171,7 @@ public class FillDownTests extends RefineTest {
     }
 
     // For issue #742
-    // https://github.com/OpenRefine/OpenRefine/issues/742
+    // https://github.com/KLEAR/KLEAR/issues/742
     @Test
     public void testFillDownRecordsNoFacets() throws Exception {
         FillDownOperation operation = new FillDownOperation(EngineConfig.deserialize("{\"mode\":\"record-based\",\"facets\":[]}"), "bar");
@@ -191,7 +191,7 @@ public class FillDownTests extends RefineTest {
     }
 
     // For issue #742
-    // https://github.com/OpenRefine/OpenRefine/issues/742
+    // https://github.com/KLEAR/KLEAR/issues/742
     @Test
     public void testFillDownRowsNoFacets() throws Exception {
         FillDownOperation operation = new FillDownOperation(EngineConfig.defaultRowBased(), "bar");

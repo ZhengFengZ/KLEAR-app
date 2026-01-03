@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.updates.scheduler;
+package org.klear.wikibase.updates.scheduler;
 
 public class ImpossibleSchedulingException extends Exception {
 

@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.qa;
+package org.klear.wikibase.qa;
 
 import java.io.IOException;
 import java.util.HashSet;
@@ -11,8 +11,8 @@ import org.testng.annotations.Test;
 import org.wikidata.wdtk.datamodel.helpers.Datamodel;
 import org.wikidata.wdtk.datamodel.interfaces.PropertyIdValue;
 
-import org.openrefine.wikibase.schema.WikibaseSchema;
-import org.openrefine.wikibase.testing.TestingData;
+import org.klear.wikibase.schema.WikibaseSchema;
+import org.klear.wikibase.testing.TestingData;
 
 public class SchemaPropertyExtractorTest {
 

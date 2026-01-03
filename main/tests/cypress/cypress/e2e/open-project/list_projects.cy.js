@@ -2,7 +2,7 @@ describe(__filename, function () {
   it('List an existing project, ensure a newly created project is displayed', function () {
     const projectName = Date.now();
     cy.loadProject('food.mini', projectName);
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Open project');
     cy.get('#projects-list table').should('contain', projectName);
   });
@@ -10,7 +10,7 @@ describe(__filename, function () {
   it('Visit a project from the Open project page, ensure link is working', function () {
     const projectName = Date.now();
     cy.loadProject('food.mini', projectName);
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Open project');
     cy.get('#projects-list table').contains(projectName).click();
     cy.get('#project-name-button').should('contain', projectName);
@@ -22,7 +22,7 @@ describe(__filename, function () {
     let positionZ;
     cy.loadProject('food.mini', projectName);
     cy.loadProject('food.mini', projectName2);
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Open project');
     cy.get('#projects-list table').contains('Name').click();
     // cy.get('#projects-list tbody>tr').eq(0).should('contain','projectA');
@@ -57,7 +57,7 @@ describe(__filename, function () {
   it('Ensure project is deleted from database as well as UI', function () {
     const projectName = Date.now();
     cy.loadProject('food.mini', projectName);
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Open project');
     cy.contains('td', projectName).siblings().find('.delete-project').click();
     cy.get('#projects-list').should('not.contain', projectName);

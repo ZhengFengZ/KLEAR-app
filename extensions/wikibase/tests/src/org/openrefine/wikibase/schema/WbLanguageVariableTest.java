@@ -22,13 +22,13 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import org.testng.annotations.Test;
 
 import com.google.refine.model.Cell;
 
-import org.openrefine.wikibase.testing.JacksonSerializationTest;
+import org.klear.wikibase.testing.JacksonSerializationTest;
 
 public class WbLanguageVariableTest extends WbVariableTest<String> {
 

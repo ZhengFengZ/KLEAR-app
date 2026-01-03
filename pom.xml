@@ -2,14 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.openrefine</groupId>
-  <artifactId>openrefine</artifactId>
+  <groupId>org.klear</groupId>
+  <artifactId>klear</artifactId>
   <packaging>pom</packaging>
   <version>3.10-SNAPSHOT</version>
 
-  <name>OpenRefine</name>
-  <description>OpenRefine is a free, open source power tool for working with messy data and improving it</description>
-  <url>http://openrefine.org/</url>
+  <name>KLEAR</name>
+  <description>KLEAR is a free, open source power tool for working with messy data and improving it</description>
+  <url>http://klear.org/</url>
   <inceptionYear>2010</inceptionYear>
   <organization>
     <name>Code for Science &amp; Society Inc.</name>
@@ -18,38 +18,38 @@
   <licenses>
     <license>
       <name>BSD-3-Clause</name>
-      <url>https://raw.githubusercontent.com/OpenRefine/OpenRefine/master/LICENSE.txt</url>
+      <url>https://raw.githubusercontent.com/KLEAR/KLEAR/master/LICENSE.txt</url>
       <distribution>repo</distribution>
     </license>
   </licenses>
   <mailingLists>
     <mailingList>
       <name>Dev</name>
-        <post>openrefine+dev@discoursemail.com</post>
-        <archive>https://forum.openrefine.org/c/8</archive>
+        <post>klear+dev@discoursemail.com</post>
+        <archive>https://forum.klear.org/c/8</archive>
      </mailingList>
      <mailingList>
        <name>Users</name>
-       <post>openrefine+support@discoursemail.com</post>
-       <archive>https://forum.openrefine.org/c/support/12</archive>
+       <post>klear+support@discoursemail.com</post>
+       <archive>https://forum.klear.org/c/support/12</archive>
      </mailingList>
   </mailingLists>
   <scm>
-      <connection>scm:git:git://github.com//OpenRefine/OpenRefine.git</connection>
-      <developerConnection>scm:git:https://github.com/OpenRefine/OpenRefine</developerConnection>
-      <url>https://github.com/OpenRefine/OpenRefine.git</url>
+      <connection>scm:git:git://github.com//KLEAR/KLEAR.git</connection>
+      <developerConnection>scm:git:https://github.com/KLEAR/KLEAR</developerConnection>
+      <url>https://github.com/KLEAR/KLEAR.git</url>
       <tag>HEAD</tag>
   </scm>
   <issueManagement>
     <system>GitHub Issues</system>
-    <url>https://github.com/openrefine/openrefine/issues</url>
+    <url>https://github.com/klear/klear/issues</url>
   </issueManagement>
 
   <developers>
     <developer>
       <id>contributors</id>
-      <name>OpenRefine Contributors</name>
-      <url>https://github.com/OpenRefine/OpenRefine/graphs/contributors</url>
+      <name>KLEAR Contributors</name>
+      <url>https://github.com/KLEAR/KLEAR/graphs/contributors</url>
       <roles>
         <role>Contributor</role>
       </roles>  
@@ -136,7 +136,7 @@
     <!-- It is nice for "mvn" with no arguments to do a reasonable default. -->
     <defaultGoal>install</defaultGoal>
 
-    <finalName>openrefine</finalName>
+    <finalName>klear</finalName>
     <resources>
     </resources>
     <plugins>
@@ -187,7 +187,7 @@
         <configuration>
           <skip>${skipTests}</skip>
           <excludes>
-            <exclude>org/openrefine/messages/**/*</exclude>
+            <exclude>org/klear/messages/**/*</exclude>
           </excludes>
         </configuration>
         <executions>
@@ -260,7 +260,7 @@
         <version>3.12.0</version>
         <configuration>
             <bottom>
-                    <![CDATA[Copyright &#169; {inceptionYear}&#x2013;{currentYear} {organizationName}. Generated from source code published under the BSD Clause-3 license. For more information, see the <a href="https://openrefine.org">OpenRefine website</a>]]></bottom>
+                    <![CDATA[Copyright &#169; {inceptionYear}&#x2013;{currentYear} {organizationName}. Generated from source code published under the BSD Clause-3 license. For more information, see the <a href="https://klear.org">KLEAR website</a>]]></bottom>
             <source>11</source>
         </configuration>
         <executions>
@@ -288,7 +288,7 @@
         <artifactId>impsort-maven-plugin</artifactId>
         <version>1.9.0</version>
         <configuration>
-          <groups>java.,javax.,*,com.google.refine,org.openrefine</groups>
+          <groups>java.,javax.,*,com.google.refine,org.klear</groups>
           <staticGroups>java,*</staticGroups>
           <removeUnused>true</removeUnused>
         </configuration>

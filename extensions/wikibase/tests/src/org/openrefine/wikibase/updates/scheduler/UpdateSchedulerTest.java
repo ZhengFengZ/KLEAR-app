@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.updates.scheduler;
+package org.klear.wikibase.updates.scheduler;
 
 import static org.testng.Assert.assertEquals;
 
@@ -36,12 +36,12 @@ import org.wikidata.wdtk.datamodel.helpers.Datamodel;
 import org.wikidata.wdtk.datamodel.interfaces.ItemIdValue;
 import org.wikidata.wdtk.datamodel.interfaces.MediaInfoIdValue;
 
-import org.openrefine.wikibase.testing.TestingData;
-import org.openrefine.wikibase.updates.EntityEdit;
-import org.openrefine.wikibase.updates.ItemEdit;
-import org.openrefine.wikibase.updates.ItemEditBuilder;
-import org.openrefine.wikibase.updates.StatementEdit;
-import org.openrefine.wikibase.updates.TermedStatementEntityEdit;
+import org.klear.wikibase.testing.TestingData;
+import org.klear.wikibase.updates.EntityEdit;
+import org.klear.wikibase.updates.ItemEdit;
+import org.klear.wikibase.updates.ItemEditBuilder;
+import org.klear.wikibase.updates.StatementEdit;
+import org.klear.wikibase.updates.TermedStatementEntityEdit;
 
 public abstract class UpdateSchedulerTest {
 

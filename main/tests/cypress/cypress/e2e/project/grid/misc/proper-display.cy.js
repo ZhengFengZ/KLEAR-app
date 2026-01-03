@@ -7,7 +7,7 @@ describe(__filename, function () {
         // eslint-disable-next-line max-len
         'https://www.wikidata.org/wiki/Property:P670 https://www.wikidata.org/wiki/Property:P669 are now mapped to https://schema.org/streetAddress via https://www.wikidata.org/wiki/Property:P2235',
       ],
-      ['github https://github.com/OpenRefine/OpenRefine/issues/2519'],
+      ['github https://github.com/KLEAR/KLEAR/issues/2519'],
     ];
     cy.loadAndVisitProject(fixture);
 

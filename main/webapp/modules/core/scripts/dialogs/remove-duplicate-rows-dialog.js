@@ -1,6 +1,6 @@
 /*
 
-Copyright 2024, OpenRefine.
+Copyright 2024, KLEAR.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without

@@ -1,7 +1,7 @@
 
-package org.openrefine.wikibase.commands;
+package org.klear.wikibase.commands;
 
-import static org.openrefine.wikibase.commands.CommandUtilities.respondError;
+import static org.klear.wikibase.commands.CommandUtilities.respondError;
 
 import java.io.IOException;
 
@@ -17,7 +17,7 @@ import org.apache.commons.lang3.Validate;
 import com.google.refine.commands.Command;
 import com.google.refine.util.ParsingUtilities;
 
-import org.openrefine.wikibase.schema.WikibaseSchema;
+import org.klear.wikibase.schema.WikibaseSchema;
 
 /**
  * Command to check whether a given schema template is syntactically valid. This uses POST because schema templates can
@@ -69,7 +69,7 @@ public class ParseWikibaseSchemaCommand extends Command {
             } catch (IOException e) {
                 // if it is not a schema template, it might just be a schema (without a name).
                 // This is also accepted, just for the sake of being able to import schemas exported
-                // prior to OpenRefine 3.7 (which did not come with the wrapping object storing the name).
+                // prior to KLEAR 3.7 (which did not come with the wrapping object storing the name).
                 WikibaseSchema schema = ParsingUtilities.mapper.readValue(jsonString, WikibaseSchema.class);
 
                 ObjectNode jsonResponse = ParsingUtilities.mapper.createObjectNode();

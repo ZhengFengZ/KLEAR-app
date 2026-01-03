@@ -22,14 +22,14 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.qa;
+package org.klear.wikibase.qa;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 
 import org.testng.annotations.Test;
 
-import org.openrefine.wikibase.testing.JacksonSerializationTest;
+import org.klear.wikibase.testing.JacksonSerializationTest;
 
 public class QAWarningTest {
 

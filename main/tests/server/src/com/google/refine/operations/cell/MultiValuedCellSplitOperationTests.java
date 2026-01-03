@@ -114,7 +114,7 @@ public class MultiValuedCellSplitOperationTests extends RefineTest {
 
     @Test
     public void deserializeLegacySeparatorSyntaxPlain() throws JsonMappingException, JsonProcessingException {
-        // regression test for https://github.com/OpenRefine/OpenRefine/issues/7078
+        // regression test for https://github.com/KLEAR/KLEAR/issues/7078
         String json = "{\n"
                 + "    \"op\": \"core/multivalued-cell-split\",\n"
                 + "    \"description\": \"Split multi-valued cells in column Dirigeants\",\n"
@@ -138,7 +138,7 @@ public class MultiValuedCellSplitOperationTests extends RefineTest {
 
     @Test
     public void deserializeLegacySeparatorSyntaxRegex() throws JsonMappingException, JsonProcessingException {
-        // regression test for https://github.com/OpenRefine/OpenRefine/issues/7078
+        // regression test for https://github.com/KLEAR/KLEAR/issues/7078
         String json = "{\n"
                 + "    \"op\": \"core/multivalued-cell-split\",\n"
                 + "    \"description\": \"Split multi-valued cells in column Dirigeants\",\n"
@@ -218,7 +218,7 @@ public class MultiValuedCellSplitOperationTests extends RefineTest {
 
     /**
      * Test to demonstrate the intended behaviour of the function, for issue #1268
-     * https://github.com/OpenRefine/OpenRefine/issues/1268
+     * https://github.com/KLEAR/KLEAR/issues/1268
      */
 
     @Test

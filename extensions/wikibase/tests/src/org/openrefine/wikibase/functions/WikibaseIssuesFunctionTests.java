@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.functions;
+package org.klear.wikibase.functions;
 
 import static org.testng.Assert.assertEquals;
 
@@ -22,10 +22,10 @@ import com.google.refine.model.Project;
 import com.google.refine.model.Row;
 import com.google.refine.util.ParsingUtilities;
 
-import org.openrefine.wikibase.manifests.Manifest;
-import org.openrefine.wikibase.manifests.ManifestException;
-import org.openrefine.wikibase.manifests.ManifestParser;
-import org.openrefine.wikibase.schema.WikibaseSchema;
+import org.klear.wikibase.manifests.Manifest;
+import org.klear.wikibase.manifests.ManifestException;
+import org.klear.wikibase.manifests.ManifestParser;
+import org.klear.wikibase.schema.WikibaseSchema;
 
 public class WikibaseIssuesFunctionTests extends RefineTest {
 

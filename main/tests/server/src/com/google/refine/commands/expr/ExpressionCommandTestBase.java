@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2018, OpenRefine contributors
+ * Copyright (C) 2018, KLEAR contributors
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without
@@ -87,7 +87,7 @@ public class ExpressionCommandTestBase extends CommandTestBase {
 
     public void initWorkspace(String jsonData) {
         try {
-            File workspaceDir = TestUtils.createTempDirectory("openrefine-test-workspace-dir");
+            File workspaceDir = TestUtils.createTempDirectory("klear-test-workspace-dir");
             File jsonPath = new File(workspaceDir, "workspace.json");
             FileUtils.writeStringToFile(jsonPath, jsonData);
             FileProjectManager.initialize(workspaceDir);

@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema.entityvalues;
+package org.klear.wikibase.schema.entityvalues;
 
 import java.util.List;
 
@@ -32,7 +32,7 @@ import org.wikidata.wdtk.datamodel.interfaces.EntityIdValue;
 /**
  * An entity id value that also comes with a label and possibly types.
  * 
- * The rationale behind this classes is that OpenRefine already stores labels and types for the Wikidata entities it
+ * The rationale behind this classes is that KLEAR already stores labels and types for the Wikidata entities it
  * knows about (in the reconciliation data), so it is worth keeping this data to avoid re-fetching it when we need it.
  * 
  * @author Antonin Delpeuch
@@ -42,7 +42,7 @@ public interface PrefetchedEntityIdValue extends EntityIdValue {
 
     /**
      * This should return the label "as we got it", with no guarantee that it is current or that its language matches
-     * that of the user. In general though, that should be the case if the user always uses OpenRefine with the same
+     * that of the user. In general though, that should be the case if the user always uses KLEAR with the same
      * language settings.
      * 
      * @return the preferred label of the entity

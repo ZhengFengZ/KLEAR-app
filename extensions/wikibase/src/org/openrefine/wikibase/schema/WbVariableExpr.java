@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import java.util.Set;
 
@@ -32,11 +32,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import com.google.refine.model.Cell;
 
-import org.openrefine.wikibase.schema.exceptions.QAWarningException;
-import org.openrefine.wikibase.schema.exceptions.SkipSchemaExpressionException;
-import org.openrefine.wikibase.schema.exceptions.SpecialValueNoValueException;
-import org.openrefine.wikibase.schema.exceptions.SpecialValueSomeValueException;
-import org.openrefine.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.schema.exceptions.QAWarningException;
+import org.klear.wikibase.schema.exceptions.SkipSchemaExpressionException;
+import org.klear.wikibase.schema.exceptions.SpecialValueNoValueException;
+import org.klear.wikibase.schema.exceptions.SpecialValueSomeValueException;
+import org.klear.wikibase.schema.validation.ValidationState;
 
 /**
  * A base class for expressions which draw their values from a particular column.
@@ -78,7 +78,7 @@ public abstract class WbVariableExpr<T> implements WbExpression<T> {
     /**
      * Returns the column name used by the variable.
      * 
-     * @return the OpenRefine column name
+     * @return the KLEAR column name
      */
     @JsonProperty("columnName")
     public String getColumnName() {
@@ -123,7 +123,7 @@ public abstract class WbVariableExpr<T> implements WbExpression<T> {
     }
 
     /**
-     * Method that should be implemented by subclasses, converting an OpenRefine cell to a Wikibase value. Access to
+     * Method that should be implemented by subclasses, converting an KLEAR cell to a Wikibase value. Access to
      * other values and emitting warnings is possible via the supplied EvaluationContext object.
      * 
      * @param cell

@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import java.util.Map;
 
@@ -32,7 +32,7 @@ import org.wikidata.wdtk.datamodel.interfaces.StringValue;
 
 import com.google.refine.model.Cell;
 
-import org.openrefine.wikibase.schema.exceptions.SkipSchemaExpressionException;
+import org.klear.wikibase.schema.exceptions.SkipSchemaExpressionException;
 
 /**
  * A variable that returns a simple string value.

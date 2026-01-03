@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.qa.scrutinizers;
+package org.klear.wikibase.qa.scrutinizers;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -33,7 +33,7 @@ import org.wikidata.wdtk.datamodel.interfaces.MonolingualTextValue;
 import org.wikidata.wdtk.datamodel.interfaces.StringValue;
 import org.wikidata.wdtk.datamodel.interfaces.Value;
 
-import org.openrefine.wikibase.qa.QAWarning;
+import org.klear.wikibase.qa.QAWarning;
 
 /**
  * Scrutinizes strings for trailing / leading whitespace, and others

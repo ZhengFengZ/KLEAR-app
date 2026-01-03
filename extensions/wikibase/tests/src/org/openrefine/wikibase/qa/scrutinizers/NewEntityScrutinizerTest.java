@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.qa.scrutinizers;
+package org.klear.wikibase.qa.scrutinizers;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -38,13 +38,13 @@ import org.wikidata.wdtk.datamodel.interfaces.Claim;
 import org.wikidata.wdtk.datamodel.interfaces.Statement;
 import org.wikidata.wdtk.datamodel.interfaces.StatementRank;
 
-import org.openrefine.wikibase.qa.QAWarning;
-import org.openrefine.wikibase.schema.entityvalues.SuggestedPropertyIdValue;
-import org.openrefine.wikibase.testing.TestingData;
-import org.openrefine.wikibase.updates.ItemEdit;
-import org.openrefine.wikibase.updates.ItemEditBuilder;
-import org.openrefine.wikibase.updates.MediaInfoEdit;
-import org.openrefine.wikibase.updates.MediaInfoEditBuilder;
+import org.klear.wikibase.qa.QAWarning;
+import org.klear.wikibase.schema.entityvalues.SuggestedPropertyIdValue;
+import org.klear.wikibase.testing.TestingData;
+import org.klear.wikibase.updates.ItemEdit;
+import org.klear.wikibase.updates.ItemEditBuilder;
+import org.klear.wikibase.updates.MediaInfoEdit;
+import org.klear.wikibase.updates.MediaInfoEditBuilder;
 
 public class NewEntityScrutinizerTest extends ScrutinizerTest {
 

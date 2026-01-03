@@ -5,12 +5,12 @@
   <artifactId>grel</artifactId>
   <packaging>jar</packaging>
 
-  <name>OpenRefine - GREL</name>
-  <description>General Refine Expression Language (default expression language of OpenRefine)</description>
-  <url>http://openrefine.org/</url>
+  <name>KLEAR - GREL</name>
+  <description>General Refine Expression Language (default expression language of KLEAR)</description>
+  <url>http://klear.org/</url>
   <parent>
-    <groupId>org.openrefine</groupId>
-    <artifactId>openrefine</artifactId>
+    <groupId>org.klear</groupId>
+    <artifactId>klear</artifactId>
     <version>3.10-SNAPSHOT</version>
     <relativePath>../..</relativePath>
   </parent>
@@ -19,7 +19,7 @@
        other artifacts (such as "main") need to copy it to a
        subdirectory for Butterfly -->
   <build>
-    <finalName>openrefine-grel</finalName>
+    <finalName>klear-grel</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -55,7 +55,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.openrefine</groupId>
+      <groupId>org.klear</groupId>
       <artifactId>core</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -94,7 +94,7 @@
       <version>${univocity-csv.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.openrefine.dependencies</groupId>
+      <groupId>org.klear.dependencies</groupId>
       <artifactId>vicino</artifactId>
       <version>${vicino.version}</version>
       <exclusions>
@@ -143,7 +143,7 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.openrefine</groupId>
+      <groupId>org.klear</groupId>
       <artifactId>core</artifactId>
       <version>${project.version}</version>
       <type>test-jar</type>

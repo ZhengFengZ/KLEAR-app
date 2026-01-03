@@ -216,7 +216,7 @@ public class TemplatingExporterTests extends RefineTest {
 
     /**
      * This test is add for checking the fix for issue 3955. Issue link:
-     * https://github.com/OpenRefine/OpenRefine/issues/3955
+     * https://github.com/KLEAR/KLEAR/issues/3955
      */
     @Test
     public void exportTemplateInRecordMode() throws IOException {
@@ -252,7 +252,7 @@ public class TemplatingExporterTests extends RefineTest {
 
     /**
      * Testing that curly braces are properly escaped. CS427 Issue Link:
-     * https://github.com/OpenRefine/OpenRefine/issues/3381
+     * https://github.com/KLEAR/KLEAR/issues/3381
      */
     @Test
     public void exportTemplateWithProperEscaping() throws IOException {

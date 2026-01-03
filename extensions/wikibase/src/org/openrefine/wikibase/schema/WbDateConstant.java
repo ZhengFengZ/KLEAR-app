@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import java.text.ParseException;
 import java.time.format.DateTimeFormatter;
@@ -42,8 +42,8 @@ import com.google.common.collect.ImmutableMap;
 import org.wikidata.wdtk.datamodel.helpers.Datamodel;
 import org.wikidata.wdtk.datamodel.interfaces.TimeValue;
 
-import org.openrefine.wikibase.schema.exceptions.SkipSchemaExpressionException;
-import org.openrefine.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.schema.exceptions.SkipSchemaExpressionException;
+import org.klear.wikibase.schema.validation.ValidationState;
 
 /**
  * A constant for a time value, accepting a number of formats which determine the precision of the parsed value.

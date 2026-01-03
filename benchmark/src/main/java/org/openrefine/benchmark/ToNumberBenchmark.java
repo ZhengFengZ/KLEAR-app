@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2020, OpenRefine contributors
+ * Copyright (C) 2020, KLEAR contributors
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without
@@ -25,7 +25,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
 
-package org.openrefine.benchmark;
+package org.klear.benchmark;
 
 import java.util.Properties;
 import java.util.Random;

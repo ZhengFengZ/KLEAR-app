@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.editing;
+package org.klear.wikibase.editing;
 
 import static org.testng.Assert.assertEquals;
 
@@ -32,12 +32,12 @@ import org.wikidata.wdtk.datamodel.helpers.Datamodel;
 import org.wikidata.wdtk.datamodel.interfaces.ItemIdValue;
 import org.wikidata.wdtk.datamodel.interfaces.PropertyIdValue;
 
-import org.openrefine.wikibase.schema.exceptions.NewEntityNotCreatedYetException;
-import org.openrefine.wikibase.testing.TestingData;
-import org.openrefine.wikibase.updates.EntityEdit;
-import org.openrefine.wikibase.updates.ItemEditBuilder;
-import org.openrefine.wikibase.updates.LabeledStatementEntityEdit;
-import org.openrefine.wikibase.updates.TermedStatementEntityEdit;
+import org.klear.wikibase.schema.exceptions.NewEntityNotCreatedYetException;
+import org.klear.wikibase.testing.TestingData;
+import org.klear.wikibase.updates.EntityEdit;
+import org.klear.wikibase.updates.ItemEditBuilder;
+import org.klear.wikibase.updates.LabeledStatementEntityEdit;
+import org.klear.wikibase.updates.TermedStatementEntityEdit;
 
 public class ReconEntityRewriterTest {
 

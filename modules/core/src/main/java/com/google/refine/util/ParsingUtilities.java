@@ -1,6 +1,6 @@
 /*
 
-Copyright 2010, 2022 Google Inc. & OpenRefine contributors
+Copyright 2010, 2022 Google Inc. & KLEAR contributors
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -80,7 +80,7 @@ public class ParsingUtilities {
             .build()
             .configure(JsonGenerator.Feature.AUTO_CLOSE_TARGET, false)
             .setStreamReadConstraints(StreamReadConstraints.builder()
-                    .maxStringLength(Integer.MAX_VALUE) // for https://github.com/OpenRefine/OpenRefine/issues/6680
+                    .maxStringLength(Integer.MAX_VALUE) // for https://github.com/KLEAR/KLEAR/issues/6680
                     .build());
 
     public static final ObjectMapper mapper = new ObjectMapper(jsonFactory);

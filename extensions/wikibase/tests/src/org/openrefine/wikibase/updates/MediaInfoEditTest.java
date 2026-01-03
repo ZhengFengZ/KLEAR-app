@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.updates;
+package org.klear.wikibase.updates;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyList;
@@ -31,12 +31,12 @@ import org.wikidata.wdtk.wikibaseapi.apierrors.MediaWikiApiErrorException;
 
 import com.google.refine.util.TestUtils;
 
-import org.openrefine.wikibase.editing.MediaFileUtils;
-import org.openrefine.wikibase.editing.MediaFileUtils.MediaUploadResponse;
-import org.openrefine.wikibase.schema.strategies.PropertyOnlyStatementMerger;
-import org.openrefine.wikibase.schema.strategies.StatementEditingMode;
-import org.openrefine.wikibase.schema.strategies.StatementMerger;
-import org.openrefine.wikibase.testing.TestingData;
+import org.klear.wikibase.editing.MediaFileUtils;
+import org.klear.wikibase.editing.MediaFileUtils.MediaUploadResponse;
+import org.klear.wikibase.schema.strategies.PropertyOnlyStatementMerger;
+import org.klear.wikibase.schema.strategies.StatementEditingMode;
+import org.klear.wikibase.schema.strategies.StatementMerger;
+import org.klear.wikibase.testing.TestingData;
 
 public class MediaInfoEditTest {
 
@@ -156,7 +156,7 @@ public class MediaInfoEditTest {
         MediaInfoIdValue mid = Datamodel.makeMediaInfoIdValue("M1234", "http://www.wikidata.org/entity/");
         when(response.getMid(any(), any()))
                 .thenReturn(mid);
-        when(mediaFileUtils.uploadRemoteFile(new URL(url), "Foo.png", "{{wikitext}}\n[[Category:Uploaded with OpenRefine]]", "summary",
+        when(mediaFileUtils.uploadRemoteFile(new URL(url), "Foo.png", "{{wikitext}}\n[[Category:Uploaded with KLEAR]]", "summary",
                 Collections.emptyList(), false))
                         .thenReturn(response);
         when(mediaFileUtils.checkIfPageNamesExist(anyList()))
@@ -185,7 +185,7 @@ public class MediaInfoEditTest {
         MediaInfoIdValue mid = Datamodel.makeMediaInfoIdValue("M1234", "http://www.wikidata.org/entity/");
         when(response.getMid(any(), any()))
                 .thenReturn(mid);
-        when(mediaFileUtils.uploadRemoteFile(new URL(url), "Foo.png", "{{wikitext}}\n[[Category:Uploaded with OpenRefine]]", "summary",
+        when(mediaFileUtils.uploadRemoteFile(new URL(url), "Foo.png", "{{wikitext}}\n[[Category:Uploaded with KLEAR]]", "summary",
                 Collections.emptyList(), false))
                         .thenReturn(response);
         when(mediaFileUtils.checkIfPageNamesExist(anyList()))

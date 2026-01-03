@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.updates;
+package org.klear.wikibase.updates;
 
 import java.util.HashMap;
 import java.util.List;

@@ -31,7 +31,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 */
 
-var OpenRefineVersion;
+var KLEARVersion;
 
 var Refine = {
   actionAreas: []
@@ -87,15 +87,15 @@ $(function() {
         "command/core/get-version",
         null,
         function(data) {
-          OpenRefineVersion = data;
+          KLEARVersion = data;
 
-          $("#openrefine-version").prepend($.i18n('core-index/refine-version', OpenRefineVersion.full_version));
-          $("#openrefine-extensions").text($.i18n('core-index/refine-extensions', OpenRefineVersion.module_names.join(", ")));
-          $("#java-runtime-version").text(OpenRefineVersion.java_runtime_name + " " + OpenRefineVersion.java_runtime_version);
-          if (OpenRefineVersion.display_new_version_notice === "true") {
+          $("#klear-version").prepend($.i18n('core-index/refine-version', KLEARVersion.full_version));
+          $("#klear-extensions").text($.i18n('core-index/refine-extensions', KLEARVersion.module_names.join(", ")));
+          $("#java-runtime-version").text(KLEARVersion.java_runtime_name + " " + KLEARVersion.java_runtime_version);
+          if (KLEARVersion.display_new_version_notice === "true") {
             showNotifications();
           }
-          buildClipBoardInformation(OpenRefineVersion);
+          buildClipBoardInformation(KLEARVersion);
         }
     );
   };
@@ -117,7 +117,7 @@ $(function() {
       function(data) {
         let notificationStatus = data.value;
         if (notificationStatus === null) {
-          // this is the first time we are starting OpenRefine on this workspace.
+          // this is the first time we are starting KLEAR on this workspace.
           // Let's not prompt the user yet, wait for next time instead.
           storeNotificationStatus("promptUser");
         } else if (notificationStatus == "promptUser") {
@@ -151,7 +151,7 @@ $(function() {
             .text('(')
             .appendTo(notification);
           $('<a>')
-            .attr('href', 'https://openrefine.org/privacy')
+            .attr('href', 'https://klear.org/privacy')
             .attr('target', '_blank')
             .text($.i18n('core-index/notification-privacy-info'))
             .appendTo(privacySpan);
@@ -159,7 +159,7 @@ $(function() {
           container
             .appendTo(document.body);
         } else if (notificationStatus == "enabled") {
-            $.getJSON("https://openrefine.org/versions.json",
+            $.getJSON("https://klear.org/versions.json",
                 function (data) {
                   if (data.events && data.events.length > 0) {
                     var latestEvent = data.events[0];
@@ -181,7 +181,7 @@ $(function() {
                   }
                   var latestStableRelease = stableReleases[0];
                   var latestVersion = latestStableRelease.version;
-                  var thisVersion = OpenRefineVersion.version;
+                  var thisVersion = KLEARVersion.version;
 
                   if (latestVersion.startsWith("v")) {
                     latestVersion = latestVersion.substring(1);
@@ -195,7 +195,7 @@ $(function() {
                         .appendTo(container);
                     $('<a>')
                         .addClass('notification-action')
-                        .attr("href", "https://openrefine.org/download")
+                        .attr("href", "https://klear.org/download")
                         .attr("target", "_blank")
                         .text($.i18n('core-index/new-version-available', latestVersion))
                         .appendTo(notification);
@@ -213,7 +213,7 @@ ${versionData.java_vm_name} ${versionData.java_vm_version}
 Modules: ${versionData.module_names.join(", ")}
 Client user-agent: ${navigator.userAgent}`;
 
-    $("#openrefine-version").on('click', function() {
+    $("#klear-version").on('click', function() {
       navigator.clipboard.writeText(clipboardData).then(function() {
         // show notification that the text has been copied to clipboard
         const container = $('<div id="notification-container">').appendTo(document.body);
@@ -282,7 +282,7 @@ Client user-agent: ${navigator.userAgent}`;
   $("#or-index-noProj").text($.i18n('core-index/no-proj')+".");
   $("#or-index-try").text($.i18n('core-index/try-these'));
   $("#or-index-sample").text($.i18n('core-index/sample-data'));
-  $("#openrefine-version").attr('title', $.i18n('core-index/refine-version-copy-to-clipboard'));
+  $("#klear-version").attr('title', $.i18n('core-index/refine-version-copy-to-clipboard'));
 
   maybeShowNotifications();
 

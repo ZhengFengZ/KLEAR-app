@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema.entityvalues;
+package org.klear.wikibase.schema.entityvalues;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
@@ -37,7 +37,7 @@ import org.wikidata.wdtk.datamodel.interfaces.EntityIdValue;
 
 import com.google.refine.model.Recon;
 
-import org.openrefine.wikibase.testing.TestingData;
+import org.klear.wikibase.testing.TestingData;
 
 public class ReconEntityIdValueTest {
 

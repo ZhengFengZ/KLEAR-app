@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.schema.strategies;
+package org.klear.wikibase.schema.strategies;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonSubTypes.Type;

@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.schema.exceptions;
+package org.klear.wikibase.schema.exceptions;
 
 import org.wikidata.wdtk.datamodel.interfaces.EntityIdValue;
 

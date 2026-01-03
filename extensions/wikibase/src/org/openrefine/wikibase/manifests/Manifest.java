@@ -1,11 +1,11 @@
 
-package org.openrefine.wikibase.manifests;
+package org.klear.wikibase.manifests;
 
 import java.util.List;
 
 /**
  * A configuration object for a Wikibase instance. The deserialization of this object is versioned, via
- * {@link org.openrefine.wikibase.manifests.ManifestParser}.
+ * {@link org.klear.wikibase.manifests.ManifestParser}.
  * 
  * @author Lu Liu, Antonin Delpeuch
  *
@@ -16,7 +16,7 @@ public interface Manifest {
     public static final String PROPERTY_TYPE = "property";
     public static final String MEDIAINFO_TYPE = "mediainfo";
     public static final int DEFAULT_MAX_EDITS_PER_MINUTE = 60;
-    public static final String DEFAULT_TAG_TEMPLATE = "openrefine";
+    public static final String DEFAULT_TAG_TEMPLATE = "klear";
 
     /**
      * The version of the manifest object, which determines its JSON format.
@@ -39,8 +39,8 @@ public interface Manifest {
     int getMaxlag();
 
     /**
-     * The tag to apply to edits made from OpenRefine. If the string contains the ${version} string, it should be
-     * replaced by the major.minor OpenRefine version.
+     * The tag to apply to edits made from KLEAR. If the string contains the ${version} string, it should be
+     * replaced by the major.minor KLEAR version.
      */
     String getTagTemplate();
 
@@ -106,7 +106,7 @@ public interface Manifest {
 
     /**
      * Only useful for Wikibase instances to which one can upload files: this is set to true when the Wikibase instance
-     * does not support structured data in the form of MediaInfo entities. In this case, OpenRefine will still offer
+     * does not support structured data in the form of MediaInfo entities. In this case, KLEAR will still offer
      * editing those files, but hide the Captions and Statements fields.
      */
     boolean hideStructuredFieldsInMediaInfo();

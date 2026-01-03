@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2020, OpenRefine contributors
+ * Copyright (C) 2020, KLEAR contributors
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -39,7 +39,7 @@ import org.eclipse.jetty.server.handler.HandlerWrapper;
 
 /**
  * Validate the Host header of the HTTP request to see if it matches either a loopback IP address, localhost or an
- * explicitly specified hostname. This is required to avoid DNS rebinding attacks against users running OpenRefine on
+ * explicitly specified hostname. This is required to avoid DNS rebinding attacks against users running KLEAR on
  * their desktop computers.
  */
 class ValidateHostHandler extends HandlerWrapper {

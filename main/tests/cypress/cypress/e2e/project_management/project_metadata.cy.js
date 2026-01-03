@@ -2,7 +2,7 @@ describe(__filename, function () {
   it('Ensures project-metadata dialogue loads', function () {
     const projectName = Date.now();
     cy.loadProject('food.mini', projectName);
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Open project');
     cy.contains('td', projectName).siblings().contains('a', 'About').click();
     cy.get('h1').contains('Project metadata');
@@ -14,7 +14,7 @@ describe(__filename, function () {
   it('Ensures project-metadata has correct details', function () {
     const projectName = Date.now();
     cy.loadProject('food.mini', projectName);
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Open project');
     cy.contains('td', projectName).siblings().contains('a', 'About').click();
     cy.get('#metadata-body > div > table > tr:nth-child(4) > td:nth-child(1)').contains('Project name');
@@ -119,7 +119,7 @@ describe(__filename, function () {
     cy.loadProject('food.mini', projectName);
     cy.visit(Cypress.env('OPENREFINE_URL'), {
       onBeforeLoad(win) {
-        cy.stub(win, 'prompt').returns('openrefine.org');
+        cy.stub(win, 'prompt').returns('klear.org');
       },
     });
     cy.navigateTo('Open project');
@@ -129,6 +129,6 @@ describe(__filename, function () {
       .contains('button', 'Edit')
       .click();
     cy.get('#metadata-body > div > table > tr:nth-child(14) > td:nth-child(1)').contains('Homepage');
-    cy.get('#metadata-body > div > table > tr:nth-child(14) > td:nth-child(2)').contains('openrefine.org');
+    cy.get('#metadata-body > div > table > tr:nth-child(14) > td:nth-child(2)').contains('klear.org');
   });
 });

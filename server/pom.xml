@@ -5,12 +5,12 @@
   <artifactId>server</artifactId>
   <packaging>jar</packaging>
 
-  <name>OpenRefine - server</name>
-  <description>OpenRefine is a free, open source power tool for working with messy data and improving it</description>
-  <url>http://openrefine.org/</url>
+  <name>KLEAR - server</name>
+  <description>KLEAR is a free, open source power tool for working with messy data and improving it</description>
+  <url>http://klear.org/</url>
   <parent>
-    <groupId>org.openrefine</groupId>
-    <artifactId>openrefine</artifactId>
+    <groupId>org.klear</groupId>
+    <artifactId>klear</artifactId>
     <version>3.10-SNAPSHOT</version>
   </parent>
 
@@ -22,12 +22,12 @@
   </properties>
 
   <scm>
-    <connection>scm:git:http://github.com/OpenRefine/OpenRefine</connection>
-    <url>http://github.com/OpenRefine/OpenRefine</url>
+    <connection>scm:git:http://github.com/KLEAR/KLEAR</connection>
+    <url>http://github.com/KLEAR/KLEAR</url>
   </scm>
 
   <build>
-    <finalName>openrefine-${project.version}-server</finalName>
+    <finalName>klear-${project.version}-server</finalName>
     <resources>
       <resource>
         <directory>src</directory>
@@ -180,7 +180,7 @@
       <version>${jetty.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.openrefine.dependencies</groupId>
+      <groupId>org.klear.dependencies</groupId>
       <artifactId>butterfly</artifactId>
       <version>${butterfly.version}</version>
     </dependency>

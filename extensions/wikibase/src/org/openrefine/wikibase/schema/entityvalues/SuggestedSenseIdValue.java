@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.schema.entityvalues;
+package org.klear.wikibase.schema.entityvalues;
 
 import org.wikidata.wdtk.datamodel.implementation.EntityIdValueImpl;
 import org.wikidata.wdtk.datamodel.interfaces.DatatypeIdValue;

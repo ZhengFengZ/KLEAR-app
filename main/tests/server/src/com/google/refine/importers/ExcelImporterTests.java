@@ -1,6 +1,6 @@
 /*
 
-Copyright 2011, 2022 Thomas F. Morris, OpenRefine developers
+Copyright 2011, 2022 Thomas F. Morris, KLEAR developers
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -615,7 +615,7 @@ public class ExcelImporterTests extends ImporterTest {
 
         File file;
         try {
-            file = File.createTempFile("openrefine-importer-test", xml ? ".xlsx" : ".xls");
+            file = File.createTempFile("klear-importer-test", xml ? ".xlsx" : ".xls");
             file.deleteOnExit();
             OutputStream outputStream = new FileOutputStream(file);
             wb.write(outputStream);
@@ -663,7 +663,7 @@ public class ExcelImporterTests extends ImporterTest {
 
         File file;
         try {
-            file = File.createTempFile("openrefine-importer-test", xml ? ".xlsx" : ".xls");
+            file = File.createTempFile("klear-importer-test", xml ? ".xlsx" : ".xls");
             file.deleteOnExit();
             OutputStream outputStream = new FileOutputStream(file);
             wb.write(outputStream);

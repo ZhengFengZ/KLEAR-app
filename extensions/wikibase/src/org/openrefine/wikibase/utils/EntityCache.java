@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.utils;
+package org.klear.wikibase.utils;
 
 import java.util.HashMap;
 import java.util.List;

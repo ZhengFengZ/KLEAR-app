@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.utils;
+package org.klear.wikibase.utils;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;

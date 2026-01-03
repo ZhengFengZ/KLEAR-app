@@ -7,7 +7,7 @@
 // curl "https://www.wikidata.org/w/api.php?action=query&meta=wbcontentlanguages&wbclcontext=monolingualtext&format=json&formatversion=2" | jq ".query.wbcontentlanguages[].code" | tr '\n' ','
 //
 // See https://stackoverflow.com/questions/46507037/how-to-get-all-allowed-languages-for-wikidata/46562061#46562061
-// I don't think it is worth making every OpenRefine client perform this query at every startup, because it typically does
+// I don't think it is worth making every KLEAR client perform this query at every startup, because it typically does
 // not change very often.
 //
 // This is the list of language codes accepted for monolingualtext values. The language codes for terms are more restrictive.

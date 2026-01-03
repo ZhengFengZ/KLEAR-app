@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.commands;
+package org.klear.wikibase.commands;
 
 import static org.mockito.Mockito.when;
 import static org.testng.Assert.assertEquals;

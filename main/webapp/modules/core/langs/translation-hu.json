@@ -39,7 +39,7 @@
     "core-index-create/question": "Projekt létrehozásához importáljon adatokat. Milyen adatokat importálhatok?",
     "core-index-create/sec-remaining": "másodperc van hátra",
     "core-index-create/done": "Kész.",
-    "core-index-create/formats": "TSV, CSV, *SV, Excel (.xls és .xlsx), JSON, XML, RDF XML-ként és Google Data dokumentumok támogatottak. További formátumok hozzáadása OpenRefine bővítmények révén lehetséges.",
+    "core-index-create/formats": "TSV, CSV, *SV, Excel (.xls és .xlsx), JSON, XML, RDF XML-ként és Google Data dokumentumok támogatottak. További formátumok hozzáadása KLEAR bővítmények révén lehetséges.",
     "core-index-create/starting": "Kezdés",
     "core-index-create/no-details": "Nincsenek technikai részletek.",
     "core-index-import/rename": "Projekt átnevezése (opcionális)",

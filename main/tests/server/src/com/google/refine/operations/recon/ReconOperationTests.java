@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2018, OpenRefine contributors
+ * Copyright (C) 2018, KLEAR contributors
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without
@@ -62,7 +62,7 @@ import org.testng.annotations.Test;
 
 import com.google.refine.RefineTest;
 import com.google.refine.browsing.EngineConfig;
-import com.google.refine.messages.OpenRefineMessage;
+import com.google.refine.messages.KLEARMessage;
 import com.google.refine.model.AbstractOperation;
 import com.google.refine.model.Cell;
 import com.google.refine.model.Column;
@@ -88,7 +88,7 @@ public class ReconOperationTests extends RefineTest {
             + "\"columnName\":\"researcher\","
             + "\"config\":{"
             + "   \"mode\":\"standard-service\","
-            + "   \"service\":\"https://tools.wmflabs.org/openrefine-wikidata/en/api\","
+            + "   \"service\":\"https://tools.wmflabs.org/klear-wikidata/en/api\","
             + "   \"identifierSpace\":\"http://www.wikidata.org/entity/\","
             + "   \"schemaSpace\":\"http://www.wikidata.org/prop/direct/\","
             + "   \"type\":{\"id\":\"Q5\",\"name\":\"human\"},"
@@ -104,7 +104,7 @@ public class ReconOperationTests extends RefineTest {
             + "\"columnName\":\"researcher\","
             + "\"config\":{"
             + "   \"mode\":\"standard-service\","
-            + "   \"service\":\"https://tools.wmflabs.org/openrefine-wikidata/en/api\","
+            + "   \"service\":\"https://tools.wmflabs.org/klear-wikidata/en/api\","
             + "   \"identifierSpace\":\"http://www.wikidata.org/entity/\","
             + "   \"schemaSpace\":\"http://www.wikidata.org/prop/direct/\","
             + "   \"type\":{\"id\":\"Q5\",\"name\":\"human\"},"
@@ -137,7 +137,7 @@ public class ReconOperationTests extends RefineTest {
             "           \"expression\" : \"forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \\\"(unreconciled)\\\", \\\"(blank)\\\"))\",\n"
             +
             "           \"name\" : \"researcher: " +
-            StringEscapeUtils.escapeJson(OpenRefineMessage.recon_operation_judgement_facet_name()) + "\"\n" +
+            StringEscapeUtils.escapeJson(KLEARMessage.recon_operation_judgement_facet_name()) + "\"\n" +
             "         },\n" +
             "         \"facetOptions\" : {\n" +
             "           \"scroll\" : true\n" +
@@ -150,7 +150,7 @@ public class ReconOperationTests extends RefineTest {
             "           \"expression\" : \"cell.recon.best.score\",\n" +
             "           \"mode\" : \"range\",\n" +
             "           \"name\" : \"researcher: " +
-            StringEscapeUtils.escapeJson(OpenRefineMessage.recon_operation_score_facet_name()) + "\"\n" +
+            StringEscapeUtils.escapeJson(KLEARMessage.recon_operation_score_facet_name()) + "\"\n" +
             "         },\n" +
             "         \"facetType\" : \"range\"\n" +
             "       } ],\n" +
@@ -275,7 +275,7 @@ public class ReconOperationTests extends RefineTest {
                 + "         \"limit\" : 0,\n"
                 + "         \"mode\" : \"standard-service\",\n"
                 + "         \"schemaSpace\" : \"http://www.wikidata.org/prop/direct/\",\n"
-                + "         \"service\" : \"https://tools.wmflabs.org/openrefine-wikidata/en/api\",\n"
+                + "         \"service\" : \"https://tools.wmflabs.org/klear-wikidata/en/api\",\n"
                 + "         \"type\" : {\n"
                 + "           \"id\" : \"Q5\",\n"
                 + "           \"name\" : \"human\"\n"
@@ -361,7 +361,7 @@ public class ReconOperationTests extends RefineTest {
 
         try (MockWebServer server = new MockWebServer()) {
             server.start();
-            HttpUrl url = server.url("/openrefine-wikidata/en/api");
+            HttpUrl url = server.url("/klear-wikidata/en/api");
             server.enqueue(new MockResponse.Builder().body(nonJsonResponse).build());
             server.enqueue(new MockResponse.Builder().build());
 
@@ -466,7 +466,7 @@ public class ReconOperationTests extends RefineTest {
                 "}\n";
         try (MockWebServer server = new MockWebServer()) {
             server.start();
-            HttpUrl url = server.url("/openrefine-wikidata/en/api");
+            HttpUrl url = server.url("/klear-wikidata/en/api");
             server.enqueue(new MockResponse.Builder().code(503).build()); // service initially overloaded
             server.enqueue(new MockResponse.Builder().body(reconResponse).build()); // service returns successfully
             server.enqueue(new MockResponse.Builder().build());

@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import java.util.Map;
 
@@ -33,8 +33,8 @@ import com.google.refine.model.Column;
 import com.google.refine.model.ColumnModel;
 import com.google.refine.model.Row;
 
-import org.openrefine.wikibase.qa.QAWarning;
-import org.openrefine.wikibase.qa.QAWarningStore;
+import org.klear.wikibase.qa.QAWarning;
+import org.klear.wikibase.qa.QAWarningStore;
 
 /**
  * A class holding all the necessary information about the context in which a schema expression is evaluated.

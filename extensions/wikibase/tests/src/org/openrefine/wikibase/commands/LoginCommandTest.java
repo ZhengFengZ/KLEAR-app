@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.commands;
+package org.klear.wikibase.commands;
 
 import static com.google.refine.util.TestUtils.assertEqualsAsJson;
 import static org.mockito.ArgumentMatchers.eq;
@@ -8,17 +8,17 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
-import static org.openrefine.wikibase.commands.LoginCommand.ACCESS_SECRET;
-import static org.openrefine.wikibase.commands.LoginCommand.ACCESS_TOKEN;
-import static org.openrefine.wikibase.commands.LoginCommand.API_ENDPOINT;
-import static org.openrefine.wikibase.commands.LoginCommand.CONSUMER_SECRET;
-import static org.openrefine.wikibase.commands.LoginCommand.CONSUMER_TOKEN;
-import static org.openrefine.wikibase.commands.LoginCommand.PASSWORD;
-import static org.openrefine.wikibase.commands.LoginCommand.USERNAME;
-import static org.openrefine.wikibase.commands.LoginCommand.WIKIBASE_COOKIE_PREFIX;
-import static org.openrefine.wikibase.commands.LoginCommand.getCookieValue;
-import static org.openrefine.wikibase.commands.LoginCommand.removeCRLF;
-import static org.openrefine.wikibase.commands.LoginCommand.sanitizeCookieKey;
+import static org.klear.wikibase.commands.LoginCommand.ACCESS_SECRET;
+import static org.klear.wikibase.commands.LoginCommand.ACCESS_TOKEN;
+import static org.klear.wikibase.commands.LoginCommand.API_ENDPOINT;
+import static org.klear.wikibase.commands.LoginCommand.CONSUMER_SECRET;
+import static org.klear.wikibase.commands.LoginCommand.CONSUMER_TOKEN;
+import static org.klear.wikibase.commands.LoginCommand.PASSWORD;
+import static org.klear.wikibase.commands.LoginCommand.USERNAME;
+import static org.klear.wikibase.commands.LoginCommand.WIKIBASE_COOKIE_PREFIX;
+import static org.klear.wikibase.commands.LoginCommand.getCookieValue;
+import static org.klear.wikibase.commands.LoginCommand.removeCRLF;
+import static org.klear.wikibase.commands.LoginCommand.sanitizeCookieKey;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertNotEquals;
@@ -239,7 +239,7 @@ public class LoginCommandTest extends CommandTest {
         when(connection.getCustomUserAgent()).thenReturn("test-wdtk-lib");
         connectionManager.setupConnection(connection);
         verify(connection, times(1)).getCustomUserAgent();
-        verify(connection, times(1)).setCustomUserAgent(Mockito.matches("^OpenRefine-Wikibase-extension.* test-wdtk-lib$"));
+        verify(connection, times(1)).setCustomUserAgent(Mockito.matches("^KLEAR-Wikibase-extension.* test-wdtk-lib$"));
 
         command.doPost(request, response);
 
@@ -279,7 +279,7 @@ public class LoginCommandTest extends CommandTest {
         when(connection.getCustomUserAgent()).thenReturn("test-wdtk-lib");
         connectionManager.setupConnection(connection);
         verify(connection, times(1)).getCustomUserAgent();
-        verify(connection, times(1)).setCustomUserAgent(Mockito.matches("^OpenRefine-Wikibase-extension.* test-wdtk-lib$"));
+        verify(connection, times(1)).setCustomUserAgent(Mockito.matches("^KLEAR-Wikibase-extension.* test-wdtk-lib$"));
 
         command.doPost(request, response);
 
@@ -320,7 +320,7 @@ public class LoginCommandTest extends CommandTest {
         when(connection.getCustomUserAgent()).thenReturn("test-wdtk-lib");
         connectionManager.setupConnection(connection);
         verify(connection, times(1)).getCustomUserAgent();
-        verify(connection, times(1)).setCustomUserAgent(Mockito.matches("^OpenRefine-Wikibase-extension.* test-wdtk-lib$"));
+        verify(connection, times(1)).setCustomUserAgent(Mockito.matches("^KLEAR-Wikibase-extension.* test-wdtk-lib$"));
 
         command.doPost(request, response);
 

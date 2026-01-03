@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import java.util.Collections;
 
@@ -33,10 +33,10 @@ import com.google.refine.model.Cell;
 import com.google.refine.model.Recon;
 import com.google.refine.model.ReconCandidate;
 
-import org.openrefine.wikibase.qa.QAWarning;
-import org.openrefine.wikibase.qa.QAWarning.Severity;
-import org.openrefine.wikibase.schema.entityvalues.ReconItemIdValue;
-import org.openrefine.wikibase.testing.JacksonSerializationTest;
+import org.klear.wikibase.qa.QAWarning;
+import org.klear.wikibase.qa.QAWarning.Severity;
+import org.klear.wikibase.schema.entityvalues.ReconItemIdValue;
+import org.klear.wikibase.testing.JacksonSerializationTest;
 
 public class WbItemVariableTest extends WbVariableTest<ItemIdValue> {
 

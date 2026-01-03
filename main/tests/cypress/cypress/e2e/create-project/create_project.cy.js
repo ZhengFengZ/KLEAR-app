@@ -4,7 +4,7 @@ describe(__filename, function () {
   });
   
   it('Test the create project from this computer based on CSV', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Create project');
     cy.get('#create-project-ui-source-selection-tabs > a')
       .contains('This Computer')
@@ -35,7 +35,7 @@ describe(__filename, function () {
     cy.waitForProjectTable();
   });
   it('Test the create project from this computer based on TSV', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Create project');
     cy.get('#create-project-ui-source-selection-tabs > a')
       .contains('This Computer')
@@ -66,7 +66,7 @@ describe(__filename, function () {
     cy.waitForProjectTable();
   });
   it('Test the create project from clipboard based on CSV', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Create project');
     cy.get('#create-project-ui-source-selection-tabs > a')
       .contains('Clipboard')
@@ -102,7 +102,7 @@ describe(__filename, function () {
     cy.waitForProjectTable();
   });
   it('Test the create project from clipboard based on TSV', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Create project');
     cy.get('#create-project-ui-source-selection-tabs > a')
       .contains('Clipboard')
@@ -135,7 +135,7 @@ describe(__filename, function () {
   });
 
   it('Test project renaming', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.createProjectThroughUserInterface('cypress/fixtures/food.mini.csv');
     cy.get('.create-project-ui-panel').contains('Configure parsing options');
     cy.get(
@@ -152,7 +152,7 @@ describe(__filename, function () {
   });
   
   it('Test project tagging by adding various tags', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.createProjectThroughUserInterface('cypress/fixtures/food.mini.csv');
     cy.get('.create-project-ui-panel').contains('Configure parsing options');
     const uniqueProjectName = Date.now();
@@ -172,7 +172,7 @@ describe(__filename, function () {
     cy.waitForProjectTable();
 
     cy.addProjectForDeletion();
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Open project');
     cy.get('#projects-list')
         .contains(uniqueProjectName)
@@ -187,10 +187,10 @@ describe(__filename, function () {
   });
 
   const csvURL =
-      'https://raw.githubusercontent.com/OpenRefine/OpenRefine/master/main/tests/cypress/cypress/fixtures/food.mini.csv';
+      'https://raw.githubusercontent.com/KLEAR/KLEAR/master/main/tests/cypress/cypress/fixtures/food.mini.csv';
 
   it('Test the create project from Web URL based on CSV', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Create project');
     cy.get('#create-project-ui-source-selection-tabs > a')
       .contains('Web Addresses (URLs)')
@@ -219,7 +219,7 @@ describe(__filename, function () {
   });
 
   it('Test the create project from Multiple Web URLs based on CSV', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Create project');
     cy.get('#create-project-ui-source-selection-tabs > a')
       .contains('Web Addresses (URLs)')
@@ -253,7 +253,7 @@ describe(__filename, function () {
     cy.waitForProjectTable();
   });
   it('Test the create project from XML file after selecting record path', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Create project');
     cy.get('#create-project-ui-source-selection-tabs > a')
       .contains('This Computer')
@@ -310,7 +310,7 @@ describe(__filename, function () {
   });
 
   it('Test the create project from invalid XML generates error dialog', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Create project');
     cy.get('#create-project-ui-source-selection-tabs > a')
       .contains('This Computer')

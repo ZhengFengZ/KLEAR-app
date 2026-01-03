@@ -227,7 +227,7 @@ DataTableColumnHeaderUI.prototype._createMenuForColumnHeader = function(elmt) {
           /**
            * This function expands all the columns in the project
            */
-          // CS427 Issue Link: https://github.com/OpenRefine/OpenRefine/issues/4067
+          // CS427 Issue Link: https://github.com/KLEAR/KLEAR/issues/4067
           click: function() {
             self._dataTableView._collapsedColumnNames = [];
             self._dataTableView.render();
@@ -238,7 +238,7 @@ DataTableColumnHeaderUI.prototype._createMenuForColumnHeader = function(elmt) {
           /**
            * This function expands the columns to the left of the selected column
            */
-          // CS427 Issue Link: https://github.com/OpenRefine/OpenRefine/issues/4067
+          // CS427 Issue Link: https://github.com/KLEAR/KLEAR/issues/4067
           click: function() {
             //by deleting these entries from collapsedColumnNames, they won't render on the dataTableView
             for (var i = 0; i < self._columnIndex; i++) {
@@ -252,7 +252,7 @@ DataTableColumnHeaderUI.prototype._createMenuForColumnHeader = function(elmt) {
           /**
            * This function expands the columns to the right of the selected column
            */
-          // CS427 Issue Link: https://github.com/OpenRefine/OpenRefine/issues/4067
+          // CS427 Issue Link: https://github.com/KLEAR/KLEAR/issues/4067
           click: function() {
             //by deleting these entries from collapsedColumnNames, they won't render on the dataTableView
             for (var i = self._columnIndex + 1; i < theProject.columnModel.columns.length; i++) {

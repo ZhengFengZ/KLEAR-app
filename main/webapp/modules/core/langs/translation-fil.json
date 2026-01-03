@@ -39,7 +39,7 @@
     "core-index-create/question": "Gumawa ng proyekto sa pamamagitan ng pag import ng data. Anong mga uri ng mga file ng data ang maaari kong i-import?",
     "core-index-create/sec-remaining": "natitirang segundo",
     "core-index-create/done": "Tapos.",
-    "core-index-create/formats": "Lahat ng mga TSV, CSV, * SV, Excel (.xls at .xlsx), JSON, XML, RDF bilang XML, at mga dokumento ng Google Data ay sinusuportahan. Ang suporta para sa iba pang mga format ay maaaring idagdag sa mga extension ng OpenRefine.",
+    "core-index-create/formats": "Lahat ng mga TSV, CSV, * SV, Excel (.xls at .xlsx), JSON, XML, RDF bilang XML, at mga dokumento ng Google Data ay sinusuportahan. Ang suporta para sa iba pang mga format ay maaaring idagdag sa mga extension ng KLEAR.",
     "core-index-create/starting": "Simula",
     "core-index-create/no-details": "Walang mga teknikal na detalye.",
     "core-index-import/rename": "Palitan ng pangalan ang proyekto (opsyunal)",

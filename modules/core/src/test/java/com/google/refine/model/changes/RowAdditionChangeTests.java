@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2024, OpenRefine contributors
+ * Copyright (C) 2024, KLEAR contributors
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -109,7 +109,7 @@ public class RowAdditionChangeTests extends RefineTest {
     @Test
     // After prepend apply, project's new prepended rows are equal those passed to constructor
     // but not identical, because otherwise modifying the row will change the operation's metadata.
-    // See https://github.com/OpenRefine/OpenRefine/issues/7245
+    // See https://github.com/KLEAR/KLEAR/issues/7245
     public void testPrependApplyRowIdentity() {
         change.apply(project);
         for (int i = insertionIndex; i < newRows.size(); i++) {
@@ -211,7 +211,7 @@ public class RowAdditionChangeTests extends RefineTest {
     @Test
     // After append apply, project's new append rows are identical those passed to constructor
     // but not identical, because otherwise modifying the row will change the operation's metadata.
-    // See https://github.com/OpenRefine/OpenRefine/issues/7245
+    // See https://github.com/KLEAR/KLEAR/issues/7245
     public void testAppendApplyRowIdentity() {
         insertionIndex = project.rows.size();
         change = new RowAdditionChange(newRows, insertionIndex);

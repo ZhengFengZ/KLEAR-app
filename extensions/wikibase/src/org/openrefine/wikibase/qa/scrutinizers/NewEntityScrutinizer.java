@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.qa.scrutinizers;
+package org.klear.wikibase.qa.scrutinizers;
 
 import java.io.File;
 import java.net.URI;
@@ -38,10 +38,10 @@ import org.wikidata.wdtk.datamodel.interfaces.ItemDocument;
 import org.wikidata.wdtk.datamodel.interfaces.MonolingualTextValue;
 import org.wikidata.wdtk.datamodel.interfaces.Statement;
 
-import org.openrefine.wikibase.qa.QAWarning;
-import org.openrefine.wikibase.schema.entityvalues.SuggestedPropertyIdValue;
-import org.openrefine.wikibase.updates.ItemEdit;
-import org.openrefine.wikibase.updates.MediaInfoEdit;
+import org.klear.wikibase.qa.QAWarning;
+import org.klear.wikibase.schema.entityvalues.SuggestedPropertyIdValue;
+import org.klear.wikibase.updates.ItemEdit;
+import org.klear.wikibase.updates.MediaInfoEdit;
 
 /**
  * A scrutinizer that inspects new entities.

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2018,2023 OpenRefine contributors
+ * Copyright (C) 2018,2023 KLEAR contributors
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without
@@ -66,7 +66,7 @@ public class CrossTests extends GrelTestBase {
     Project projectDuplicate1;
     Project projectDuplicate2;
 
-    // data from: https://github.com/OpenRefine/OpenRefine/wiki/GREL-Other-Functions
+    // data from: https://github.com/KLEAR/KLEAR/wiki/GREL-Other-Functions
     @BeforeMethod
     public void SetUp() {
         bindings = new Properties();

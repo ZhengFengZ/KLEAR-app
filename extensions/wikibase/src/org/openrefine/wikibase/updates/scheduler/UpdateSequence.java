@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.updates.scheduler;
+package org.klear.wikibase.updates.scheduler;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -32,7 +32,7 @@ import java.util.Set;
 
 import org.wikidata.wdtk.datamodel.interfaces.EntityIdValue;
 
-import org.openrefine.wikibase.updates.EntityEdit;
+import org.klear.wikibase.updates.EntityEdit;
 
 /**
  * Helper class to store a list of updates where each subject appears at most once. It preserves order of insertion.

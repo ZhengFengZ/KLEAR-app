@@ -2,7 +2,7 @@
  * Navigate to project preview page and check its contents
  */
 function navigateToProjectPreview() {
-  cy.visitOpenRefine();
+  cy.visitKLEAR();
   cy.createProjectThroughUserInterface('cypress/fixtures/food.mini.csv');
   cy.get('.create-project-ui-panel').contains('Configure parsing options');
   cy.get('table.data-table tr').eq(1).should('to.contain', '1.');
@@ -13,7 +13,7 @@ function navigateToProjectPreview() {
 }
 describe(__filename, function () {
   it('Tests Parsing Options related to column separation', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.createProjectThroughUserInterface('cypress/fixtures/food.mini.csv');
     cy.get('.create-project-ui-panel').contains('Configure parsing options');
 
@@ -55,7 +55,7 @@ describe(__filename, function () {
     cy.get('table.data-table tr').eq(1).should('to.contain', 'Energ_Kcal');
   });
   it('Ensures navigation works from project-preview page', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.createProjectThroughUserInterface('cypress/fixtures/food.mini.csv');
     cy.get('.create-project-ui-panel').contains('Configure parsing options');
 
@@ -77,7 +77,7 @@ describe(__filename, function () {
   });
 
   it('Ensures the working of Start-Over Button', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.createProjectThroughUserInterface('cypress/fixtures/food.mini.csv');
     cy.get('.create-project-ui-panel').should(
       'to.contain',
@@ -96,7 +96,7 @@ describe(__filename, function () {
   });
 
   it('Tests ignore-first of parsing options', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.createProjectThroughUserInterface('cypress/fixtures/food.mini.csv');
     cy.get('.create-project-ui-panel').contains('Configure parsing options');
 
@@ -199,7 +199,7 @@ describe(__filename, function () {
   });
 
   it('Tests save blank columns of parsing options', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.createProjectThroughUserInterface('cypress/fixtures/food-blank-column.mini.csv');
     cy.get('.create-project-ui-panel').contains('Configure parsing options');
     

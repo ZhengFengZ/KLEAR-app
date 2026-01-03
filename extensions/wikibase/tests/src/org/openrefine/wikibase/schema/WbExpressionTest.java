@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import java.io.IOException;
 import java.io.Serializable;
@@ -47,13 +47,13 @@ import com.google.refine.model.Project;
 import com.google.refine.model.Recon;
 import com.google.refine.model.Row;
 
-import org.openrefine.wikibase.qa.QAWarning;
-import org.openrefine.wikibase.qa.QAWarningStore;
-import org.openrefine.wikibase.schema.exceptions.QAWarningException;
-import org.openrefine.wikibase.schema.exceptions.SkipSchemaExpressionException;
-import org.openrefine.wikibase.schema.validation.ValidationState;
-import org.openrefine.wikibase.testing.TestingData;
-import org.openrefine.wikibase.testing.WikidataRefineTest;
+import org.klear.wikibase.qa.QAWarning;
+import org.klear.wikibase.qa.QAWarningStore;
+import org.klear.wikibase.schema.exceptions.QAWarningException;
+import org.klear.wikibase.schema.exceptions.SkipSchemaExpressionException;
+import org.klear.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.testing.TestingData;
+import org.klear.wikibase.testing.WikidataRefineTest;
 
 public class WbExpressionTest<T> extends WikidataRefineTest {
 

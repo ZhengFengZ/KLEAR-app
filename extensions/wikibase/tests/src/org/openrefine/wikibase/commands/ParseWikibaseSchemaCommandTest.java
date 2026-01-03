@@ -1,8 +1,8 @@
 
-package org.openrefine.wikibase.commands;
+package org.klear.wikibase.commands;
 
 import static org.mockito.Mockito.when;
-import static org.openrefine.wikibase.testing.TestingData.jsonFromFile;
+import static org.klear.wikibase.testing.TestingData.jsonFromFile;
 import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;

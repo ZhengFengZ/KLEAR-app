@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.exporters;
+package org.klear.wikibase.exporters;
 
 import java.io.IOException;
 import java.io.Serializable;
@@ -12,7 +12,7 @@ import com.google.refine.browsing.Engine;
 import com.google.refine.model.Project;
 import com.google.refine.util.TestUtils;
 
-import org.openrefine.wikibase.testing.WikidataRefineTest;
+import org.klear.wikibase.testing.WikidataRefineTest;
 
 public class SchemaExporterTest extends WikidataRefineTest {
 

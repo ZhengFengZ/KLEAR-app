@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.qa;
+package org.klear.wikibase.qa;
 
 import java.util.ArrayList;
 import java.util.Collections;

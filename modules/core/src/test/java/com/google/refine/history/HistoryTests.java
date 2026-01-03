@@ -117,7 +117,7 @@ public class HistoryTests extends RefineTest {
                 + "    \"columnName\":\"organization_name\","
                 + "    \"config\":{"
                 + "        \"mode\":\"standard-service\","
-                + "        \"service\":\"https://tools.wmflabs.org/openrefine-wikidata/en/api\","
+                + "        \"service\":\"https://tools.wmflabs.org/klear-wikidata/en/api\","
                 + "        \"identifierSpace\":\"http://www.wikidata.org/entity/\","
                 + "        \"schemaSpace\":\"http://www.wikidata.org/prop/direct/\","
                 + "        \"type\":{\"id\":\"Q43229\",\"name\":\"organization\"},"

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2018, OpenRefine contributors
+ * Copyright (C) 2018, KLEAR contributors
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without
@@ -112,7 +112,7 @@ public class StandardReconConfigTests extends RefineTest {
     public void serializeStandardReconConfig() throws Exception {
         String json = " {\n" +
                 "        \"mode\": \"standard-service\",\n" +
-                "        \"service\": \"https://tools.wmflabs.org/openrefine-wikidata/en/api\",\n" +
+                "        \"service\": \"https://tools.wmflabs.org/klear-wikidata/en/api\",\n" +
                 "        \"identifierSpace\": \"http://www.wikidata.org/entity/\",\n" +
                 "        \"schemaSpace\": \"http://www.wikidata.org/prop/direct/\",\n" +
                 "        \"type\": {\n" +
@@ -146,7 +146,7 @@ public class StandardReconConfigTests extends RefineTest {
     public void serializeStandardReconConfigWithBatchSize() throws Exception {
         String json = " {\n" +
                 "        \"mode\": \"standard-service\",\n" +
-                "        \"service\": \"https://tools.wmflabs.org/openrefine-wikidata/en/api\",\n" +
+                "        \"service\": \"https://tools.wmflabs.org/klear-wikidata/en/api\",\n" +
                 "        \"identifierSpace\": \"http://www.wikidata.org/entity/\",\n" +
                 "        \"schemaSpace\": \"http://www.wikidata.org/prop/direct/\",\n" +
                 "        \"type\": {\n" +
@@ -180,7 +180,7 @@ public class StandardReconConfigTests extends RefineTest {
     @Test
     public void testReconstructNoType() throws IOException {
         String json = "{\"mode\":\"standard-service\","
-                + "\"service\":\"https://tools.wmflabs.org/openrefine-wikidata/en/api\","
+                + "\"service\":\"https://tools.wmflabs.org/klear-wikidata/en/api\","
                 + "\"identifierSpace\":\"http://www.wikidata.org/entity/\","
                 + "\"schemaSpace\":\"http://www.wikidata.org/prop/direct/\","
                 + "\"type\":null,"
@@ -199,7 +199,7 @@ public class StandardReconConfigTests extends RefineTest {
     public void testGetBatchSize() throws IOException {
 
         String json = "{\"mode\":\"standard-service\","
-                + "\"service\":\"https://tools.wmflabs.org/openrefine-wikidata/en/api\","
+                + "\"service\":\"https://tools.wmflabs.org/klear-wikidata/en/api\","
                 + "\"identifierSpace\":\"http://www.wikidata.org/entity/\","
                 + "\"schemaSpace\":\"http://www.wikidata.org/prop/direct/\","
                 + "\"type\":null,"
@@ -220,7 +220,7 @@ public class StandardReconConfigTests extends RefineTest {
     @Test
     public void testGetColumnDependencies() throws IOException {
         String json = "{\"mode\":\"standard-service\","
-                + "\"service\":\"https://tools.wmflabs.org/openrefine-wikidata/en/api\","
+                + "\"service\":\"https://tools.wmflabs.org/klear-wikidata/en/api\","
                 + "\"identifierSpace\":\"http://www.wikidata.org/entity/\","
                 + "\"schemaSpace\":\"http://www.wikidata.org/prop/direct/\","
                 + "\"type\":null,"
@@ -238,7 +238,7 @@ public class StandardReconConfigTests extends RefineTest {
     @Test
     public void testReconstructNoIdentifierSchemaSpaces() throws IOException {
         String json = "{\"mode\":\"standard-service\","
-                + "\"service\":\"https://tools.wmflabs.org/openrefine-wikidata/en/api\","
+                + "\"service\":\"https://tools.wmflabs.org/klear-wikidata/en/api\","
                 + "\"type\":null,"
                 + "\"autoMatch\":true,"
                 + "\"columnDetails\":[],"
@@ -258,7 +258,7 @@ public class StandardReconConfigTests extends RefineTest {
 
         String config = " {\n" +
                 "        \"mode\": \"standard-service\",\n" +
-                "        \"service\": \"https://tools.wmflabs.org/openrefine-wikidata/en/api\",\n" +
+                "        \"service\": \"https://tools.wmflabs.org/klear-wikidata/en/api\",\n" +
                 "        \"identifierSpace\": \"http://www.wikidata.org/entity/\",\n" +
                 "        \"schemaSpace\": \"http://www.wikidata.org/prop/direct/\",\n" +
                 "        \"type\": {\n" +
@@ -340,7 +340,7 @@ public class StandardReconConfigTests extends RefineTest {
                 "}\n";
         try (MockWebServer server = new MockWebServer()) {
             server.start();
-            HttpUrl url = server.url("/openrefine-wikidata/en/api");
+            HttpUrl url = server.url("/klear-wikidata/en/api");
             server.enqueue(new MockResponse.Builder().body(reconResponse).build()); // service returns successfully
             server.enqueue(new MockResponse.Builder().build());
 
@@ -386,7 +386,7 @@ public class StandardReconConfigTests extends RefineTest {
 
         try (MockWebServer server = new MockWebServer()) {
             server.start();
-            HttpUrl url = server.url("/openrefine-wikidata/en/api");
+            HttpUrl url = server.url("/klear-wikidata/en/api");
             server.enqueue(new MockResponse.Builder().code(500).build());
 
             String configJson = " {\n" +
@@ -447,7 +447,7 @@ public class StandardReconConfigTests extends RefineTest {
     public void batchReconTestConnectionError() throws Exception {
         try (MockWebServer server = new MockWebServer()) {
             server.start();
-            HttpUrl url = server.url("/openrefine-wikidata/en/api");
+            HttpUrl url = server.url("/klear-wikidata/en/api");
             // enqueue a few responses to cater for the automatic retries
             server.enqueue(new MockResponse.Builder().onResponseStart(new SocketEffect.CloseSocket()).build());
             server.enqueue(new MockResponse.Builder().onResponseStart(new SocketEffect.CloseSocket()).build());

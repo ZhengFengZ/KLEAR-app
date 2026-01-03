@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.updates;
+package org.klear.wikibase.updates;
 
 import java.util.Collections;
 import java.util.List;
@@ -14,8 +14,8 @@ import org.wikidata.wdtk.datamodel.interfaces.PropertyIdValue;
 import org.wikidata.wdtk.datamodel.interfaces.Statement;
 import org.wikidata.wdtk.datamodel.interfaces.StatementGroup;
 
-import org.openrefine.wikibase.schema.strategies.StatementEditingMode;
-import org.openrefine.wikibase.schema.strategies.StatementMerger;
+import org.klear.wikibase.schema.strategies.StatementEditingMode;
+import org.klear.wikibase.schema.strategies.StatementMerger;
 
 /**
  * A list of statement edits which share the same property, and will therefore affect the same statement group on the

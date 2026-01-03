@@ -22,11 +22,11 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.updates.scheduler;
+package org.klear.wikibase.updates.scheduler;
 
 import java.util.List;
 
-import org.openrefine.wikibase.updates.EntityEdit;
+import org.klear.wikibase.updates.EntityEdit;
 
 /**
  * A scheduling strategy for entity updates. Given a list of initial updates, the scheduler reorganizes these updates

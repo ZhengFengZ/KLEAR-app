@@ -4,7 +4,7 @@ describe('Clear reconciliation data', () => {
     });
     
     it('Test clearing reconciliation for a reconciled dataset', () => {
-        cy.visitOpenRefine();
+        cy.visitKLEAR();
         cy.navigateTo('Import project');
         cy.get('#or-import-locate').should('to.contain', 'Locate an existing Refine project file');
         cy.get('#project-tar-file-input').selectFile('cypress/fixtures/reconciled-project-automatch.zip')

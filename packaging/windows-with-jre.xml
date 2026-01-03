@@ -79,11 +79,11 @@
   <!-- TODO replace $VERSION by ${project.version} in WEB-INF/web.xml -->
   <files>
     <file>
-      <source>target/openrefine_with_jre.exe</source>
-      <destName>openrefine.exe</destName>
+      <source>target/klear_with_jre.exe</source>
+      <destName>klear.exe</destName>
     </file>
     <file>
-      <source>${rootdir}/conf/openrefine.l4j.ini</source>
+      <source>${rootdir}/conf/klear.l4j.ini</source>
     </file>
     <file>
       <source>${rootdir}/refine.bat</source>
@@ -102,7 +102,7 @@
       <outputDirectory>webapp/WEB-INF</outputDirectory>
     </file>
     <file>
-      <source>${rootdir}/server/target/openrefine-${project.version}-server.jar</source>
+      <source>${rootdir}/server/target/klear-${project.version}-server.jar</source>
       <outputDirectory>server/target/lib</outputDirectory>
     </file>
   </files>

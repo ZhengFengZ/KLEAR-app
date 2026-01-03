@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2018, 2020 OpenRefine contributors
+ * Copyright (C) 2018, 2020 KLEAR contributors
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without
@@ -114,15 +114,15 @@ public class ImportingUtilitiesTests extends ImporterTest {
 
     @Test(expectedExceptions = IllegalArgumentException.class)
     public void testZipSlip() throws IOException {
-        File tempDir = TestUtils.createTempDirectory("openrefine-zip-slip-test");
+        File tempDir = TestUtils.createTempDirectory("klear-zip-slip-test");
         // For CVE-2018-19859, issue #1840
         ImportingUtilities.allocateFile(tempDir, "../../tmp/script.sh");
     }
 
     @Test
     public void testAllocateFileDeduplication() throws IOException {
-        // Test for comment https://github.com/OpenRefine/OpenRefine/issues/3043#issuecomment-671057317
-        File tempDir = TestUtils.createTempDirectory("openrefine-allocate-file-test");
+        // Test for comment https://github.com/KLEAR/KLEAR/issues/3043#issuecomment-671057317
+        File tempDir = TestUtils.createTempDirectory("klear-allocate-file-test");
         File dirA = new File(tempDir, "a");
         dirA.mkdir();
         File conflicting = new File(dirA, "dummy");
@@ -135,7 +135,7 @@ public class ImportingUtilitiesTests extends ImporterTest {
     @Test
     public void testNormalizePath() {
         // Test for issue Unable to create a project from a URL on Windows if the URL path contains ":" character #4625
-        // https://github.com/OpenRefine/OpenRefine/issues/4625
+        // https://github.com/KLEAR/KLEAR/issues/4625
         String urlPath = "/a/b:c/dummy:test";
         String urlPathFixed = "\\a\\b-c\\dummy-test";
         String result = ImportingUtilities.normalizePath(urlPath);
@@ -150,7 +150,7 @@ public class ImportingUtilitiesTests extends ImporterTest {
     @Test
     public void testNormalizePathWithDifferentSeparator() {
         // Test for issue Unable to create a project from a URL on Windows if the URL path contains ":" character #4625
-        // https://github.com/OpenRefine/OpenRefine/issues/4625
+        // https://github.com/KLEAR/KLEAR/issues/4625
         String urlPath = "\\a\\b:c\\dummy:test";
         String urlPathFixed = "\\a\\b-c\\dummy-test";
         String result = ImportingUtilities.normalizePath(urlPath);
@@ -165,8 +165,8 @@ public class ImportingUtilitiesTests extends ImporterTest {
     @Test
     public void testAllocateFileWithIllegalCharInWindows() throws IOException {
         // Test for issue Unable to create a project from a URL on Windows if the URL path contains ":" character #4625
-        // https://github.com/OpenRefine/OpenRefine/issues/4625
-        File tempDir = TestUtils.createTempDirectory("openrefine-allocate-file-test");
+        // https://github.com/KLEAR/KLEAR/issues/4625
+        File tempDir = TestUtils.createTempDirectory("klear-allocate-file-test");
         File dirA = new File(tempDir, "a");
         Assert.assertTrue(dirA.mkdir());
         String urlPath = ".././a/b:c/dummy:test";
@@ -183,8 +183,8 @@ public class ImportingUtilitiesTests extends ImporterTest {
     @Test
     public void testAllocateFileWithIllegalCharInWindowsDifferentSeparator() throws IOException {
         // Test for issue Unable to create a project from a URL on Windows if the URL path contains ":" character #4625
-        // https://github.com/OpenRefine/OpenRefine/issues/4625
-        File tempDir = TestUtils.createTempDirectory("openrefine-allocate-file-test");
+        // https://github.com/KLEAR/KLEAR/issues/4625
+        File tempDir = TestUtils.createTempDirectory("klear-allocate-file-test");
         File dirA = new File(tempDir, "a");
         Assert.assertTrue(dirA.mkdir());
         String urlPath = "..\\.\\a\\b:c\\dummy:test";
@@ -334,7 +334,7 @@ public class ImportingUtilitiesTests extends ImporterTest {
         String filepath = ClassLoader.getSystemResource(filename).getPath();
         // Make a copy in our data directory where it's expected
         String suffix = filename.substring(filename.lastIndexOf("."));
-        File tmp = File.createTempFile("openrefine-test-movies", suffix, job.getRawDataDir());
+        File tmp = File.createTempFile("klear-test-movies", suffix, job.getRawDataDir());
         tmp.deleteOnExit();
         FileUtils.copyFile(new File(filepath), tmp);
 
@@ -404,7 +404,7 @@ public class ImportingUtilitiesTests extends ImporterTest {
         String filename = "persons.csv.gz";
         String filepath = ClassLoader.getSystemResource(filename).getPath();
         // Make a copy in our data directory where it's expected
-        File tmp = File.createTempFile("openrefine-test-persons", ".csv.gz", job.getRawDataDir());
+        File tmp = File.createTempFile("klear-test-persons", ".csv.gz", job.getRawDataDir());
         tmp.deleteOnExit();
         FileUtils.copyFile(new File(filepath), tmp);
 
@@ -466,7 +466,7 @@ public class ImportingUtilitiesTests extends ImporterTest {
         String filename = basename + ".zip";
         String filepath = ClassLoader.getSystemResource(filename).getPath();
         // Make a copy in our data directory where it's expected
-        File tmp = File.createTempFile("openrefine-test-" + basename, ".zip", job.getRawDataDir());
+        File tmp = File.createTempFile("klear-test-" + basename, ".zip", job.getRawDataDir());
         tmp.deleteOnExit();
         FileUtils.copyFile(new File(filepath), tmp);
 
@@ -507,7 +507,7 @@ public class ImportingUtilitiesTests extends ImporterTest {
             String filename = FILENAME_BASE + suffix;
             Path filePath = Paths.get(ClassLoader.getSystemResource(filename).toURI());
 
-            File tmp = File.createTempFile("openrefine-test-" + FILENAME_BASE, suffix, job.getRawDataDir());
+            File tmp = File.createTempFile("klear-test-" + FILENAME_BASE, suffix, job.getRawDataDir());
             tmp.deleteOnExit();
             byte[] contents = Files.readAllBytes(filePath);
             Files.write(tmp.toPath(), contents);
@@ -647,12 +647,12 @@ public class ImportingUtilitiesTests extends ImporterTest {
         String filepath1 = ClassLoader.getSystemResource(file1 + fileSuffix).getPath();
         String filepath2 = ClassLoader.getSystemResource(file2 + fileSuffix).getPath();
 
-        File tmp1 = File.createTempFile("openrefine-test-" + file1, fileSuffix, job.getRawDataDir());
+        File tmp1 = File.createTempFile("klear-test-" + file1, fileSuffix, job.getRawDataDir());
         tmp1.deleteOnExit();
 
         FileUtils.copyFile(new File(filepath1), tmp1);
 
-        File tmp2 = File.createTempFile("openrefine-test-" + file2, fileSuffix, job.getRawDataDir());
+        File tmp2 = File.createTempFile("klear-test-" + file2, fileSuffix, job.getRawDataDir());
         tmp2.deleteOnExit();
 
         FileUtils.copyFile(new File(filepath2), tmp2);

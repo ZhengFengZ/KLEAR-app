@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.qa;
+package org.klear.wikibase.qa;
 
 import static org.mockito.Mockito.mock;
 import static org.testng.Assert.assertEquals;
@@ -8,11 +8,11 @@ import org.testng.annotations.Test;
 
 import com.google.refine.model.Recon;
 
-import org.openrefine.wikibase.manifests.Manifest;
-import org.openrefine.wikibase.manifests.ManifestParser;
-import org.openrefine.wikibase.qa.QAWarning.Severity;
-import org.openrefine.wikibase.schema.entityvalues.ReconItemIdValue;
-import org.openrefine.wikibase.testing.TestingData;
+import org.klear.wikibase.manifests.Manifest;
+import org.klear.wikibase.manifests.ManifestParser;
+import org.klear.wikibase.qa.QAWarning.Severity;
+import org.klear.wikibase.schema.entityvalues.ReconItemIdValue;
+import org.klear.wikibase.testing.TestingData;
 
 public class EditInspectorTest {
 
@@ -45,7 +45,7 @@ public class EditInspectorTest {
 
     @Test
     public void testLabelFetchingIgnoresReconciledEntityIds() throws Exception {
-        // regression test for https://github.com/OpenRefine/OpenRefine/issues/7089
+        // regression test for https://github.com/KLEAR/KLEAR/issues/7089
         String manifestJson = TestingData.jsonFromFile("manifest/wikidata-manifest-v1.0.json");
         Manifest manifest = ManifestParser.parse(manifestJson);
         QAWarningStore qaWarningStore = new QAWarningStore();

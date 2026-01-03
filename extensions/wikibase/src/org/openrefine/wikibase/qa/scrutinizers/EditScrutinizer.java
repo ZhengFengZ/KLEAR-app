@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.qa.scrutinizers;
+package org.klear.wikibase.qa.scrutinizers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,14 +33,14 @@ import org.wikidata.wdtk.datamodel.interfaces.Value;
 import org.wikidata.wdtk.datamodel.interfaces.ValueSnak;
 import org.wikidata.wdtk.wikibaseapi.ApiConnection;
 
-import org.openrefine.wikibase.manifests.Manifest;
-import org.openrefine.wikibase.qa.ConstraintFetcher;
-import org.openrefine.wikibase.qa.QAWarning;
-import org.openrefine.wikibase.qa.QAWarning.Severity;
-import org.openrefine.wikibase.qa.QAWarningStore;
-import org.openrefine.wikibase.updates.EntityEdit;
-import org.openrefine.wikibase.updates.ItemEdit;
-import org.openrefine.wikibase.updates.MediaInfoEdit;
+import org.klear.wikibase.manifests.Manifest;
+import org.klear.wikibase.qa.ConstraintFetcher;
+import org.klear.wikibase.qa.QAWarning;
+import org.klear.wikibase.qa.QAWarning.Severity;
+import org.klear.wikibase.qa.QAWarningStore;
+import org.klear.wikibase.updates.EntityEdit;
+import org.klear.wikibase.updates.ItemEdit;
+import org.klear.wikibase.updates.MediaInfoEdit;
 
 /**
  * Inspects an edit batch and emits warnings.

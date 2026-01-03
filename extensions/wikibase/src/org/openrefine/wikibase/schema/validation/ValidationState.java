@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.schema.validation;
+package org.klear.wikibase.schema.validation;
 
 import java.util.ArrayList;
 import java.util.List;

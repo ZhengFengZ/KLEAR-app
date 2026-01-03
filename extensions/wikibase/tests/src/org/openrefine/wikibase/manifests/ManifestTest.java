@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.manifests;
+package org.klear.wikibase.manifests;
 
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertNull;
@@ -11,7 +11,7 @@ import java.util.Arrays;
 
 import org.testng.annotations.Test;
 
-import org.openrefine.wikibase.testing.TestingData;
+import org.klear.wikibase.testing.TestingData;
 
 public class ManifestTest {
 

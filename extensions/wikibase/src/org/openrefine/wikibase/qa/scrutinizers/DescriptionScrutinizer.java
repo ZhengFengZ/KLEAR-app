@@ -1,13 +1,13 @@
 
-package org.openrefine.wikibase.qa.scrutinizers;
+package org.klear.wikibase.qa.scrutinizers;
 
 import java.util.Set;
 
 import org.wikidata.wdtk.datamodel.interfaces.MonolingualTextValue;
 
-import org.openrefine.wikibase.updates.ItemEdit;
-import org.openrefine.wikibase.updates.LabeledStatementEntityEdit;
-import org.openrefine.wikibase.updates.MediaInfoEdit;
+import org.klear.wikibase.updates.ItemEdit;
+import org.klear.wikibase.updates.LabeledStatementEntityEdit;
+import org.klear.wikibase.updates.MediaInfoEdit;
 
 /**
  * @author Lu Liu

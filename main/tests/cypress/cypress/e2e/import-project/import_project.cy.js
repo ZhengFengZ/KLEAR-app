@@ -4,17 +4,17 @@ describe(__filename, function () {
   });
   
   it('Check the layout for importing a project', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Import project');
     cy.get('.grid-layout').contains('Locate an existing Refine project file');
   });
 
   it('Import a project', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Import project');
     // make sure the dataset was loaded properly
     cy.get('#project-upload-form input#project-tar-file-input').selectFile(
-      'cypress/fixtures/food-small-csv.openrefine.tar.zip'
+      'cypress/fixtures/food-small-csv.klear.tar.zip'
     );
     cy.get('#project-upload-form').submit();
 
@@ -24,11 +24,11 @@ describe(__filename, function () {
   });
 
   it('Import a project, test the renaming', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Import project');
     // make sure the dataset was loaded properly
     cy.get('#project-upload-form input#project-tar-file-input').selectFile(
-      'cypress/fixtures/food-small-csv.openrefine.tar.zip'
+      'cypress/fixtures/food-small-csv.klear.tar.zip'
     );
 
     // rename
@@ -41,9 +41,9 @@ describe(__filename, function () {
   });
 
   it('Import a project from URL', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Import project');
-    const url = "https://raw.githubusercontent.com/OpenRefine/OpenRefine/master/main/tests/cypress/cypress/fixtures/food-small-csv.openrefine.tar.zip";
+    const url = "https://raw.githubusercontent.com/KLEAR/KLEAR/master/main/tests/cypress/cypress/fixtures/food-small-csv.klear.tar.zip";
     cy.get('#or-import-url').type(url);
     cy.get('#project-upload-form').submit();
 
@@ -52,9 +52,9 @@ describe(__filename, function () {
   });
 
   it('Delete a file', function () {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     
-    const projectFile = 'cypress/fixtures/food-small-csv.openrefine.tar.zip';
+    const projectFile = 'cypress/fixtures/food-small-csv.klear.tar.zip';
     cy.get('#project-upload-form input#project-tar-file-input').selectFile(
       projectFile, {force: true}
     );

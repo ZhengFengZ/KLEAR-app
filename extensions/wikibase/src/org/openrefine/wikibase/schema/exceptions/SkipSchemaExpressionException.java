@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema.exceptions;
+package org.klear.wikibase.schema.exceptions;
 
 /**
  * Exception thrown to indicate that the expression currently being evaluated should be skipped (for instance because

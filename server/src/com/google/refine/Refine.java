@@ -92,7 +92,7 @@ public class Refine {
         // tell macosx to keep the menu associated with the screen and what the app title is
         System.setProperty("apple.laf.useScreenMenuBar", "true");
         System.setProperty("com.apple.eawt.CocoaComponent.CompatibilityMode", "false");
-        System.setProperty("com.apple.mrj.application.apple.menu.about.name", "OpenRefine");
+        System.setProperty("com.apple.mrj.application.apple.menu.about.name", "KLEAR");
 
         // tell the signpost library to log
         // System.setProperty("debug","true");
@@ -375,7 +375,7 @@ class RefineServer extends Server {
                 parentDir = new File(".");
             }
 
-            dataDir = new File(parentDir, "OpenRefine");
+            dataDir = new File(parentDir, "KLEAR");
             extensionsDir = new File(dataDir, "extensions");
             grefineDir = new File(new File(parentDir, "Google"), "Refine");
             gridworksDir = new File(parentDir, "Gridworks");
@@ -383,7 +383,7 @@ class RefineServer extends Server {
             // on macosx, use "~/Library/Application Support"
             String home = System.getProperty("user.home");
 
-            String data_home = (home != null) ? home + "/Library/Application Support/OpenRefine" : ".openrefine";
+            String data_home = (home != null) ? home + "/Library/Application Support/KLEAR" : ".klear";
             dataDir = new File(data_home);
 
             String grefine_home = (home != null) ? home + "/Library/Application Support/Google/Refine" : ".google-refine";
@@ -392,8 +392,8 @@ class RefineServer extends Server {
             String gridworks_home = (home != null) ? home + "/Library/Application Support/Gridworks" : ".gridworks";
             gridworksDir = new File(gridworks_home);
 
-            String extensions_home = (home != null) ? home + "/Library/Application Support/OpenRefine/extensions"
-                    : ".openrefine/extensions";
+            String extensions_home = (home != null) ? home + "/Library/Application Support/KLEAR/extensions"
+                    : ".klear/extensions";
             extensionsDir = new File(extensions_home);
         } else { // most likely a UNIX flavor
             // start with the XDG environment
@@ -407,8 +407,8 @@ class RefineServer extends Server {
                 data_home = home + "/.local/share";
             }
 
-            dataDir = new File(data_home + "/openrefine");
-            extensionsDir = new File(data_home + "/openrefine/extensions");
+            dataDir = new File(data_home + "/klear");
+            extensionsDir = new File(data_home + "/klear/extensions");
             grefineDir = new File(data_home + "/google/refine");
             gridworksDir = new File(data_home + "/gridworks");
         }

@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.editing;
+package org.klear.wikibase.editing;
 
 import static org.testng.Assert.assertEquals;
 
@@ -16,7 +16,7 @@ import com.google.refine.expr.EvalError;
 import com.google.refine.model.Cell;
 import com.google.refine.model.changes.CellAtRow;
 
-import org.openrefine.wikibase.editing.EditBatchProcessor.EditResult;
+import org.klear.wikibase.editing.EditBatchProcessor.EditResult;
 
 public class EditResultsFormatterTest {
 

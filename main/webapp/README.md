@@ -1,6 +1,6 @@
-# OpenRefine WebApp
+# KLEAR WebApp
 
-See the main [README.md](../../README.md) for how to build and run OpenRefine.
+See the main [README.md](../../README.md) for how to build and run KLEAR.
 
 ## Dependencies
 

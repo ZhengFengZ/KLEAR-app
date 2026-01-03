@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNull;
@@ -34,7 +34,7 @@ import org.testng.annotations.Test;
 
 import com.google.refine.model.Project;
 
-import org.openrefine.wikibase.testing.WikidataRefineTest;
+import org.klear.wikibase.testing.WikidataRefineTest;
 
 public class ExpressionContextTest extends WikidataRefineTest {
 

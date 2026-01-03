@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.exporters;
+package org.klear.wikibase.exporters;
 
 import static org.testng.Assert.assertEquals;
 
@@ -34,8 +34,8 @@ import org.wikidata.wdtk.datamodel.interfaces.GlobeCoordinatesValue;
 import org.wikidata.wdtk.datamodel.interfaces.TimeValue;
 import org.wikidata.wdtk.datamodel.interfaces.Value;
 
-import org.openrefine.wikibase.schema.entityvalues.ReconEntityIdValue;
-import org.openrefine.wikibase.testing.TestingData;
+import org.klear.wikibase.schema.entityvalues.ReconEntityIdValue;
+import org.klear.wikibase.testing.TestingData;
 
 public class QSValuePrinterTest {
 

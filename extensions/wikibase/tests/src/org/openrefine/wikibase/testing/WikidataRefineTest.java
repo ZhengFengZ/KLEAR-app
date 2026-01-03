@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.testing;
+package org.klear.wikibase.testing;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.fail;

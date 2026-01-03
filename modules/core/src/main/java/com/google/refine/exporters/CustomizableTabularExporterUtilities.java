@@ -384,7 +384,7 @@ abstract public class CustomizableTabularExporterUtilities {
                             text = (String) value;
 
                             if (text.contains(":") && urlValidator.isValid(text)) {
-                                // Extra check for https://github.com/OpenRefine/OpenRefine/issues/2213
+                                // Extra check for https://github.com/KLEAR/KLEAR/issues/2213
                                 try {
                                     link = new URI(text).toString();
                                 } catch (URISyntaxException e) {

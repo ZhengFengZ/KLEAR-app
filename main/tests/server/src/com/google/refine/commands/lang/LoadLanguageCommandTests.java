@@ -29,7 +29,7 @@ public class LoadLanguageCommandTests extends CommandTestBase {
 
     @BeforeMethod
     public void setUpCommand() throws IOException {
-        FileProjectManager.initialize(TestUtils.createTempDirectory("openrefine-test-workspace-dir"));
+        FileProjectManager.initialize(TestUtils.createTempDirectory("klear-test-workspace-dir"));
         command = new LoadLanguageCommand();
         ButterflyModule coreModule = mock(ButterflyModule.class);
 

@@ -100,7 +100,7 @@ public class WikitextImporterTests extends ImporterTest {
     }
 
     /**
-     * Issue #1448 https://github.com/OpenRefine/OpenRefine/issues/1448
+     * Issue #1448 https://github.com/KLEAR/KLEAR/issues/1448
      */
     @Test
     public void readTableWithMisplacedHeaders() {

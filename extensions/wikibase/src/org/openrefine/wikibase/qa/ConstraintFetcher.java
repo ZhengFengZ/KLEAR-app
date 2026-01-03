@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.qa;
+package org.klear.wikibase.qa;
 
 import java.util.Collections;
 import java.util.List;
@@ -36,7 +36,7 @@ import org.wikidata.wdtk.datamodel.interfaces.Statement;
 import org.wikidata.wdtk.datamodel.interfaces.StatementGroup;
 import org.wikidata.wdtk.datamodel.interfaces.StatementRank;
 
-import org.openrefine.wikibase.utils.EntityCache;
+import org.klear.wikibase.utils.EntityCache;
 
 /**
  * This class provides an abstraction over the way constraint definitions are stored in a Wikibase instance.

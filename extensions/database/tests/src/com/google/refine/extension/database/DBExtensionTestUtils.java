@@ -34,7 +34,7 @@ public class DBExtensionTestUtils {
     private static final int DEFAULT_PGSQL_PORT = 5432;
     private static final String DEFAULT_PGSQL_USER = "postgres";
     private static final String DEFAULT_PGSQL_PASSWORD = "";
-    private static final String DEFAULT_PGSQL_DB_NAME = "openrefine";
+    private static final String DEFAULT_PGSQL_DB_NAME = "klear";
 
     private static final String DEFAULT_TEST_TABLE = "test_data";
 

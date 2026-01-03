@@ -4,7 +4,7 @@ describe('Discard reconciliation judgments', () => {
     });
     
     it('Test discard existing reconciliation judgments', () => {
-        cy.visitOpenRefine();
+        cy.visitKLEAR();
         cy.navigateTo('Import project');
         cy.get('#or-import-locate').should('to.contain', 'Locate an existing Refine project file');
 

@@ -4,8 +4,8 @@
 * Copyright (C) 2009 Joel Sutherland.
 * Licensed under the MIT license
 *
-* Modified for OpenRefine by Simone Povoscania
-* Modified for OpenRefine by Lucero Garcia
+* Modified for KLEAR by Simone Povoscania
+* Modified for KLEAR by Lucero Garcia
 */
 
 (function($) {

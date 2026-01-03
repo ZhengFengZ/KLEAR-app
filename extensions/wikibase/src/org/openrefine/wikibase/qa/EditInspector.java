@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.qa;
+package org.klear.wikibase.qa;
 
 import java.util.HashMap;
 import java.util.List;
@@ -41,41 +41,41 @@ import org.wikidata.wdtk.datamodel.interfaces.PropertyIdValue;
 import org.wikidata.wdtk.wikibaseapi.ApiConnection;
 import org.wikidata.wdtk.wikibaseapi.BasicApiConnection;
 
-import org.openrefine.wikibase.manifests.Manifest;
-import org.openrefine.wikibase.qa.scrutinizers.CalendarScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.CommonDescriptionScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.ConflictsWithScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.DifferenceWithinRangeScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.DistinctValuesScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.EditScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.EnglishDescriptionScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.EntityTypeScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.FileNameScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.FormatScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.InverseConstraintScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.ItemRequiresScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.LabelScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.MultiValueScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.NewEntityScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.NoEditsMadeScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.QualifierCompatibilityScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.QuantityScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.RestrictedPositionScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.RestrictedValuesScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.SelfReferentialScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.SingleValueScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.UnsourcedScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.UseAsQualifierScrutinizer;
-import org.openrefine.wikibase.qa.scrutinizers.WhitespaceScrutinizer;
-import org.openrefine.wikibase.schema.WikibaseSchema;
-import org.openrefine.wikibase.schema.entityvalues.ReconEntityIdValue;
-import org.openrefine.wikibase.schema.entityvalues.SuggestedEntityIdValue;
-import org.openrefine.wikibase.schema.entityvalues.SuggestedItemIdValue;
-import org.openrefine.wikibase.schema.entityvalues.SuggestedPropertyIdValue;
-import org.openrefine.wikibase.updates.EntityEdit;
-import org.openrefine.wikibase.updates.scheduler.ImpossibleSchedulingException;
-import org.openrefine.wikibase.updates.scheduler.WikibaseAPIUpdateScheduler;
-import org.openrefine.wikibase.utils.EntityCache;
+import org.klear.wikibase.manifests.Manifest;
+import org.klear.wikibase.qa.scrutinizers.CalendarScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.CommonDescriptionScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.ConflictsWithScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.DifferenceWithinRangeScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.DistinctValuesScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.EditScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.EnglishDescriptionScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.EntityTypeScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.FileNameScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.FormatScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.InverseConstraintScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.ItemRequiresScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.LabelScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.MultiValueScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.NewEntityScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.NoEditsMadeScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.QualifierCompatibilityScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.QuantityScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.RestrictedPositionScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.RestrictedValuesScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.SelfReferentialScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.SingleValueScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.UnsourcedScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.UseAsQualifierScrutinizer;
+import org.klear.wikibase.qa.scrutinizers.WhitespaceScrutinizer;
+import org.klear.wikibase.schema.WikibaseSchema;
+import org.klear.wikibase.schema.entityvalues.ReconEntityIdValue;
+import org.klear.wikibase.schema.entityvalues.SuggestedEntityIdValue;
+import org.klear.wikibase.schema.entityvalues.SuggestedItemIdValue;
+import org.klear.wikibase.schema.entityvalues.SuggestedPropertyIdValue;
+import org.klear.wikibase.updates.EntityEdit;
+import org.klear.wikibase.updates.scheduler.ImpossibleSchedulingException;
+import org.klear.wikibase.updates.scheduler.WikibaseAPIUpdateScheduler;
+import org.klear.wikibase.utils.EntityCache;
 
 /**
  * Runs a collection of edit scrutinizers on an edit batch.
@@ -110,7 +110,7 @@ public class EditInspector {
         this.manifest = manifest;
         // TODO this connection could be logged in, as the user doing the upload, so that
         // we could check for their rights to upload.
-        // see https://github.com/OpenRefine/OpenRefine/issues/5170
+        // see https://github.com/KLEAR/KLEAR/issues/5170
         this.connection = new BasicApiConnection(manifest.getMediaWikiApiEndpoint());
         this.slowMode = slowMode;
 

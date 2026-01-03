@@ -127,7 +127,7 @@ public class RowTests extends RefineTest {
 
         String reconJson = "{\"id\":1533649346002675326,"
                 + "\"judgmentHistoryEntry\":1530278634724,"
-                + "\"service\":\"https://tools.wmflabs.org/openrefine-wikidata/en/api\","
+                + "\"service\":\"https://tools.wmflabs.org/klear-wikidata/en/api\","
                 + "\"identifierSpace\":\"http://www.wikidata.org/entity/\","
                 + "\"schemaSpace\":\"http://www.wikidata.org/prop/direct/\","
                 + "\"j\":\"matched\","

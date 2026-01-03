@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.updates.scheduler;
+package org.klear.wikibase.updates.scheduler;
 
 import static org.testng.Assert.assertEquals;
 
@@ -31,9 +31,9 @@ import java.util.List;
 
 import org.testng.annotations.Test;
 
-import org.openrefine.wikibase.updates.EntityEdit;
-import org.openrefine.wikibase.updates.ItemEditBuilder;
-import org.openrefine.wikibase.updates.TermedStatementEntityEdit;
+import org.klear.wikibase.updates.EntityEdit;
+import org.klear.wikibase.updates.ItemEditBuilder;
+import org.klear.wikibase.updates.TermedStatementEntityEdit;
 
 public class QuickStatementsUpdateSchedulerTest extends UpdateSchedulerTest {
 

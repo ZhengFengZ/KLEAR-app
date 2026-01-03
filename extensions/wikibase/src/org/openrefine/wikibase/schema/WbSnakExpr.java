@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import java.util.HashSet;
 import java.util.Map;
@@ -36,15 +36,15 @@ import org.wikidata.wdtk.datamodel.interfaces.PropertyIdValue;
 import org.wikidata.wdtk.datamodel.interfaces.Snak;
 import org.wikidata.wdtk.datamodel.interfaces.Value;
 
-import org.openrefine.wikibase.schema.entityvalues.FullyPropertySerializingNoValueSnak;
-import org.openrefine.wikibase.schema.entityvalues.FullyPropertySerializingSomeValueSnak;
-import org.openrefine.wikibase.schema.entityvalues.FullyPropertySerializingValueSnak;
-import org.openrefine.wikibase.schema.exceptions.QAWarningException;
-import org.openrefine.wikibase.schema.exceptions.SkipSchemaExpressionException;
-import org.openrefine.wikibase.schema.exceptions.SpecialValueNoValueException;
-import org.openrefine.wikibase.schema.exceptions.SpecialValueSomeValueException;
-import org.openrefine.wikibase.schema.validation.PathElement;
-import org.openrefine.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.schema.entityvalues.FullyPropertySerializingNoValueSnak;
+import org.klear.wikibase.schema.entityvalues.FullyPropertySerializingSomeValueSnak;
+import org.klear.wikibase.schema.entityvalues.FullyPropertySerializingValueSnak;
+import org.klear.wikibase.schema.exceptions.QAWarningException;
+import org.klear.wikibase.schema.exceptions.SkipSchemaExpressionException;
+import org.klear.wikibase.schema.exceptions.SpecialValueNoValueException;
+import org.klear.wikibase.schema.exceptions.SpecialValueSomeValueException;
+import org.klear.wikibase.schema.validation.PathElement;
+import org.klear.wikibase.schema.validation.ValidationState;
 
 /**
  * An expression for a snak (pair of property and value).

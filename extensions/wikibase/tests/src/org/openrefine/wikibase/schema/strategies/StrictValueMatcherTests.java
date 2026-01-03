@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.schema.strategies;
+package org.klear.wikibase.schema.strategies;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import com.google.refine.util.ParsingUtilities;
 import com.google.refine.util.TestUtils;
 
-import org.openrefine.wikibase.testing.TestingData;
+import org.klear.wikibase.testing.TestingData;
 
 public class StrictValueMatcherTests {
 

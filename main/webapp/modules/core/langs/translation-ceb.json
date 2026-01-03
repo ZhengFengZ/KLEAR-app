@@ -39,7 +39,7 @@
     "core-index-create/question": "Paggama ug buhat nga nag-angkat ug datus. Unsa nga klaseng datus ang akong ma-angkat?",
     "core-index-create/sec-remaining": "nahabiling segundo",
     "core-index-create/done": "Humana.",
-    "core-index-create/formats": "TSV, CSV, *SV, Excel (.xls and .xlsx), JSON, XML, RDF as XML, ug Google Data suportado ni tanang dokumento. Ang suport sa ubang pormat kay puwede pun an ug OpenRefine ekstensyon.",
+    "core-index-create/formats": "TSV, CSV, *SV, Excel (.xls and .xlsx), JSON, XML, RDF as XML, ug Google Data suportado ni tanang dokumento. Ang suport sa ubang pormat kay puwede pun an ug KLEAR ekstensyon.",
     "core-index-create/starting": "Nagsugod na",
     "core-index-create/no-details": "Walay teknikal nga detalye.",
     "core-index-import/rename": "Usaba ang ngalan sa gbuhat (optional)",

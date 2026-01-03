@@ -27,12 +27,12 @@ describe(__filename, function () {
       .click();
     cy.get('.menu-container.data-table-cell-editor').should('exist');
     cy.get('.menu-container.data-table-cell-editor textarea').type(
-      'OpenRefine Testing'
+      'KLEAR Testing'
     );
     cy.get('.menu-container button[bind="okButton"]').click();
     // ensure value has been changed in the grid
     cy.get('.menu-container.data-table-cell-editor').should('not.exist');
-    cy.assertCellEquals(1, 'Shrt_Desc', 'OpenRefine Testing');
+    cy.assertCellEquals(1, 'Shrt_Desc', 'KLEAR Testing');
   });
 
   it('Test a simple edit, using keyboard shortcut', function () {
@@ -43,10 +43,10 @@ describe(__filename, function () {
       .click();
     cy.get('.menu-container.data-table-cell-editor').should('exist');
     cy.get('.menu-container.data-table-cell-editor textarea').type(
-      'OpenRefine Testing'
+      'KLEAR Testing'
     ).type('{enter}');
     cy.get('.menu-container.data-table-cell-editor').should('not.exist');
-    cy.assertCellEquals(1, 'Shrt_Desc', 'OpenRefine Testing');
+    cy.assertCellEquals(1, 'Shrt_Desc', 'KLEAR Testing');
   });
 
   it('Test the cancel button', function () {
@@ -57,7 +57,7 @@ describe(__filename, function () {
       .click();
     cy.get('.menu-container.data-table-cell-editor').should('exist');
     cy.get('.menu-container.data-table-cell-editor textarea').type(
-      'OpenRefine Testing'
+      'KLEAR Testing'
     );
     cy.get('.menu-container button[bind="cancelButton"]').click();
     // ensure value has been changed in the grid
@@ -73,7 +73,7 @@ describe(__filename, function () {
       .click();
     cy.get('.menu-container.data-table-cell-editor').should('exist');
     cy.get('.menu-container.data-table-cell-editor textarea').type(
-      'OpenRefine Testing'
+      'KLEAR Testing'
     );
     cy.get('body').type('{esc}');
     // ensure value has been changed in the grid

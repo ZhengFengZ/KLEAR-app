@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import static org.testng.Assert.assertEquals;
 
@@ -39,8 +39,8 @@ import com.google.refine.model.Column;
 import com.google.refine.model.ColumnModel;
 import com.google.refine.model.ModelException;
 
-import org.openrefine.wikibase.schema.exceptions.QAWarningException;
-import org.openrefine.wikibase.schema.exceptions.SkipSchemaExpressionException;
+import org.klear.wikibase.schema.exceptions.QAWarningException;
+import org.klear.wikibase.schema.exceptions.SkipSchemaExpressionException;
 
 public class WbQuantityExprTest extends WbExpressionTest<QuantityValue> {
 

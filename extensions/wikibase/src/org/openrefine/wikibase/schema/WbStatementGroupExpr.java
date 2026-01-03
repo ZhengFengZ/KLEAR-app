@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -39,15 +39,15 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import org.wikidata.wdtk.datamodel.interfaces.EntityIdValue;
 import org.wikidata.wdtk.datamodel.interfaces.PropertyIdValue;
 
-import org.openrefine.wikibase.schema.exceptions.QAWarningException;
-import org.openrefine.wikibase.schema.exceptions.SkipSchemaExpressionException;
-import org.openrefine.wikibase.schema.exceptions.SpecialValueNoValueException;
-import org.openrefine.wikibase.schema.exceptions.SpecialValueSomeValueException;
-import org.openrefine.wikibase.schema.validation.PathElement;
-import org.openrefine.wikibase.schema.validation.PathElement.Type;
-import org.openrefine.wikibase.schema.validation.ValidationState;
-import org.openrefine.wikibase.updates.StatementEdit;
-import org.openrefine.wikibase.updates.StatementGroupEdit;
+import org.klear.wikibase.schema.exceptions.QAWarningException;
+import org.klear.wikibase.schema.exceptions.SkipSchemaExpressionException;
+import org.klear.wikibase.schema.exceptions.SpecialValueNoValueException;
+import org.klear.wikibase.schema.exceptions.SpecialValueSomeValueException;
+import org.klear.wikibase.schema.validation.PathElement;
+import org.klear.wikibase.schema.validation.PathElement.Type;
+import org.klear.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.updates.StatementEdit;
+import org.klear.wikibase.updates.StatementGroupEdit;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class WbStatementGroupExpr {

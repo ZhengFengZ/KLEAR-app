@@ -2,14 +2,14 @@
 	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.openrefine</groupId>
+  <groupId>org.klear</groupId>
   <artifactId>packaging</artifactId>
   <packaging>pom</packaging>
   <version>3.2-SNAPSHOT</version>
 
-  <name>OpenRefine - dummy packaging</name>
+  <name>KLEAR - dummy packaging</name>
   <description>Dummy packaging for travis</description>
-  <url>http://openrefine.org/</url>
+  <url>http://klear.org/</url>
   <build>
      <plugins>
       <plugin>

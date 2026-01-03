@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -48,21 +48,21 @@ import org.wikidata.wdtk.datamodel.interfaces.SnakGroup;
 import org.wikidata.wdtk.datamodel.interfaces.StatementRank;
 import org.wikidata.wdtk.datamodel.interfaces.Value;
 
-import org.openrefine.wikibase.qa.QAWarning;
-import org.openrefine.wikibase.schema.entityvalues.FullyPropertySerializingNoValueSnak;
-import org.openrefine.wikibase.schema.entityvalues.FullyPropertySerializingSomeValueSnak;
-import org.openrefine.wikibase.schema.entityvalues.FullyPropertySerializingValueSnak;
-import org.openrefine.wikibase.schema.exceptions.QAWarningException;
-import org.openrefine.wikibase.schema.exceptions.SkipSchemaExpressionException;
-import org.openrefine.wikibase.schema.exceptions.SpecialValueNoValueException;
-import org.openrefine.wikibase.schema.exceptions.SpecialValueSomeValueException;
-import org.openrefine.wikibase.schema.strategies.PropertyOnlyStatementMerger;
-import org.openrefine.wikibase.schema.strategies.StatementEditingMode;
-import org.openrefine.wikibase.schema.strategies.StatementMerger;
-import org.openrefine.wikibase.schema.validation.PathElement;
-import org.openrefine.wikibase.schema.validation.PathElement.Type;
-import org.openrefine.wikibase.schema.validation.ValidationState;
-import org.openrefine.wikibase.updates.StatementEdit;
+import org.klear.wikibase.qa.QAWarning;
+import org.klear.wikibase.schema.entityvalues.FullyPropertySerializingNoValueSnak;
+import org.klear.wikibase.schema.entityvalues.FullyPropertySerializingSomeValueSnak;
+import org.klear.wikibase.schema.entityvalues.FullyPropertySerializingValueSnak;
+import org.klear.wikibase.schema.exceptions.QAWarningException;
+import org.klear.wikibase.schema.exceptions.SkipSchemaExpressionException;
+import org.klear.wikibase.schema.exceptions.SpecialValueNoValueException;
+import org.klear.wikibase.schema.exceptions.SpecialValueSomeValueException;
+import org.klear.wikibase.schema.strategies.PropertyOnlyStatementMerger;
+import org.klear.wikibase.schema.strategies.StatementEditingMode;
+import org.klear.wikibase.schema.strategies.StatementMerger;
+import org.klear.wikibase.schema.validation.PathElement;
+import org.klear.wikibase.schema.validation.PathElement.Type;
+import org.klear.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.updates.StatementEdit;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class WbStatementExpr {

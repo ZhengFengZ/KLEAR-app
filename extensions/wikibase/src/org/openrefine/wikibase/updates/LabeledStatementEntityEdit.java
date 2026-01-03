@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.updates;
+package org.klear.wikibase.updates;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -22,7 +22,7 @@ import org.wikidata.wdtk.datamodel.interfaces.StatementDocument;
 import org.wikidata.wdtk.datamodel.interfaces.StatementGroup;
 import org.wikidata.wdtk.datamodel.interfaces.StatementUpdate;
 
-import org.openrefine.wikibase.schema.strategies.StatementEditingMode;
+import org.klear.wikibase.schema.strategies.StatementEditingMode;
 
 public abstract class LabeledStatementEntityEdit implements StatementEntityEdit {
 

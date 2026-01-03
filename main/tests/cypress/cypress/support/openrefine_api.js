@@ -74,7 +74,7 @@ Cypress.Commands.add('importProject', (projectTarFile, projectName) => {
 
     // the following code can be used to inject tags in created projects
     // It's conflicting though, breaking up the CSV files
-    // It is a hack to parse out CSV files in the openrefine while creating a project with tags
+    // It is a hack to parse out CSV files in the klear while creating a project with tags
     const options = {
       encoding: 'US-ASCII',
       separator: ',',
@@ -202,7 +202,7 @@ Cypress.Commands.add('loadProject', (fixture, projectName, tagName) => {
 
     // the following code can be used to inject tags in created projects
     // It's conflicting though, breaking up the CSV files
-    // It is a hack to parse out CSV files in the openrefine while creating a project with tags
+    // It is a hack to parse out CSV files in the klear while creating a project with tags
     const options = {
       encoding: 'UTF-8',
       separator: ',',

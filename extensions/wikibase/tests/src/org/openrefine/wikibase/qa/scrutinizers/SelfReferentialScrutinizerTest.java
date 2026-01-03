@@ -22,12 +22,12 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.qa.scrutinizers;
+package org.klear.wikibase.qa.scrutinizers;
 
 import org.testng.annotations.Test;
 import org.wikidata.wdtk.datamodel.interfaces.ItemIdValue;
 
-import org.openrefine.wikibase.testing.TestingData;
+import org.klear.wikibase.testing.TestingData;
 
 public class SelfReferentialScrutinizerTest extends StatementScrutinizerTest {
 

@@ -39,7 +39,7 @@
     "core-index-create/question": "Gumawa ng proyekto sa pamamagitan ng pag-import nga mga datus. Anong uri ba ng mga datus ang pwede ko ma-import?",
     "core-index-create/sec-remaining": "ang mga natitirang segundo",
     "core-index-create/done": "Tapos na.",
-    "core-index-create/formats": "TSV, CSV, *SV, Excel (.xls and .xlsx), JSON, XML, RDF bilang XML, at ang dokumento ng Google Data ang lahat ay sinusuportahan.\nAng suporta sa ibang pormat ay pwede maidagdag gamit ang mga ekstensiyon ng OpenRefine.",
+    "core-index-create/formats": "TSV, CSV, *SV, Excel (.xls and .xlsx), JSON, XML, RDF bilang XML, at ang dokumento ng Google Data ang lahat ay sinusuportahan.\nAng suporta sa ibang pormat ay pwede maidagdag gamit ang mga ekstensiyon ng KLEAR.",
     "core-index-create/starting": "Ang pagsimula",
     "core-index-create/no-details": "Walang teknikal na mga detalye.",
     "core-index-import/rename": "Baguhin ang pangalan ng proyekto (opsiyonal)",

@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.updates.scheduler;
+package org.klear.wikibase.updates.scheduler;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -30,14 +30,14 @@ import java.util.stream.Collectors;
 import org.wikidata.wdtk.datamodel.interfaces.EntityIdValue;
 import org.wikidata.wdtk.datamodel.interfaces.ItemIdValue;
 
-import org.openrefine.wikibase.schema.entityvalues.ReconEntityIdValue;
-import org.openrefine.wikibase.updates.EntityEdit;
-import org.openrefine.wikibase.updates.ItemEdit;
-import org.openrefine.wikibase.updates.ItemEditBuilder;
-import org.openrefine.wikibase.updates.MediaInfoEdit;
-import org.openrefine.wikibase.updates.MediaInfoEditBuilder;
-import org.openrefine.wikibase.updates.StatementEdit;
-import org.openrefine.wikibase.updates.TermedStatementEntityEdit;
+import org.klear.wikibase.schema.entityvalues.ReconEntityIdValue;
+import org.klear.wikibase.updates.EntityEdit;
+import org.klear.wikibase.updates.ItemEdit;
+import org.klear.wikibase.updates.ItemEditBuilder;
+import org.klear.wikibase.updates.MediaInfoEdit;
+import org.klear.wikibase.updates.MediaInfoEditBuilder;
+import org.klear.wikibase.updates.StatementEdit;
+import org.klear.wikibase.updates.TermedStatementEntityEdit;
 
 /**
  * A simple scheduler for batches committed via the Wikibase API.

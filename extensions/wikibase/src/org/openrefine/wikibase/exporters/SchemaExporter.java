@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.exporters;
+package org.klear.wikibase.exporters;
 
 import java.io.IOException;
 import java.io.Writer;
@@ -10,7 +10,7 @@ import com.google.refine.exporters.WriterExporter;
 import com.google.refine.model.Project;
 import com.google.refine.util.ParsingUtilities;
 
-import org.openrefine.wikibase.schema.WikibaseSchema;
+import org.klear.wikibase.schema.WikibaseSchema;
 
 public class SchemaExporter implements WriterExporter {
 

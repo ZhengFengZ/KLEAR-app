@@ -1,8 +1,8 @@
 
-package org.openrefine.wikibase.qa;
+package org.klear.wikibase.qa;
 
-import static org.openrefine.wikibase.qa.Constraint.CONSTRAINT_EXCEPTIONS;
-import static org.openrefine.wikibase.qa.Constraint.CONSTRAINT_STATUS;
+import static org.klear.wikibase.qa.Constraint.CONSTRAINT_EXCEPTIONS;
+import static org.klear.wikibase.qa.Constraint.CONSTRAINT_STATUS;
 
 import java.util.Arrays;
 import java.util.Collections;

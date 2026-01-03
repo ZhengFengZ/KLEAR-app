@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.manifests;
+package org.klear.wikibase.manifests;
 
 import java.io.IOException;
 

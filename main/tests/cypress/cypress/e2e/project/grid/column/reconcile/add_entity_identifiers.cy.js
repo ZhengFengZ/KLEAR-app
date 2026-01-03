@@ -4,7 +4,7 @@ describe('Add entity identifiers', () => {
   });
   
   it('Add a new column that contains the reconciliation id', () => {
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Import project');
     cy.get('#or-import-locate').should('to.contain', 'Locate an existing Refine project file');
 

@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import static org.testng.Assert.assertEquals;
 
@@ -40,12 +40,12 @@ import com.google.refine.model.ColumnModel;
 import com.google.refine.model.ModelException;
 import com.google.refine.util.ParsingUtilities;
 
-import org.openrefine.wikibase.qa.QAWarning;
-import org.openrefine.wikibase.qa.QAWarning.Severity;
-import org.openrefine.wikibase.testing.JacksonSerializationTest;
-import org.openrefine.wikibase.updates.ItemEdit;
-import org.openrefine.wikibase.updates.ItemEditBuilder;
-import org.openrefine.wikibase.updates.StatementEdit;
+import org.klear.wikibase.qa.QAWarning;
+import org.klear.wikibase.qa.QAWarning.Severity;
+import org.klear.wikibase.testing.JacksonSerializationTest;
+import org.klear.wikibase.updates.ItemEdit;
+import org.klear.wikibase.updates.ItemEditBuilder;
+import org.klear.wikibase.updates.StatementEdit;
 
 public class WbItemEditExprTest extends WbExpressionTest<ItemEdit> {
 

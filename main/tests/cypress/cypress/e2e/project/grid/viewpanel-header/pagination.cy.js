@@ -13,7 +13,7 @@ describe(__filename, function () {
 
     // testing the panel after changing pagination can't be tester properly
     // The dom re-render in a way that forces us to have an ugly 'wait'
-    // See discussion there -> https://github.com/OpenRefine/OpenRefine/pull/4163
+    // See discussion there -> https://github.com/KLEAR/KLEAR/pull/4163
     // cy.wait(250); // eslint-disable-line
     // cy.get('.data-table tbody').find('tr').should('have.length', 50);
 

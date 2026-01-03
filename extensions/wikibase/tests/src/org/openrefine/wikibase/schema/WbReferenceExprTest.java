@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -38,7 +38,7 @@ import com.google.refine.model.Column;
 import com.google.refine.model.ColumnModel;
 import com.google.refine.model.ModelException;
 
-import org.openrefine.wikibase.testing.JacksonSerializationTest;
+import org.klear.wikibase.testing.JacksonSerializationTest;
 
 public class WbReferenceExprTest extends WbExpressionTest<Reference> {
 

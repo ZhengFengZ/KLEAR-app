@@ -22,10 +22,10 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.commands;
+package org.klear.wikibase.commands;
 
 import static org.mockito.Mockito.when;
-import static org.openrefine.wikibase.testing.TestingData.jsonFromFile;
+import static org.klear.wikibase.testing.TestingData.jsonFromFile;
 import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
@@ -44,9 +44,9 @@ import org.testng.annotations.Test;
 import com.google.refine.util.LocaleUtils;
 import com.google.refine.util.ParsingUtilities;
 
-import org.openrefine.wikibase.testing.TestingData;
-import org.openrefine.wikibase.utils.EntityCache;
-import org.openrefine.wikibase.utils.EntityCacheStub;
+import org.klear.wikibase.testing.TestingData;
+import org.klear.wikibase.utils.EntityCache;
+import org.klear.wikibase.utils.EntityCacheStub;
 
 public class PreviewWikibaseSchemaCommandTest extends SchemaCommandTest {
 

@@ -22,15 +22,15 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.wikidata.wdtk.datamodel.implementation.EntityIdValueImpl;
 import org.wikidata.wdtk.datamodel.interfaces.ItemIdValue;
 
-import org.openrefine.wikibase.schema.entityvalues.SuggestedItemIdValue;
-import org.openrefine.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.schema.entityvalues.SuggestedItemIdValue;
+import org.klear.wikibase.schema.validation.ValidationState;
 
 /**
  * Represents an item that does not vary, it is independent of the row.

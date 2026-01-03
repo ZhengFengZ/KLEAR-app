@@ -39,22 +39,22 @@ echo     /c ^<path^>               Path to the refine.ini file. Default: .\refin
 echo     /d ^<path^>               Path to the data directory. Default: OS dependent.
 echo     /debug                  Enable JVM debugging (on port 8000).
 echo     /H ^<host^>               Expected host header value (* to disable checks). Default: ^<interface^>.
-echo     /i ^<interface^>          The network interface OpenRefine should bind to. Default: 127.0.0.1.
+echo     /i ^<interface^>          The network interface KLEAR should bind to. Default: 127.0.0.1.
 echo     /jmx                    Enable JMX monitoring.
 echo     /m ^<memory^>             Set JVM min and max memory heap size to use. Default: 1400M.
-echo     /p ^<port^>               The port that OpenRefine should bind to. Default: 3333.
+echo     /p ^<port^>               The port that KLEAR should bind to. Default: 3333.
 echo     /v ^<level^>              Verbosity level [error, warn, info, debug, trace].
 echo     /w ^<path^>               Path to the webapp. Default: src\main\webapp.
-echo     /x ^<name=value^>         Additional configuration parameters to pass to OpenRefine.
+echo     /x ^<name=value^>         Additional configuration parameters to pass to KLEAR.
 echo.
 echo Actions
-echo     build                   Build OpenRefine.
+echo     build                   Build KLEAR.
 echo     clean                   Clean compiled classes.
 echo     extensions_test         Run the extensions tests.
-echo     run                     Run OpenRefine.
+echo     run                     Run KLEAR.
 echo     server_test             Run the server tests.
 echo     test                    Run all the tests.
-echo     lint                    Reformat the source code according to OpenRefine's conventions.
+echo     lint                    Reformat the source code according to KLEAR's conventions.
 goto :eof
 
 
@@ -118,7 +118,7 @@ echo You must set JAVA_HOME to point at your Java Development Kit installation
 echo.
 echo If you don't know how to do this, follow the instructions at
 echo.
-echo   https://openrefine.org/docs/manual/installing#java
+echo   https://klear.org/docs/manual/installing#java
 echo.
 
 goto fail
@@ -209,8 +209,8 @@ if "!PS!"=="true" (
 echo -------------------------------------------------------------------------------------------------
 echo You have %freeRam%M of free memory.
 echo Your current configuration is set to use %REFINE_MEMORY% of memory.
-echo OpenRefine can run better when given more memory. Read our FAQ on how to allocate more memory here:
-echo https://openrefine.org/docs/manual/installing\#increasing-memory-allocation
+echo KLEAR can run better when given more memory. Read our FAQ on how to allocate more memory here:
+echo https://klear.org/docs/manual/installing\#increasing-memory-allocation
 echo -------------------------------------------------------------------------------------------------
 
 rem --- Checking Java Version  ------------------------------------------
@@ -219,7 +219,7 @@ set JAVA="%JAVA_HOME%\bin\java.exe"
 if not exist !JAVA! (
     echo The specified path !JAVA! does not point to a valid Java Development Kit installation.
     echo Please check that the path is correct and that a Java Development Kit is installed at that location.
-    echo   https://openrefine.org/docs/manual/installing#java
+    echo   https://klear.org/docs/manual/installing#java
     goto :fail
 )
 
@@ -240,11 +240,11 @@ for /f "delims=.-_ tokens=1-2" %%v in ("%JAVA_VERSION%") do (
 )
 echo Java %JAVA_RELEASE% (%JAVA_VERSION%)
 if %JAVA_RELEASE% LSS 11 (
-    echo OpenRefine requires Java version 11 or later. If you have multiple versions of Java installed, please set the environment variable JAVA_HOME to the correct version.
+    echo KLEAR requires Java version 11 or later. If you have multiple versions of Java installed, please set the environment variable JAVA_HOME to the correct version.
     exit /B 1
 )
 if %JAVA_RELEASE% GTR 21 (
-    echo WARNING: OpenRefine is not tested and not recommended for use with Java versions greater than 21.
+    echo WARNING: KLEAR is not tested and not recommended for use with Java versions greater than 21.
 )
 
 set CLASSPATH="%REFINE_CLASSES_DIR%;%REFINE_LIB_DIR%\*"

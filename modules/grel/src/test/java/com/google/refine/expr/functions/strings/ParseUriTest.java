@@ -19,7 +19,7 @@ public class ParseUriTest extends GrelTestBase {
     @BeforeTest
     public void init() {
         logger = LoggerFactory.getLogger(this.getClass());
-        sampleUri = "https://www.openrefine.org:80/documentation#download?format=xml&os=mac";
+        sampleUri = "https://www.klear.org:80/documentation#download?format=xml&os=mac";
     }
 
     @Test
@@ -28,7 +28,7 @@ public class ParseUriTest extends GrelTestBase {
 
         Assert.assertNotNull(resNode);
         Assert.assertEquals(resNode.get("scheme").asText(), "https");
-        Assert.assertEquals(resNode.get("host").asText(), "www.openrefine.org");
+        Assert.assertEquals(resNode.get("host").asText(), "www.klear.org");
         Assert.assertEquals(resNode.get("port").asInt(), 80);
         Assert.assertEquals(resNode.get("path").asText(), "/documentation");
         Assert.assertEquals(resNode.get("fragment").asText(), "download");

@@ -37,18 +37,18 @@ describe(__filename, function () {
         });
   }
 
-  it('Export a project through "OpenRefine project archive to file"', function () {
+  it('Export a project through "KLEAR project archive to file"', function () {
 
     cy.loadAndVisitProject(fixture, Date.now());
 
     cy.get('#export-button').click();
     triggerLoadEvent();
     cy.get('.menu-container a')
-      .contains('OpenRefine project archive to file')
+      .contains('KLEAR project archive to file')
       .click();
 
     cy.get('.app-path-section').invoke('text').then((name)=>{
-      validateFile(`${name}.openrefine.tar.gz`);
+      validateFile(`${name}.klear.tar.gz`);
     });
 
   });

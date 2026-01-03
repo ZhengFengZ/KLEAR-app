@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.editing;
+package org.klear.wikibase.editing;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -13,7 +13,7 @@ import com.google.refine.expr.EvalError;
 import com.google.refine.model.Cell;
 import com.google.refine.model.changes.CellAtRow;
 
-import org.openrefine.wikibase.editing.EditBatchProcessor.EditResult;
+import org.klear.wikibase.editing.EditBatchProcessor.EditResult;
 
 /**
  * Formats the results of Wikibase edits into cells to be included in the project's grid.

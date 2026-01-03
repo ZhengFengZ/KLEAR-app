@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.qa.scrutinizers;
+package org.klear.wikibase.qa.scrutinizers;
 
 import static org.mockito.Mockito.mock;
 import static org.testng.Assert.assertEquals;
@@ -50,17 +50,17 @@ import org.wikidata.wdtk.datamodel.interfaces.Statement;
 import org.wikidata.wdtk.datamodel.interfaces.StatementRank;
 import org.wikidata.wdtk.wikibaseapi.ApiConnection;
 
-import org.openrefine.wikibase.manifests.Manifest;
-import org.openrefine.wikibase.manifests.ManifestException;
-import org.openrefine.wikibase.manifests.ManifestParser;
-import org.openrefine.wikibase.qa.ConstraintFetcher;
-import org.openrefine.wikibase.qa.QAWarning;
-import org.openrefine.wikibase.qa.QAWarningStore;
-import org.openrefine.wikibase.schema.strategies.StatementEditingMode;
-import org.openrefine.wikibase.schema.strategies.StatementMerger;
-import org.openrefine.wikibase.testing.TestingData;
-import org.openrefine.wikibase.updates.EntityEdit;
-import org.openrefine.wikibase.updates.StatementEdit;
+import org.klear.wikibase.manifests.Manifest;
+import org.klear.wikibase.manifests.ManifestException;
+import org.klear.wikibase.manifests.ManifestParser;
+import org.klear.wikibase.qa.ConstraintFetcher;
+import org.klear.wikibase.qa.QAWarning;
+import org.klear.wikibase.qa.QAWarningStore;
+import org.klear.wikibase.schema.strategies.StatementEditingMode;
+import org.klear.wikibase.schema.strategies.StatementMerger;
+import org.klear.wikibase.testing.TestingData;
+import org.klear.wikibase.updates.EntityEdit;
+import org.klear.wikibase.updates.StatementEdit;
 
 public abstract class ScrutinizerTest {
 

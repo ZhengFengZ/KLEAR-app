@@ -22,14 +22,14 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNull;
 
 import org.testng.annotations.Test;
 
-import org.openrefine.wikibase.testing.JacksonSerializationTest;
+import org.klear.wikibase.testing.JacksonSerializationTest;
 
 public class WbLanguageConstantTest extends WbExpressionTest<String> {
 

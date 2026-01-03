@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema.exceptions;
+package org.klear.wikibase.schema.exceptions;
 
 public class InvalidSchemaException extends Exception {
 

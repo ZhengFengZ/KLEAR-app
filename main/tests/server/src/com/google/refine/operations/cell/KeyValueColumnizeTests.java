@@ -83,7 +83,7 @@ public class KeyValueColumnizeTests extends RefineTest {
     @BeforeMethod
     public void SetUp() throws IOException, ModelException {
         servlet = new RefineServletStub();
-        File dir = TestUtils.createTempDirectory("openrefine-test-workspace-dir");
+        File dir = TestUtils.createTempDirectory("klear-test-workspace-dir");
         FileProjectManager.initialize(dir);
         project = new Project();
         pm = new ProjectMetadata();
@@ -209,7 +209,7 @@ public class KeyValueColumnizeTests extends RefineTest {
 
     /**
      * Test to demonstrate the intended behaviour of the function, for issue #1214
-     * https://github.com/OpenRefine/OpenRefine/issues/1214
+     * https://github.com/KLEAR/KLEAR/issues/1214
      */
 
     @Test

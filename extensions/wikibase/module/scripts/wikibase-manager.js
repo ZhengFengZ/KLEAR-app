@@ -51,7 +51,7 @@ WikibaseManager.getSelectedWikibaseMaxlag = function() {
 
 WikibaseManager.getSelectedWikibaseTagTemplate = function() {
   let tag = WikibaseManager.getSelectedWikibase().wikibase.tag;
-  return tag === undefined ? 'openrefine' : tag;
+  return tag === undefined ? 'klear' : tag;
 };
 
 WikibaseManager.getSelectedWikibaseMaxEditsPerMinute = function() {

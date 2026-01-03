@@ -1,13 +1,13 @@
 
-package org.openrefine.wikibase.qa.scrutinizers;
+package org.klear.wikibase.qa.scrutinizers;
 
 import org.apache.poi.util.StringUtil;
 import org.testng.annotations.Test;
 import org.wikidata.wdtk.datamodel.helpers.Datamodel;
 
-import org.openrefine.wikibase.testing.TestingData;
-import org.openrefine.wikibase.updates.MediaInfoEdit;
-import org.openrefine.wikibase.updates.MediaInfoEditBuilder;
+import org.klear.wikibase.testing.TestingData;
+import org.klear.wikibase.updates.MediaInfoEdit;
+import org.klear.wikibase.updates.MediaInfoEditBuilder;
 
 public class LabelScrutinizerTest extends ScrutinizerTest {
 

@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.editing;
+package org.klear.wikibase.editing;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
@@ -38,8 +38,8 @@ import org.wikidata.wdtk.wikibaseapi.apierrors.TokenErrorException;
 
 import com.google.refine.util.ParsingUtilities;
 
-import org.openrefine.wikibase.editing.MediaFileUtils.ChunkedFile;
-import org.openrefine.wikibase.editing.MediaFileUtils.MediaUploadResponse;
+import org.klear.wikibase.editing.MediaFileUtils.ChunkedFile;
+import org.klear.wikibase.editing.MediaFileUtils.MediaUploadResponse;
 
 public class MediaFileUtilsTest {
 

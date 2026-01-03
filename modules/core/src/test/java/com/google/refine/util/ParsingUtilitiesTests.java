@@ -1,7 +1,7 @@
 /*
 
 Copyright 2010, Google Inc.
-Copyright 2013,2020 OpenRefine contributors
+Copyright 2013,2020 KLEAR contributors
 
 All rights reserved.
 

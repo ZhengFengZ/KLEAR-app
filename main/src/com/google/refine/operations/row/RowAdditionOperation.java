@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2024, OpenRefine contributors
+ * Copyright (C) 2024, KLEAR contributors
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -60,7 +60,7 @@ public class RowAdditionOperation extends AbstractOperation {
     /**
      * Deserialization constructor to provide compatibility for the legacy serialization format. In this format, only
      * the number of rows is relevant: the contents of the rows must be ignored, because they might have been corrupted
-     * due to mutability issues in https://github.com/OpenRefine/OpenRefine/issues/7245.
+     * due to mutability issues in https://github.com/KLEAR/KLEAR/issues/7245.
      * 
      * @param addedRows
      *            the rows to add to the project

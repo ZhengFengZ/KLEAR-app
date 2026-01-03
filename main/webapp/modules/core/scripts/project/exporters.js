@@ -177,7 +177,7 @@ ExporterManager.handlers.exportProjectToLocal = function() {
   $(form)
   .css("display", "none")
   .attr("method", "post")
-  .attr("action", "command/core/export-project/" + name + ".openrefine.tar.gz");
+  .attr("action", "command/core/export-project/" + name + ".klear.tar.gz");
   $('<input />')
   .attr("name", "project")
   .val(theProject.id)

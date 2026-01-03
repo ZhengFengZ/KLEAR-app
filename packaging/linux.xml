@@ -83,7 +83,7 @@
       <outputDirectory>webapp/WEB-INF</outputDirectory>
     </file>
     <file>
-      <source>${rootdir}/server/target/openrefine-${project.version}-server.jar</source>
+      <source>${rootdir}/server/target/klear-${project.version}-server.jar</source>
       <outputDirectory>server/target/lib</outputDirectory>
     </file>
   </files>

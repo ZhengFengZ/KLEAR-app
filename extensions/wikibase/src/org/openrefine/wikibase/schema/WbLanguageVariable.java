@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import java.util.Map;
 
@@ -30,8 +30,8 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 
 import com.google.refine.model.Cell;
 
-import org.openrefine.wikibase.qa.QAWarning;
-import org.openrefine.wikibase.schema.exceptions.SkipSchemaExpressionException;
+import org.klear.wikibase.qa.QAWarning;
+import org.klear.wikibase.schema.exceptions.SkipSchemaExpressionException;
 
 /**
  * A language variable generates a language code from a cell. It checks its values against a known list of valid

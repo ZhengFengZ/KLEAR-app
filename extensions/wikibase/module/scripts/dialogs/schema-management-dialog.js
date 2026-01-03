@@ -33,7 +33,7 @@ SchemaManagementDialog.prototype.launch = function () {
         if (data.object_type === 'template') {
           WikibaseTemplateManager.addTemplate(self.activeWikibase, parsedTemplate.name, parsedTemplate.schema);
         } else {
-          // legacy case: importing a schema generated before OpenRefine 3.7.
+          // legacy case: importing a schema generated before KLEAR 3.7.
           // We need to additionally prompt the user for a name.
           let name = prompt($.i18n('wikibase-schema-management-dialog/enter-new-schema-name'));
           if (name) {

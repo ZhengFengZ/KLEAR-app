@@ -67,7 +67,7 @@ describe(__filename, function () {
       .click();
     cy.get('.menu-container.data-table-cell-editor').should('exist');
     cy.get('.menu-container.data-table-cell-editor textarea').type(
-      'OpenRefine Testing'
+      'KLEAR Testing'
     );
     cy.get('.menu-container button[bind="okButton"]').click();
 
@@ -78,7 +78,7 @@ describe(__filename, function () {
 
     // ensure value has been changed in the grid
     cy.get('.menu-container.data-table-cell-editor').should('not.exist');
-    cy.assertCellEquals(1, 'Shrt_Desc', 'OpenRefine Testing');
+    cy.assertCellEquals(1, 'Shrt_Desc', 'KLEAR Testing');
 
     // There are no future changes anymore, since they have been deleted
     cy.get('.history-panel-body .history-future a').should('not.exist');

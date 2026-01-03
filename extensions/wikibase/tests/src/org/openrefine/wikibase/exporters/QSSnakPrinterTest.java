@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.exporters;
+package org.klear.wikibase.exporters;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

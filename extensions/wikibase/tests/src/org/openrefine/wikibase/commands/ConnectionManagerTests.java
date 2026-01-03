@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.commands;
+package org.klear.wikibase.commands;
 
 public class ConnectionManagerTests {
     /**

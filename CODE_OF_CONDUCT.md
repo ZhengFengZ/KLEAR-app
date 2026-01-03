@@ -1,8 +1,8 @@
-# OpenRefine Code of Conduct
+# KLEAR Code of Conduct
 
 ## Our Pledge
 
-In the interest of fostering an open and welcoming environment, we as OpenRefine
+In the interest of fostering an open and welcoming environment, we as KLEAR
 contributors and committers pledge to making participation in our project and
 our community a harassment-free experience for everyone, regardless of age, body
 size, disability, ethnicity, sex characteristics, gender identity and expression,
@@ -55,7 +55,7 @@ a project may be further defined and clarified by project maintainers.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the Code of Conduct Committee at code-of-conduct@openrefine.org.
+reported by contacting the Code of Conduct Committee at code-of-conduct@klear.org.
 The committee consists of:
 * Lozanna Rossenova
 * Antoine Beaubien

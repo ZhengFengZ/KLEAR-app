@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.operations;
+package org.klear.wikibase.operations;
 
 import static org.testng.Assert.assertEquals;
 
@@ -43,7 +43,7 @@ import com.google.refine.model.ColumnsDiff;
 import com.google.refine.model.Recon;
 import com.google.refine.util.ParsingUtilities;
 
-import org.openrefine.wikibase.testing.TestingData;
+import org.klear.wikibase.testing.TestingData;
 
 public class PerformWikibaseEditsOperationTest extends OperationTest {
 
@@ -72,16 +72,16 @@ public class PerformWikibaseEditsOperationTest extends OperationTest {
     @Test
     public void testGetTagCandidates() {
         PerformWikibaseEditsOperation operation = new PerformWikibaseEditsOperation(
-                EngineConfig.defaultRowBased(), "my summary", 5, "", 60, "openrefine-${version}", null);
+                EngineConfig.defaultRowBased(), "my summary", 5, "", 60, "klear-${version}", null);
         List<String> candidates = operation.getTagCandidates("3.4");
 
-        assertEquals(candidates, Arrays.asList("openrefine-3.4", "openrefine"));
+        assertEquals(candidates, Arrays.asList("klear-3.4", "klear"));
     }
 
     @Test
     public void testGetColumnsDiff() {
         var operation = new PerformWikibaseEditsOperation(
-                EngineConfig.defaultRowBased(), "my summary", 5, "", 60, "openrefine-${version}", "results column");
+                EngineConfig.defaultRowBased(), "my summary", 5, "", 60, "klear-${version}", "results column");
 
         assertEquals(operation.getColumnsDiff(), Optional.of(ColumnsDiff.builder().addColumn("results column", null).build()));
         assertEquals(operation.getColumnDependencies(), Optional.of(Set.of()));
@@ -90,7 +90,7 @@ public class PerformWikibaseEditsOperationTest extends OperationTest {
     @Test
     public void testRenameColumns() {
         var operation = new PerformWikibaseEditsOperation(
-                EngineConfig.defaultRowBased(), "my summary", 5, "", 60, "openrefine-${version}", "results column");
+                EngineConfig.defaultRowBased(), "my summary", 5, "", 60, "klear-${version}", "results column");
 
         PerformWikibaseEditsOperation renamed = operation.renameColumns(Map.of("results column", "new column"));
 

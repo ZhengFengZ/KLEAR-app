@@ -25,7 +25,7 @@ public class RecipeTests {
     //// Sample test operations
 
     /**
-     * An operation which removes a column (faithful to the actual such operation in OpenRefine, which isn't visible in
+     * An operation which removes a column (faithful to the actual such operation in KLEAR, which isn't visible in
      * this module).
      */
     static class ColumnRemovalOperation extends AbstractOperation {
@@ -48,7 +48,7 @@ public class RecipeTests {
     }
 
     /**
-     * An operation which renames a column (also faithful to the actual such operation in OpenRefine, which isn't
+     * An operation which renames a column (also faithful to the actual such operation in KLEAR, which isn't
      * visible in this module).
      */
     static class ColumnRenameOperation extends AbstractOperation {
@@ -99,7 +99,7 @@ public class RecipeTests {
 
     /**
      * An operation which exposes its dependencies, but not its impact on columns after having run (just like the
-     * ColumnSplitOperation in OpenRefine, not visible here)
+     * ColumnSplitOperation in KLEAR, not visible here)
      */
     static class ColumnSplitOperation extends AbstractOperation {
 
@@ -121,7 +121,7 @@ public class RecipeTests {
     }
 
     /**
-     * An operation which modifies a single column, like the transform operation in OpenRefine (not visible here).
+     * An operation which modifies a single column, like the transform operation in KLEAR (not visible here).
      */
     class ColumnTransformOperation extends AbstractOperation {
 

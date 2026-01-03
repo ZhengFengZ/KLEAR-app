@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.schema.strategies;
+package org.klear.wikibase.schema.strategies;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;

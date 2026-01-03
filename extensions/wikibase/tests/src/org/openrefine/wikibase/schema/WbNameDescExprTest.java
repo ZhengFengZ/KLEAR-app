@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import static org.testng.Assert.assertEquals;
 
@@ -40,11 +40,11 @@ import com.google.refine.model.Column;
 import com.google.refine.model.ColumnModel;
 import com.google.refine.model.ModelException;
 
-import org.openrefine.wikibase.schema.exceptions.QAWarningException;
-import org.openrefine.wikibase.schema.validation.ValidationState;
-import org.openrefine.wikibase.testing.JacksonSerializationTest;
-import org.openrefine.wikibase.testing.TestingData;
-import org.openrefine.wikibase.updates.ItemEditBuilder;
+import org.klear.wikibase.schema.exceptions.QAWarningException;
+import org.klear.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.testing.JacksonSerializationTest;
+import org.klear.wikibase.testing.TestingData;
+import org.klear.wikibase.updates.ItemEditBuilder;
 
 public class WbNameDescExprTest extends WbExpressionTest<MonolingualTextValue> {
 

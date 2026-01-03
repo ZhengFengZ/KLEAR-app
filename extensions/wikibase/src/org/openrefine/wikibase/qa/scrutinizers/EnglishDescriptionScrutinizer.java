@@ -1,8 +1,8 @@
 
-package org.openrefine.wikibase.qa.scrutinizers;
+package org.klear.wikibase.qa.scrutinizers;
 
-import org.openrefine.wikibase.qa.QAWarning;
-import org.openrefine.wikibase.updates.LabeledStatementEntityEdit;
+import org.klear.wikibase.qa.QAWarning;
+import org.klear.wikibase.updates.LabeledStatementEntityEdit;
 
 /**
  * @author Lu Liu

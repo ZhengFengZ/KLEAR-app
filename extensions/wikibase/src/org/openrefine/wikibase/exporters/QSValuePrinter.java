@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.exporters;
+package org.klear.wikibase.exporters;
 
 import java.math.BigDecimal;
 import java.util.Locale;
@@ -37,8 +37,8 @@ import org.wikidata.wdtk.datamodel.interfaces.TimeValue;
 import org.wikidata.wdtk.datamodel.interfaces.UnsupportedValue;
 import org.wikidata.wdtk.datamodel.interfaces.ValueVisitor;
 
-import org.openrefine.wikibase.schema.entityvalues.ReconEntityIdValue;
-import org.openrefine.wikibase.updates.scheduler.QuickStatementsUpdateScheduler;
+import org.klear.wikibase.schema.entityvalues.ReconEntityIdValue;
+import org.klear.wikibase.updates.scheduler.QuickStatementsUpdateScheduler;
 
 /**
  * Prints a Wikibase value as a string as required by QuickStatements. Format documentation:
@@ -100,7 +100,7 @@ public class QSValuePrinter implements ValueVisitor<String> {
 
     @Override
     public String visit(UnsupportedValue value) {
-        // we know this cannot happen, since UnsupportedValues cannot be generated in OpenRefine
+        // we know this cannot happen, since UnsupportedValues cannot be generated in KLEAR
         return "<UNSUPPORTED>";
     }
 }

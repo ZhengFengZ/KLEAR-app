@@ -2,14 +2,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>packaging</artifactId>
-  <name>OpenRefine - packaging</name>
+  <name>KLEAR - packaging</name>
   <description>Creates packages for all supported operating systems</description>
-  <url>http://openrefine.org/</url>
+  <url>http://klear.org/</url>
   <packaging>pom</packaging>
 
   <parent>
-    <groupId>org.openrefine</groupId>
-    <artifactId>openrefine</artifactId>
+    <groupId>org.klear</groupId>
+    <artifactId>klear</artifactId>
     <version>3.10-SNAPSHOT</version>
   </parent>
   <properties>
@@ -20,9 +20,9 @@
 
     <mac.jre.path>${project.build.directory}/mac_jre</mac.jre.path>
     <mac.jre.url>https://api.adoptium.net/v3/binary/latest/${embedded.jre.version}/ga/mac/x64/jre/hotspot/normal/eclipse?project=jdk</mac.jre.url>
-    <mac.build.directory>OpenRefine ${project.version}</mac.build.directory>
-    <mac.webapp.dir>./target/OpenRefine.app/Contents/Resources/webapp/</mac.webapp.dir>
-    <mac.icon.path>../graphics/icon/openrefine.icns</mac.icon.path>
+    <mac.build.directory>KLEAR ${project.version}</mac.build.directory>
+    <mac.webapp.dir>./target/KLEAR.app/Contents/Resources/webapp/</mac.webapp.dir>
+    <mac.icon.path>../graphics/icon/klear.icns</mac.icon.path>
     <mac.dmg.path>${project.build.directory}/${project.build.finalName}-mac-${project.version}.dmg</mac.dmg.path>
     <mac.signing.identity>Code for Science and Society, Inc.</mac.signing.identity>
     <!-- Apple Notarization settings -->
@@ -30,7 +30,7 @@
 
     <windows.jre.path>${project.build.directory}/windows_jre</windows.jre.path>
     <windows.jre.url>https://api.adoptium.net/v3/binary/latest/${embedded.jre.version}/ga/windows/x64/jre/hotspot/normal/eclipse?project=jdk</windows.jre.url>
-    <windows.copyright.line>Copyright (c) 2018 OpenRefine contributors, 2010 Google, Inc.</windows.copyright.line>
+    <windows.copyright.line>Copyright (c) 2018 KLEAR contributors, 2010 Google, Inc.</windows.copyright.line>
     <windows.fullversion>0.0.0.0</windows.fullversion>
   </properties>
 
@@ -197,7 +197,7 @@
                     </copy>
                     <copy todir="${mac.webapp.dir}/WEB-INF/lib/">
                         <fileset dir="${webapp.target}">
-                            <include name="openrefine-main.jar" />
+                            <include name="klear-main.jar" />
                         </fileset>
                     </copy>
                     
@@ -302,18 +302,18 @@
                 <!-- Remove manpages from JRE as they are not accessible anyway, and prevent us from codesigning -->
                 <exec dir="${project.build.directory}" os="Mac OS X" executable="rm">
                     <arg line="-r"/>
-                    <arg line="&quot;${mac.build.directory}/OpenRefine.app/Contents/PlugIns/JRE/Contents/Home/jre/man&quot;"/>
+                    <arg line="&quot;${mac.build.directory}/KLEAR.app/Contents/PlugIns/JRE/Contents/Home/jre/man&quot;"/>
                 </exec>
                 <!-- remove JRE licenses folder, cannot be signed -->
                 <exec dir="${project.build.directory}" os="Mac OS X" executable="rm">
                     <arg line="-r"/>
-                    <arg line="&quot;${mac.build.directory}/OpenRefine.app/Contents/PlugIns/JRE/Contents/Home/jre/legal&quot;"/>
+                    <arg line="&quot;${mac.build.directory}/KLEAR.app/Contents/PlugIns/JRE/Contents/Home/jre/legal&quot;"/>
                 </exec>
-                <!-- adapt file permissions, for https://github.com/OpenRefine/OpenRefine/issues/5160 -->
+                <!-- adapt file permissions, for https://github.com/KLEAR/KLEAR/issues/5160 -->
                 <exec dir="${project.build.directory}" executable="chmod">
                     <arg line="-R" />
                     <arg line="go+r" />
-                    <arg line="&quot;${mac.build.directory}/OpenRefine.app/Contents/Resources/webapp/WEB-INF/&quot;" />
+                    <arg line="&quot;${mac.build.directory}/KLEAR.app/Contents/Resources/webapp/WEB-INF/&quot;" />
                 </exec>
 
                 <!-- remove any existing DMG (hdiutil fails otherwise) -->
@@ -326,7 +326,7 @@
                 <exec dir="${project.build.directory}" os="Mac OS X" executable="xattr">
                     <arg line="-rd"/>
                     <arg line="com.apple.quarantine"/>
-                    <arg line="&quot;${mac.build.directory}/OpenRefine.app/Contents/PlugIns&quot;"/>
+                    <arg line="&quot;${mac.build.directory}/KLEAR.app/Contents/PlugIns&quot;"/>
                 </exec>
 
                 <!-- Codesign JRE -->
@@ -340,13 +340,13 @@
                     <arg value="--timestamp"/>
                     <arg value="--options"/>
                     <arg value="runtime"/>
-                    <arg value="${mac.build.directory}/OpenRefine.app/Contents/PlugIns/JRE/Contents/Home/jre/lib/jli/libjli.dylib" />
+                    <arg value="${mac.build.directory}/KLEAR.app/Contents/PlugIns/JRE/Contents/Home/jre/lib/jli/libjli.dylib" />
                 </exec>
 
                 <!-- Codesign jars with native code in them -->
                 <exec executable="/bin/bash" os="Mac OS X" dir="${project.build.directory}/${mac.build.directory}">
                     <arg value="${basedir}/apple_certs/codesign.sh" />
-                    <arg value="OpenRefine.app" />
+                    <arg value="KLEAR.app" />
                     <arg value="${mac.signing.identity}" />
                     <arg value="../../Entitlements.plist" />
                 </exec>
@@ -362,7 +362,7 @@
                     <arg value="--timestamp"/>
                     <arg value="--options"/>
                     <arg value="runtime"/>
-                    <arg value="${mac.build.directory}/OpenRefine.app"/>
+                    <arg value="${mac.build.directory}/KLEAR.app"/>
                 </exec>
 
                 <!-- Create DMG (Mac OS X) -->
@@ -372,15 +372,15 @@
                     <arg value="-s"/>
                     <arg value="../dmg_settings.py"/>
                     <arg value="-D"/>
-                    <arg value="app=${mac.build.directory}/OpenRefine.app"/>
-                    <arg value="OpenRefine"/>
+                    <arg value="app=${mac.build.directory}/KLEAR.app"/>
+                    <arg value="KLEAR"/>
                     <arg value="${mac.dmg.path}"/>
                 </exec>
 
                 <!-- Create DMG (Linux), only for testing -->
                 <exec dir="${project.build.directory}" os="Linux" executable="genisoimage">
                     <arg value="-V"/>
-                    <arg value="OpenRefine"/>
+                    <arg value="KLEAR"/>
                     <arg value="-U"/>
                     <arg value="-D"/>
                     <arg value="-l"/>
@@ -435,11 +435,11 @@
             <goals><goal>launch4j</goal></goals>
             <configuration>
               <headerType>console</headerType>
-              <outfile>target/openrefine_with_jre.exe</outfile>
-              <jar>server/target/lib/openrefine-${project.version}-server.jar</jar>
+              <outfile>target/klear_with_jre.exe</outfile>
+              <jar>server/target/lib/klear-${project.version}-server.jar</jar>
               <dontWrapJar>true</dontWrapJar>
               <saveConfig>true</saveConfig>
-              <icon>openrefine.ico</icon>
+              <icon>klear.ico</icon>
               <classPath>
                 <mainClass>com.google.refine.Refine</mainClass>
                 <jarLocation>server/target/lib/</jarLocation>
@@ -458,13 +458,13 @@
               <versionInfo>
                 <fileVersion>${windows.fullversion}</fileVersion>
                 <txtFileVersion>${project.version}</txtFileVersion>
-                <fileDescription>openrefine</fileDescription>
+                <fileDescription>klear</fileDescription>
                 <copyright>${windows.copyright.line}</copyright>
                 <productVersion>${windows.fullversion}</productVersion>
                 <txtProductVersion>${project.version}</txtProductVersion>
-                <productName>OpenRefine</productName>
-                <internalName>openrefine</internalName>
-                <originalFilename>openrefine.exe</originalFilename>
+                <productName>KLEAR</productName>
+                <internalName>klear</internalName>
+                <originalFilename>klear.exe</originalFilename>
               </versionInfo>
             </configuration>
           </execution>
@@ -550,7 +550,7 @@
           </dependencies>
           <configuration>
             <mainClass>com.google.refine.Refine</mainClass>
-            <bundleName>OpenRefine</bundleName>
+            <bundleName>KLEAR</bundleName>
             <buildDirectory>${project.build.directory}/${mac.build.directory}</buildDirectory>
             <iconFile>${mac.icon.path}</iconFile>
             <generateDiskImageFile>false</generateDiskImageFile>
@@ -566,7 +566,7 @@
               <fileSet>
                 <directory>target</directory>
                 <includes>
-                  <include>OpenRefine.app/Contents/Resources/webapp/**/**</include>
+                  <include>KLEAR.app/Contents/Resources/webapp/**/**</include>
                 </includes>
               </fileSet>
             </additionalResources>
@@ -580,7 +580,7 @@
               <fileSet>
                 <directory>${rootdir}/server/target</directory>
                 <includes>
-                  <include>openrefine-${project.version}-server.jar</include>
+                  <include>klear-${project.version}-server.jar</include>
                 </includes>
                 <excludes>
                   <exclude>**/lib/**</exclude>

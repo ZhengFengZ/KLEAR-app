@@ -376,7 +376,7 @@ SchemaAlignment._reset = function(schema) {
   if (!schema.entityEdits) {
     schema.entityEdits = [];
   }
-  // backwards compatibility for schemas which supported only items (up to OpenRefine 3.5)
+  // backwards compatibility for schemas which supported only items (up to KLEAR 3.5)
   if (schema.itemDocuments) {
 	for(let itemEdit in schema.itemDocuments) {
 	   schema.entityEdits.push(itemEdit);

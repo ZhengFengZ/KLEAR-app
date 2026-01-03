@@ -22,9 +22,9 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.commands;
+package org.klear.wikibase.commands;
 
-import static org.openrefine.wikibase.commands.CommandUtilities.respondError;
+import static org.klear.wikibase.commands.CommandUtilities.respondError;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -41,9 +41,9 @@ import com.google.refine.model.Project;
 import com.google.refine.process.Process;
 import com.google.refine.util.ParsingUtilities;
 
-import org.openrefine.wikibase.operations.SaveWikibaseSchemaOperation;
-import org.openrefine.wikibase.schema.WikibaseSchema;
-import org.openrefine.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.operations.SaveWikibaseSchemaOperation;
+import org.klear.wikibase.schema.WikibaseSchema;
+import org.klear.wikibase.schema.validation.ValidationState;
 
 public class SaveWikibaseSchemaCommand extends Command {
 

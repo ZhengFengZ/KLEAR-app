@@ -1,6 +1,6 @@
 /*
 
-Copyright 2020 OpenRefine committers
+Copyright 2020 KLEAR committers
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -85,7 +85,7 @@ public class TextFormatGuesserTests extends ImporterTest {
         // Test an XLSX file without the correct file extension
         String dir = ClassLoader.getSystemResource("Colorado-Municipalities-small-xlsx.gz").getPath();
         InputStream is = new GZIPInputStream(new FileInputStream(new File(dir)));
-        File tmp = File.createTempFile("openrefinetests-textguesser", "");
+        File tmp = File.createTempFile("kleartests-textguesser", "");
         FileUtils.copyInputStreamToFile(is, tmp);
         String format = guesser.guess(tmp, "UTF-8", "text");
         assertEquals(format, "binary");
@@ -136,7 +136,7 @@ public class TextFormatGuesserTests extends ImporterTest {
     }
 
     private void testWikiTableString(String input) throws IOException, FileNotFoundException {
-        File tmp = File.createTempFile("openrefinetests-textguesser", "");
+        File tmp = File.createTempFile("kleartests-textguesser", "");
         OutputStreamWriter writer = new OutputStreamWriter(
                 new FileOutputStream(tmp),
                 Charset.forName("UTF-8").newEncoder());

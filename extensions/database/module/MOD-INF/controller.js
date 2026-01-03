@@ -70,7 +70,7 @@ function registerFunctions() {
  */
 function init() {
   
-  logger.trace("Initializing OpenRefine Database Extension...");
+  logger.trace("Initializing KLEAR Database Extension...");
   logger.trace("Database Extension Mount point " + module.getMountPoint());
 
   registerCommands();

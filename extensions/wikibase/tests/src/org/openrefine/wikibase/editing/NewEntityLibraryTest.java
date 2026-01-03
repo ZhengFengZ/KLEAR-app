@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.editing;
+package org.klear.wikibase.editing;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -37,9 +37,9 @@ import com.google.refine.model.Project;
 import com.google.refine.model.Recon;
 import com.google.refine.model.recon.StandardReconConfig;
 
-import org.openrefine.wikibase.testing.JacksonSerializationTest;
-import org.openrefine.wikibase.testing.TestingData;
-import org.openrefine.wikibase.testing.WikidataRefineTest;
+import org.klear.wikibase.testing.JacksonSerializationTest;
+import org.klear.wikibase.testing.TestingData;
+import org.klear.wikibase.testing.WikidataRefineTest;
 
 public class NewEntityLibraryTest extends WikidataRefineTest {
 

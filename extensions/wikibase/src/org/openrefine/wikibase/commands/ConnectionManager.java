@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.commands;
+package org.klear.wikibase.commands;
 
 import java.io.IOException;
 import java.util.Collections;
@@ -45,7 +45,7 @@ import org.wikidata.wdtk.wikibaseapi.apierrors.MediaWikiApiErrorException;
 import com.google.refine.ProjectManager;
 import com.google.refine.preference.PreferenceStore;
 
-import org.openrefine.wikibase.utils.HttpClient;
+import org.klear.wikibase.utils.HttpClient;
 
 /**
  * Manages a connection to the current Wikibase instance.

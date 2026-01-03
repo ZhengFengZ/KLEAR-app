@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.utils;
+package org.klear.wikibase.utils;
 
 import java.io.IOException;
 import java.util.Arrays;

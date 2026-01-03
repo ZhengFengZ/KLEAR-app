@@ -1,6 +1,6 @@
 const WikibaseManifestSchemaV1 = {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://openrefine.org/schemas/wikibase-manifest-v1.json",
+  "$id": "https://klear.org/schemas/wikibase-manifest-v1.json",
   "type": "object",
   "description": "The schema validates Wikibase manifests with version 1.x. The manifest contains configurations of basic information (e.g. URL of the main page), extensions (e.g. OAuth extension) or external services (e.g. Reconciliation service) of a Wikibase",
   "properties": {
@@ -52,7 +52,7 @@ const WikibaseManifestSchemaV1 = {
         },
         "tag": {
           "type": "string",
-          "description": "The tag to apply to edits made to the Wikibase instance. If the ${version} string is included, it will be replaced by the major.minor version of OpenRefine used to make the edit"
+          "description": "The tag to apply to edits made to the Wikibase instance. If the ${version} string is included, it will be replaced by the major.minor version of KLEAR used to make the edit"
         },
         "max_edits_per_minute": {
           "type": "integer",

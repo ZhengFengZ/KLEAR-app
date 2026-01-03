@@ -100,7 +100,7 @@ public class ColumnAdditionByFetchingURLsOperationTests extends RefineTest {
             + "\"cacheResponses\":true,"
             + "\"httpHeadersJson\":["
             + "    {\"name\":\"authorization\",\"value\":\"\"},"
-            + "    {\"name\":\"user-agent\",\"value\":\"OpenRefine 3.0 rc.1 [TRUNK]\"},"
+            + "    {\"name\":\"user-agent\",\"value\":\"KLEAR 3.0 rc.1 [TRUNK]\"},"
             + "    {\"name\":\"accept\",\"value\":\"application/json\"}"
             + "]}";
 
@@ -257,7 +257,7 @@ public class ColumnAdditionByFetchingURLsOperationTests extends RefineTest {
     }
 
     /**
-     * Fetch invalid URLs https://github.com/OpenRefine/OpenRefine/issues/1219
+     * Fetch invalid URLs https://github.com/KLEAR/KLEAR/issues/1219
      */
     @Test
     public void testInvalidUrl() throws Exception {
@@ -307,7 +307,7 @@ public class ColumnAdditionByFetchingURLsOperationTests extends RefineTest {
             row0.setCell(0, new Cell(url.toString(), null));
             project.rows.add(row0);
 
-            String userAgentValue = "OpenRefine";
+            String userAgentValue = "KLEAR";
             String authorizationValue = "Basic";
             String acceptValue = "*/*";
             List<HttpHeader> headers = new ArrayList<>();

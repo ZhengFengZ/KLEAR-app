@@ -2,7 +2,7 @@ describe(__filename, function () {
   it('List an existing project tag, ensure a newly created project tag is created and displayed', function () {
     const projectName = Date.now();
     cy.loadProject('food.mini', projectName, 'TestTag');
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Open project');
     cy.get('#projects-list table').contains(projectName);
     cy.get('#projects-list table').contains('TestTag');
@@ -12,7 +12,7 @@ describe(__filename, function () {
     const project2 = 'Project B';
     cy.loadProject('food.mini', project1, 'TestTagOne');
     cy.loadProject('food.mini', project2, 'TestTagTwo');
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Open project');
     cy.get('#projects-list table').contains(project1);
     cy.get('#projects-list table').contains('TestTagOne');
@@ -25,7 +25,7 @@ describe(__filename, function () {
     const project2 = 'Project B';
     cy.loadProject('food.mini', project1, 'TestTagOne');
     cy.loadProject('food.mini', project2, 'TestTagTwo');
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Open project');
     cy.get('#projects-list table').contains(project1);
     cy.get('#projects-list table').contains('TestTagOne');
@@ -42,7 +42,7 @@ describe(__filename, function () {
     const project2 = 'Project B';
     cy.loadProject('food.mini', project1);
     cy.loadProject('food.mini', project2);
-    cy.visitOpenRefine();
+    cy.visitKLEAR();
     cy.navigateTo('Open project');
     cy.get('#projects-list table').contains(project1);
     cy.get('#search-icon').click();

@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import java.text.ParseException;
 import java.util.Map;
@@ -32,8 +32,8 @@ import org.wikidata.wdtk.datamodel.interfaces.GlobeCoordinatesValue;
 
 import com.google.refine.model.Cell;
 
-import org.openrefine.wikibase.qa.QAWarning;
-import org.openrefine.wikibase.schema.exceptions.SkipSchemaExpressionException;
+import org.klear.wikibase.qa.QAWarning;
+import org.klear.wikibase.schema.exceptions.SkipSchemaExpressionException;
 
 public class WbLocationVariable extends WbVariableExpr<GlobeCoordinatesValue> {
 

@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.qa;
+package org.klear.wikibase.qa;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,16 +10,16 @@ import java.util.Set;
 import org.wikidata.wdtk.datamodel.helpers.Datamodel;
 import org.wikidata.wdtk.datamodel.interfaces.PropertyIdValue;
 
-import org.openrefine.wikibase.schema.WbExpression;
-import org.openrefine.wikibase.schema.WbItemEditExpr;
-import org.openrefine.wikibase.schema.WbMediaInfoEditExpr;
-import org.openrefine.wikibase.schema.WbPropConstant;
-import org.openrefine.wikibase.schema.WbReferenceExpr;
-import org.openrefine.wikibase.schema.WbSnakExpr;
-import org.openrefine.wikibase.schema.WbStatementExpr;
-import org.openrefine.wikibase.schema.WbStatementGroupExpr;
-import org.openrefine.wikibase.schema.WikibaseSchema;
-import org.openrefine.wikibase.updates.EntityEdit;
+import org.klear.wikibase.schema.WbExpression;
+import org.klear.wikibase.schema.WbItemEditExpr;
+import org.klear.wikibase.schema.WbMediaInfoEditExpr;
+import org.klear.wikibase.schema.WbPropConstant;
+import org.klear.wikibase.schema.WbReferenceExpr;
+import org.klear.wikibase.schema.WbSnakExpr;
+import org.klear.wikibase.schema.WbStatementExpr;
+import org.klear.wikibase.schema.WbStatementGroupExpr;
+import org.klear.wikibase.schema.WikibaseSchema;
+import org.klear.wikibase.updates.EntityEdit;
 
 public class SchemaPropertyExtractor {
 

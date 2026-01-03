@@ -22,14 +22,14 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.wikidata.wdtk.datamodel.interfaces.PropertyIdValue;
 
-import org.openrefine.wikibase.schema.entityvalues.SuggestedPropertyIdValue;
-import org.openrefine.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.schema.entityvalues.SuggestedPropertyIdValue;
+import org.klear.wikibase.schema.validation.ValidationState;
 
 /**
  * A constant property, that does not change depending on the row

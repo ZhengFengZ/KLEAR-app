@@ -264,7 +264,7 @@ describe(__filename, function () {
         ]);
     });
 
-    // https://github.com/OpenRefine/OpenRefine/issues/4004
+    // https://github.com/KLEAR/KLEAR/issues/4004
     it('Ensure duplicate whitespace are preserved, #4004', function () {
         const fixture = [['test'], ['foo'], ['b ar'], ['b  ar'], ['b   ar']];
 

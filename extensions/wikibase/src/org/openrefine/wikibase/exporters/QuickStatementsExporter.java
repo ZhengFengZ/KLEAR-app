@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.exporters;
+package org.klear.wikibase.exporters;
 
 import java.io.IOException;
 import java.io.Writer;
@@ -45,21 +45,21 @@ import com.google.refine.browsing.Engine;
 import com.google.refine.exporters.WriterExporter;
 import com.google.refine.model.Project;
 
-import org.openrefine.wikibase.schema.WikibaseSchema;
-import org.openrefine.wikibase.schema.strategies.StatementEditingMode;
-import org.openrefine.wikibase.schema.validation.ValidationState;
-import org.openrefine.wikibase.updates.EntityEdit;
-import org.openrefine.wikibase.updates.ItemEdit;
-import org.openrefine.wikibase.updates.MediaInfoEdit;
-import org.openrefine.wikibase.updates.StatementEdit;
-import org.openrefine.wikibase.updates.scheduler.ImpossibleSchedulingException;
-import org.openrefine.wikibase.updates.scheduler.QuickStatementsUpdateScheduler;
+import org.klear.wikibase.schema.WikibaseSchema;
+import org.klear.wikibase.schema.strategies.StatementEditingMode;
+import org.klear.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.updates.EntityEdit;
+import org.klear.wikibase.updates.ItemEdit;
+import org.klear.wikibase.updates.MediaInfoEdit;
+import org.klear.wikibase.updates.StatementEdit;
+import org.klear.wikibase.updates.scheduler.ImpossibleSchedulingException;
+import org.klear.wikibase.updates.scheduler.QuickStatementsUpdateScheduler;
 
 public class QuickStatementsExporter implements WriterExporter {
 
     final static Logger logger = LoggerFactory.getLogger("QuickStatementsExporter");
 
-    public static final String impossibleSchedulingErrorMessage = "This edit batch cannot be performed with QuickStatements due to the structure of its new entities. QuickStatements does not support creating two new entities which refer to each other. Consider uploading your edits directly with OpenRefine.";
+    public static final String impossibleSchedulingErrorMessage = "This edit batch cannot be performed with QuickStatements due to the structure of its new entities. QuickStatements does not support creating two new entities which refer to each other. Consider uploading your edits directly with KLEAR.";
     public static final String noSchemaErrorMessage = "No schema was provided. You need to align your project with Wikibase first.";
 
     protected final QSSnakPrinter mainSnakPrinter;

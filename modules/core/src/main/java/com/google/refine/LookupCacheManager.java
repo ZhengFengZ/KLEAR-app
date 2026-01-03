@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2018, OpenRefine contributors
+ * Copyright (C) 2018, KLEAR contributors
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without
@@ -49,7 +49,7 @@ import com.google.refine.util.LookupException;
  */
 public class LookupCacheManager {
 
-    public static final String INDEX_COLUMN_NAME = "_OpenRefine_Index_Column_Name_";
+    public static final String INDEX_COLUMN_NAME = "_KLEAR_Index_Column_Name_";
 
     protected final Map<String, ProjectLookup> _lookups = new HashMap<>();
 

@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.editing;
+package org.klear.wikibase.editing;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyBoolean;
@@ -64,14 +64,14 @@ import org.wikidata.wdtk.wikibaseapi.apierrors.MediaWikiErrorMessage;
 
 import com.google.refine.util.ParsingUtilities;
 
-import org.openrefine.wikibase.editing.EditBatchProcessor.EditResult;
-import org.openrefine.wikibase.testing.TestingData;
-import org.openrefine.wikibase.testing.WikidataRefineTest;
-import org.openrefine.wikibase.updates.EntityEdit;
-import org.openrefine.wikibase.updates.ItemEditBuilder;
-import org.openrefine.wikibase.updates.MediaInfoEdit;
-import org.openrefine.wikibase.updates.MediaInfoEditBuilder;
-import org.openrefine.wikibase.updates.StatementEdit;
+import org.klear.wikibase.editing.EditBatchProcessor.EditResult;
+import org.klear.wikibase.testing.TestingData;
+import org.klear.wikibase.testing.WikidataRefineTest;
+import org.klear.wikibase.updates.EntityEdit;
+import org.klear.wikibase.updates.ItemEditBuilder;
+import org.klear.wikibase.updates.MediaInfoEdit;
+import org.klear.wikibase.updates.MediaInfoEditBuilder;
+import org.klear.wikibase.updates.StatementEdit;
 
 public class EditBatchProcessorTest extends WikidataRefineTest {
 
@@ -504,7 +504,7 @@ public class EditBatchProcessorTest extends WikidataRefineTest {
             throws InterruptedException, MediaWikiApiErrorException, IOException {
         MediaInfoIdValue mid = Datamodel.makeWikimediaCommonsMediaInfoIdValue("M12345");
         MediaInfoEdit edit = new MediaInfoEditBuilder(mid)
-                .addWikitext("my new wikitext [[Category:Uploaded with OpenRefine]]")
+                .addWikitext("my new wikitext [[Category:Uploaded with KLEAR]]")
                 .addFileName("File:My_test_file.png")
                 .addFilePath("https://my.site.com/file.png")
                 .addContributingRowId(123)
@@ -533,7 +533,7 @@ public class EditBatchProcessorTest extends WikidataRefineTest {
         parameters.put("tags", "my-tag");
         parameters.put("comment", summary);
         parameters.put("filename", "File:My_test_file.png");
-        parameters.put("text", "my new wikitext [[Category:Uploaded with OpenRefine]]");
+        parameters.put("text", "my new wikitext [[Category:Uploaded with KLEAR]]");
         parameters.put("token", csrfToken);
 
         Map<String, String> uploadParameters = new HashMap<>();

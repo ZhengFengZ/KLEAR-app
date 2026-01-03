@@ -22,12 +22,12 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.qa.scrutinizers;
+package org.klear.wikibase.qa.scrutinizers;
 
 import org.testng.annotations.Test;
 
-import org.openrefine.wikibase.testing.TestingData;
-import org.openrefine.wikibase.updates.ItemEditBuilder;
+import org.klear.wikibase.testing.TestingData;
+import org.klear.wikibase.updates.ItemEditBuilder;
 
 public class NoEditsMadeScrutinizerTest extends ScrutinizerTest {
 

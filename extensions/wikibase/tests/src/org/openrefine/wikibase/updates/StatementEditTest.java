@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.updates;
+package org.klear.wikibase.updates;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotEquals;
@@ -13,10 +13,10 @@ import org.wikidata.wdtk.datamodel.interfaces.Statement;
 import com.google.refine.util.ParsingUtilities;
 import com.google.refine.util.TestUtils;
 
-import org.openrefine.wikibase.schema.strategies.PropertyOnlyStatementMerger;
-import org.openrefine.wikibase.schema.strategies.StatementEditingMode;
-import org.openrefine.wikibase.schema.strategies.StatementMerger;
-import org.openrefine.wikibase.testing.TestingData;
+import org.klear.wikibase.schema.strategies.PropertyOnlyStatementMerger;
+import org.klear.wikibase.schema.strategies.StatementEditingMode;
+import org.klear.wikibase.schema.strategies.StatementMerger;
+import org.klear.wikibase.testing.TestingData;
 
 public class StatementEditTest {
 

@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import java.util.Map;
 
@@ -36,13 +36,13 @@ import org.wikidata.wdtk.datamodel.interfaces.PropertyIdValue;
 import com.google.refine.model.Cell;
 import com.google.refine.model.Recon.Judgment;
 
-import org.openrefine.wikibase.qa.QAWarning;
-import org.openrefine.wikibase.qa.QAWarning.Severity;
-import org.openrefine.wikibase.schema.entityvalues.ReconItemIdValue;
-import org.openrefine.wikibase.schema.entityvalues.ReconMediaInfoIdValue;
-import org.openrefine.wikibase.schema.entityvalues.ReconPropertyIdValue;
-import org.openrefine.wikibase.schema.exceptions.QAWarningException;
-import org.openrefine.wikibase.schema.exceptions.SkipSchemaExpressionException;
+import org.klear.wikibase.qa.QAWarning;
+import org.klear.wikibase.qa.QAWarning.Severity;
+import org.klear.wikibase.schema.entityvalues.ReconItemIdValue;
+import org.klear.wikibase.schema.entityvalues.ReconMediaInfoIdValue;
+import org.klear.wikibase.schema.entityvalues.ReconPropertyIdValue;
+import org.klear.wikibase.schema.exceptions.QAWarningException;
+import org.klear.wikibase.schema.exceptions.SkipSchemaExpressionException;
 
 /**
  * An Entity that depends on a reconciled value in a column.

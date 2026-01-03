@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.schema.entityvalues;
+package org.klear.wikibase.schema.entityvalues;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

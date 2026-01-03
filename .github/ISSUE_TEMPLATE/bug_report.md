@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Create a report to help us improve OpenRefine
+about: Create a report to help us improve KLEAR
 title: ''
 labels: ['Type: Bug', 'Status: Pending Review']
 assignees: ''
@@ -28,9 +28,9 @@ Steps to reproduce the behavior:
 
 ### Versions<!--  (please complete the following information)-->
  - Operating System: <!--  e.g. iOS, Windows 10, Linux, Ubuntu 18.04 -->
- - Browser Version: <!--  e.g. Chrome 19, Firefox 61, Safari, NOTE: OpenRefine does not support IE but works OK in most cases -->
+ - Browser Version: <!--  e.g. Chrome 19, Firefox 61, Safari, NOTE: KLEAR does not support IE but works OK in most cases -->
  - JRE or JDK Version: <!--  output of "java -version" e.g. JRE 1.8.0_181 -->
- - OpenRefine: <!--  e.g. OpenRefine 3.0 Beta] -->
+ - KLEAR: <!--  e.g. KLEAR 3.0 Beta] -->
 
 ### Datasets
 <!-- If you are allowed and are OK with making your data public, it would be awesome if you can include or attach the data causing the issue or a URL pointing to where the data is.

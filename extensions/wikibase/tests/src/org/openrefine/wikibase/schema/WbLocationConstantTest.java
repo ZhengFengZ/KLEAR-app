@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import static org.testng.Assert.assertEquals;
 
@@ -34,8 +34,8 @@ import org.wikidata.wdtk.datamodel.interfaces.GlobeCoordinatesValue;
 
 import com.google.refine.model.ColumnModel;
 
-import org.openrefine.wikibase.schema.validation.ValidationState;
-import org.openrefine.wikibase.testing.JacksonSerializationTest;
+import org.klear.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.testing.JacksonSerializationTest;
 
 public class WbLocationConstantTest extends WbExpressionTest<GlobeCoordinatesValue> {
 

@@ -1,9 +1,9 @@
 {
-    "name": "openrefine-cypress-test-suite",
+    "name": "klear-cypress-test-suite",
     "version": "1.0.0",
-    "description": "Cypress tests for OpenRefine",
+    "description": "Cypress tests for KLEAR",
     "license": "BSD-3-Clause",
-    "author": "OpenRefine",
+    "author": "KLEAR",
     "private": true,
     "engines": {
         "node": ">=20.0.0",

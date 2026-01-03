@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.editing;
+package org.klear.wikibase.editing;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -107,7 +107,7 @@ public class NewEntityLibrary {
         Set<Integer> impactedColumns = new HashSet<>();
 
         /*
-         * Note that there is a slight violation of OpenRefine's model here: if we reconcile multiple cells to the same
+         * Note that there is a slight violation of KLEAR's model here: if we reconcile multiple cells to the same
          * new Entity, and then perform this operation on a subset of the corresponding rows, we are going to modify
          * cells that are outside the facet (because they are reconciled to the same cell). But I think this is the
          * right thing to do.

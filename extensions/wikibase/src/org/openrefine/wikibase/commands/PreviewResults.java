@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.commands;
+package org.klear.wikibase.commands;
 
 import java.util.List;
 
@@ -7,9 +7,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import org.openrefine.wikibase.qa.QAWarning;
-import org.openrefine.wikibase.qa.QAWarning.Severity;
-import org.openrefine.wikibase.updates.EntityEdit;
+import org.klear.wikibase.qa.QAWarning;
+import org.klear.wikibase.qa.QAWarning.Severity;
+import org.klear.wikibase.updates.EntityEdit;
 
 public class PreviewResults {
 

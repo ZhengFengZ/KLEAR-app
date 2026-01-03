@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.commands;
+package org.klear.wikibase.commands;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -40,8 +40,8 @@ import org.testng.annotations.BeforeMethod;
 import com.google.refine.commands.Command;
 import com.google.refine.model.Project;
 
-import org.openrefine.wikibase.testing.TestingData;
-import org.openrefine.wikibase.testing.WikidataRefineTest;
+import org.klear.wikibase.testing.TestingData;
+import org.klear.wikibase.testing.WikidataRefineTest;
 
 public abstract class CommandTest extends WikidataRefineTest {
 

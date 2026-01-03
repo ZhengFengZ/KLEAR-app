@@ -4,7 +4,7 @@ describe('Create new item for each cell', () => {
     });
     
     it('Test mark to create new items in many cells, previously reconciled', () => {
-        cy.visitOpenRefine();
+        cy.visitKLEAR();
         cy.navigateTo('Import project');
         cy.get('#or-import-locate').should('to.contain', 'Locate an existing Refine project file');
 

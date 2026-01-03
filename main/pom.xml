@@ -5,12 +5,12 @@
   <artifactId>main</artifactId>
   <packaging>jar</packaging>
 
-  <name>OpenRefine - main</name>
-  <description>OpenRefine is a free, open source power tool for working with messy data and improving it</description>
-  <url>http://openrefine.org/</url>
+  <name>KLEAR - main</name>
+  <description>KLEAR is a free, open source power tool for working with messy data and improving it</description>
+  <url>http://klear.org/</url>
   <parent>
-    <groupId>org.openrefine</groupId>
-    <artifactId>openrefine</artifactId>
+    <groupId>org.klear</groupId>
+    <artifactId>klear</artifactId>
     <version>3.10-SNAPSHOT</version>
   </parent>
 
@@ -21,12 +21,12 @@
   </properties>
 
   <scm>
-    <connection>scm:git:http://github.com/OpenRefine/OpenRefine</connection>
-    <url>http://github.com/OpenRefine/OpenRefine</url>
+    <connection>scm:git:http://github.com/KLEAR/KLEAR</connection>
+    <url>http://github.com/KLEAR/KLEAR</url>
   </scm>
 
   <build>
-    <finalName>openrefine-main</finalName>
+    <finalName>klear-main</finalName>
     <resources>
       <resource>
         <directory>src</directory>
@@ -183,17 +183,17 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.openrefine</groupId>
+      <groupId>org.klear</groupId>
       <artifactId>core</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.openrefine</groupId>
+      <groupId>org.klear</groupId>
       <artifactId>grel</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.openrefine.dependencies</groupId>
+      <groupId>org.klear.dependencies</groupId>
       <artifactId>butterfly</artifactId>
       <version>${butterfly.version}</version>
       <exclusions>
@@ -296,7 +296,7 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.openrefine.dependencies</groupId>
+      <groupId>org.klear.dependencies</groupId>
       <artifactId>vicino</artifactId>
       <version>${vicino.version}</version>
       <exclusions>
@@ -357,7 +357,7 @@
       <artifactId>jaxb-api</artifactId>
       <version>${jaxb-api.version}</version>
     </dependency>
-    <dependency> <!-- Mozilla Public License Version 1.1 - for details see /OpenRefine/packaging/manual_licenses.xml -->
+    <dependency> <!-- Mozilla Public License Version 1.1 - for details see /KLEAR/packaging/manual_licenses.xml -->
       <groupId>com.github.albfernandez</groupId>
       <artifactId>juniversalchardet</artifactId>
       <version>${juniversalchardet.version}</version>
@@ -377,7 +377,7 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.openrefine</groupId>
+      <groupId>org.klear</groupId>
       <artifactId>core</artifactId>
       <version>${project.version}</version>
       <type>test-jar</type>

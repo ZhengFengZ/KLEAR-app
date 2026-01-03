@@ -22,9 +22,9 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.commands;
+package org.klear.wikibase.commands;
 
-import static org.openrefine.wikibase.commands.CommandUtilities.respondError;
+import static org.klear.wikibase.commands.CommandUtilities.respondError;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -40,16 +40,16 @@ import com.google.refine.browsing.Engine;
 import com.google.refine.commands.Command;
 import com.google.refine.model.Project;
 
-import org.openrefine.wikibase.manifests.Manifest;
-import org.openrefine.wikibase.manifests.ManifestException;
-import org.openrefine.wikibase.manifests.ManifestParser;
-import org.openrefine.wikibase.qa.EditInspector;
-import org.openrefine.wikibase.qa.QAWarningStore;
-import org.openrefine.wikibase.schema.WikibaseSchema;
-import org.openrefine.wikibase.schema.validation.ValidationError;
-import org.openrefine.wikibase.schema.validation.ValidationState;
-import org.openrefine.wikibase.updates.EntityEdit;
-import org.openrefine.wikibase.updates.scheduler.WikibaseAPIUpdateScheduler;
+import org.klear.wikibase.manifests.Manifest;
+import org.klear.wikibase.manifests.ManifestException;
+import org.klear.wikibase.manifests.ManifestParser;
+import org.klear.wikibase.qa.EditInspector;
+import org.klear.wikibase.qa.QAWarningStore;
+import org.klear.wikibase.schema.WikibaseSchema;
+import org.klear.wikibase.schema.validation.ValidationError;
+import org.klear.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.updates.EntityEdit;
+import org.klear.wikibase.updates.scheduler.WikibaseAPIUpdateScheduler;
 
 public class PreviewWikibaseSchemaCommand extends Command {
 

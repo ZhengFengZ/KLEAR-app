@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.operations;
+package org.klear.wikibase.operations;
 
 import java.io.IOException;
 import java.io.LineNumberReader;
@@ -77,16 +77,16 @@ import com.google.refine.process.Process;
 import com.google.refine.util.ParsingUtilities;
 import com.google.refine.util.Pool;
 
-import org.openrefine.wikibase.commands.ConnectionManager;
-import org.openrefine.wikibase.editing.EditBatchProcessor;
-import org.openrefine.wikibase.editing.EditBatchProcessor.EditResult;
-import org.openrefine.wikibase.editing.EditResultsFormatter;
-import org.openrefine.wikibase.editing.NewEntityLibrary;
-import org.openrefine.wikibase.manifests.Manifest;
-import org.openrefine.wikibase.schema.WikibaseSchema;
-import org.openrefine.wikibase.schema.validation.ValidationState;
-import org.openrefine.wikibase.updates.EntityEdit;
-import org.openrefine.wikibase.utils.HttpClient;
+import org.klear.wikibase.commands.ConnectionManager;
+import org.klear.wikibase.editing.EditBatchProcessor;
+import org.klear.wikibase.editing.EditBatchProcessor.EditResult;
+import org.klear.wikibase.editing.EditResultsFormatter;
+import org.klear.wikibase.editing.NewEntityLibrary;
+import org.klear.wikibase.manifests.Manifest;
+import org.klear.wikibase.schema.WikibaseSchema;
+import org.klear.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.updates.EntityEdit;
+import org.klear.wikibase.utils.HttpClient;
 
 public class PerformWikibaseEditsOperation extends EngineDependentOperation {
 
@@ -196,9 +196,9 @@ public class PerformWikibaseEditsOperation extends EngineDependentOperation {
             }
 
             // if the tag template includes the version, also add a version-independent tag as fallback.
-            // for instance, if the tag template is `openrefine-${version}`, also try adding the tag `openrefine`
+            // for instance, if the tag template is `klear-${version}`, also try adding the tag `klear`
             // in case the version-specific tag isn't available.
-            // See https://github.com/OpenRefine/OpenRefine/issues/6551
+            // See https://github.com/KLEAR/KLEAR/issues/6551
             if (tagTemplate.endsWith("-${version}")) {
                 results.add(tagTemplate.substring(0, tagTemplate.length() - "-${version}".length()));
             }

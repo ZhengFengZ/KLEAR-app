@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
@@ -54,18 +54,18 @@ import com.google.refine.model.ColumnModel;
 import com.google.refine.model.Project;
 import com.google.refine.util.TestUtils;
 
-import org.openrefine.wikibase.schema.strategies.StatementEditingMode;
-import org.openrefine.wikibase.schema.strategies.StatementMerger;
-import org.openrefine.wikibase.schema.validation.PathElement;
-import org.openrefine.wikibase.schema.validation.PathElement.Type;
-import org.openrefine.wikibase.schema.validation.ValidationError;
-import org.openrefine.wikibase.schema.validation.ValidationState;
-import org.openrefine.wikibase.testing.TestingData;
-import org.openrefine.wikibase.testing.WikidataRefineTest;
-import org.openrefine.wikibase.updates.EntityEdit;
-import org.openrefine.wikibase.updates.ItemEditBuilder;
-import org.openrefine.wikibase.updates.StatementEdit;
-import org.openrefine.wikibase.updates.TermedStatementEntityEdit;
+import org.klear.wikibase.schema.strategies.StatementEditingMode;
+import org.klear.wikibase.schema.strategies.StatementMerger;
+import org.klear.wikibase.schema.validation.PathElement;
+import org.klear.wikibase.schema.validation.PathElement.Type;
+import org.klear.wikibase.schema.validation.ValidationError;
+import org.klear.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.testing.TestingData;
+import org.klear.wikibase.testing.WikidataRefineTest;
+import org.klear.wikibase.updates.EntityEdit;
+import org.klear.wikibase.updates.ItemEditBuilder;
+import org.klear.wikibase.updates.StatementEdit;
+import org.klear.wikibase.updates.TermedStatementEntityEdit;
 
 public class WikibaseSchemaTest extends WikidataRefineTest {
 

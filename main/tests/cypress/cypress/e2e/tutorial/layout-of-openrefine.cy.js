@@ -1,7 +1,7 @@
  // librarycarpentry.org/lc-open-refine/03-working-with-data/index.html
 
 describe(__filename, function () {
-  it('Working with rows and records in openrefine', function () {
+  it('Working with rows and records in klear', function () {
     /** ************
     Splitting Cells
     **************/

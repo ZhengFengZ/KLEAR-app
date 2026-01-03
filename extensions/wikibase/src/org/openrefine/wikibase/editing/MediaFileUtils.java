@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.editing;
+package org.klear.wikibase.editing;
 
 import java.io.Closeable;
 import java.io.File;

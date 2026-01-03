@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.operations;
+package org.klear.wikibase.operations;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -46,7 +46,7 @@ import com.google.refine.util.ParsingUtilities;
 import com.google.refine.util.Pool;
 import com.google.refine.util.TestUtils;
 
-import org.openrefine.wikibase.testing.WikidataRefineTest;
+import org.klear.wikibase.testing.WikidataRefineTest;
 
 public abstract class OperationTest extends WikidataRefineTest {
 

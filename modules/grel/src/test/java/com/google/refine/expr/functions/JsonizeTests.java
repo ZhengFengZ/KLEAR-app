@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2018, OpenRefine contributors
+ * Copyright (C) 2018, KLEAR contributors
  * All rights reserved.
  * 
  * Redistribution and use in source and binary forms, with or without
@@ -49,8 +49,8 @@ public class JsonizeTests extends GrelTestBase {
         Object[] objArray = { 4, "hello", true, 0.01, null };
         assertEquals(invoke("jsonize", (Object) objArray), "[ 4, \"hello\", true, 0.01, null ]");
 
-        Object[][] multiArray = { { "OpenRefine", 12 }, { 13, 4.6 }, { "data", "mining" } };
-        assertEquals(invoke("jsonize", (Object) multiArray), "[ [ \"OpenRefine\", 12 ], [ 13, 4.6 ], [ \"data\", \"mining\" ] ]");
+        Object[][] multiArray = { { "KLEAR", 12 }, { 13, 4.6 }, { "data", "mining" } };
+        assertEquals(invoke("jsonize", (Object) multiArray), "[ [ \"KLEAR\", 12 ], [ 13, 4.6 ], [ \"data\", \"mining\" ] ]");
 
     }
 }

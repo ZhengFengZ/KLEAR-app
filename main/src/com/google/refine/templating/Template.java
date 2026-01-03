@@ -154,7 +154,7 @@ public class Template {
         }
 
         /**
-         * This method is modified for issue 3955 Issue link: https://github.com/OpenRefine/OpenRefine/issues/3955 The
+         * This method is modified for issue 3955 Issue link: https://github.com/KLEAR/KLEAR/issues/3955 The
          * modification is to use the new variable totalRows instead of total
          */
         public boolean internalVisit(Project project, int rowIndex, Row row) {

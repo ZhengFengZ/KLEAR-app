@@ -69,7 +69,7 @@ public class RefineServlet extends Butterfly {
     static public String VERSION = "";
     static public String REVISION = "";
     static public String FULL_VERSION = "";
-    static public String FULLNAME = "OpenRefine ";
+    static public String FULLNAME = "KLEAR ";
 
     static final long serialVersionUID = 2386057901503517403L;
 
@@ -416,6 +416,6 @@ public class RefineServlet extends Butterfly {
     }
 
     static public String getUserAgent() {
-        return "OpenRefine/" + FULL_VERSION;
+        return "KLEAR/" + FULL_VERSION;
     }
 }

@@ -1,4 +1,4 @@
-// CS427 Issue Link: https://github.com/OpenRefine/OpenRefine/issues/4067
+// CS427 Issue Link: https://github.com/KLEAR/KLEAR/issues/4067
 describe(__filename, function () {
 const fixture = [
         ['a', 'b', 'c'],

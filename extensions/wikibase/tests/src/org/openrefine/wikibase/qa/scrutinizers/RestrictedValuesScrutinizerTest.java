@@ -1,5 +1,5 @@
 
-package org.openrefine.wikibase.qa.scrutinizers;
+package org.klear.wikibase.qa.scrutinizers;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
@@ -18,8 +18,8 @@ import org.wikidata.wdtk.datamodel.interfaces.Snak;
 import org.wikidata.wdtk.datamodel.interfaces.SnakGroup;
 import org.wikidata.wdtk.datamodel.interfaces.Statement;
 
-import org.openrefine.wikibase.qa.ConstraintFetcher;
-import org.openrefine.wikibase.testing.TestingData;
+import org.klear.wikibase.qa.ConstraintFetcher;
+import org.klear.wikibase.testing.TestingData;
 
 public class RestrictedValuesScrutinizerTest extends SnakScrutinizerTest {
 

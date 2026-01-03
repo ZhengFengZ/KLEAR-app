@@ -22,15 +22,15 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.qa.scrutinizers;
+package org.klear.wikibase.qa.scrutinizers;
 
 import org.wikidata.wdtk.datamodel.helpers.Datamodel;
 import org.wikidata.wdtk.datamodel.interfaces.MonolingualTextValue;
 import org.wikidata.wdtk.datamodel.interfaces.PropertyIdValue;
 import org.wikidata.wdtk.datamodel.interfaces.Value;
 
-import org.openrefine.wikibase.testing.TestingData;
-import org.openrefine.wikibase.updates.ItemEditBuilder;
+import org.klear.wikibase.testing.TestingData;
+import org.klear.wikibase.updates.ItemEditBuilder;
 
 public abstract class ValueScrutinizerTest extends SnakScrutinizerTest {
 

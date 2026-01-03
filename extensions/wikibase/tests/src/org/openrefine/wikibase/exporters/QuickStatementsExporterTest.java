@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.exporters;
+package org.klear.wikibase.exporters;
 
 import static org.testng.Assert.assertEquals;
 
@@ -47,15 +47,15 @@ import org.wikidata.wdtk.datamodel.interfaces.StatementRank;
 import com.google.refine.browsing.Engine;
 import com.google.refine.model.Project;
 
-import org.openrefine.wikibase.schema.WikibaseSchema;
-import org.openrefine.wikibase.schema.strategies.StatementEditingMode;
-import org.openrefine.wikibase.schema.strategies.StatementMerger;
-import org.openrefine.wikibase.schema.validation.ValidationState;
-import org.openrefine.wikibase.testing.TestingData;
-import org.openrefine.wikibase.testing.WikidataRefineTest;
-import org.openrefine.wikibase.updates.ItemEditBuilder;
-import org.openrefine.wikibase.updates.StatementEdit;
-import org.openrefine.wikibase.updates.TermedStatementEntityEdit;
+import org.klear.wikibase.schema.WikibaseSchema;
+import org.klear.wikibase.schema.strategies.StatementEditingMode;
+import org.klear.wikibase.schema.strategies.StatementMerger;
+import org.klear.wikibase.schema.validation.ValidationState;
+import org.klear.wikibase.testing.TestingData;
+import org.klear.wikibase.testing.WikidataRefineTest;
+import org.klear.wikibase.updates.ItemEditBuilder;
+import org.klear.wikibase.updates.StatementEdit;
+import org.klear.wikibase.updates.TermedStatementEntityEdit;
 
 public class QuickStatementsExporterTest extends WikidataRefineTest {
 

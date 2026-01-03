@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.updates.scheduler;
+package org.klear.wikibase.updates.scheduler;
 
 import java.util.Collections;
 import java.util.HashSet;
@@ -43,7 +43,7 @@ import org.wikidata.wdtk.datamodel.interfaces.Value;
 import org.wikidata.wdtk.datamodel.interfaces.ValueSnak;
 import org.wikidata.wdtk.datamodel.interfaces.ValueVisitor;
 
-import org.openrefine.wikibase.schema.entityvalues.ReconEntityIdValue;
+import org.klear.wikibase.schema.entityvalues.ReconEntityIdValue;
 
 /**
  * A class that extracts the new entity ids referred to in a statement.

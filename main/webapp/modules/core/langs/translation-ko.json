@@ -41,7 +41,7 @@
     "core-index-create/memory-usage": "메모리 사용량:",
     "core-index-create/no-details": "상세 기술이 없음.",
     "core-index-create/question": "데이터를 임포트하여 프로젝트를 생성하세요. 내가 어떤 종류의 데이터 파일들을 임포트할 수 있습니까?",
-    "core-index-create/formats": "TSV, CSV, *SV, Excel (.xls and .xlsx), JSON, XML, RDF as XML, 그리고 Google Data documents 모두 지원됩니다. 다른 포맷에 대한 지원은 OpenRefine extensions 를 활용하여 추가될 수 있습니다.",
+    "core-index-create/formats": "TSV, CSV, *SV, Excel (.xls and .xlsx), JSON, XML, RDF as XML, 그리고 Google Data documents 모두 지원됩니다. 다른 포맷에 대한 지원은 KLEAR extensions 를 활용하여 추가될 수 있습니다.",
     "core-index-create/from": "데이터를 가져오는 곳",
     "core-index-import/import-proj": "임포트 프로젝트",
     "core-index-import/locate": "존재하는 Refine 프로젝트 파일 (.tar or .tar.gz) 위치:",

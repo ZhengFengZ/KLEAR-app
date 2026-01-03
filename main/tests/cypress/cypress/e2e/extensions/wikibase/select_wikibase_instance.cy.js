@@ -4,8 +4,8 @@
  * They are shared across project, therefore some cleanup is required to ensure a Wikibase instance doesn't come from another test
  */
 describe(__filename, function () {
-    const WIKIBASE_TEST_NAME = 'OpenRefine Wikibase Cypress Test';
-    const WIKIBASE_TEST_NAME2 = 'OpenRefine Wikibase Test';
+    const WIKIBASE_TEST_NAME = 'KLEAR Wikibase Cypress Test';
+    const WIKIBASE_TEST_NAME2 = 'KLEAR Wikibase Test';
 
     let savedValue;
 
@@ -48,14 +48,14 @@ describe(__filename, function () {
         // add a manifest
         cy.get('.add-wikibase-dialog input[bind="manifestURLInput"]').invoke(
             'val',
-            'https://raw.githubusercontent.com/OpenRefine/wikibase-manifests/master/openrefine-wikibase-test-manifest.json'
+            'https://raw.githubusercontent.com/KLEAR/wikibase-manifests/master/klear-wikibase-test-manifest.json'
         );
         cy.get('.add-wikibase-dialog button').contains('Add Wikibase').click();
 
         // ensure the new Wikibase is listed
         cy.get('.wikibase-dialog').should(
             'to.contain',
-            'OpenRefine Wikibase Test'
+            'KLEAR Wikibase Test'
         );
         cy.get('.wikibase-dialog .dialog-footer button').contains('OK').click()
             .then( () => resetWikibases(savedValue));
@@ -76,7 +76,7 @@ describe(__filename, function () {
         const manifest = {
             version: '1.0',
             mediawiki: {
-                name: 'OpenRefine Wikibase Cypress Test',
+                name: 'KLEAR Wikibase Cypress Test',
                 root: 'https://or-wikibase-test.wiki.opencura.com/wiki/',
                 main_page: 'https://or-wikibase-test.wiki.opencura.com/wiki/Main_Page',
                 api: 'https://or-wikibase-test.wiki.opencura.com/w/api.php'
@@ -106,7 +106,7 @@ describe(__filename, function () {
         // ensure the new Wikibase is listed
         cy.get('.wikibase-dialog').should(
             'to.contain',
-            'OpenRefine Wikibase Cypress Test'
+            'KLEAR Wikibase Cypress Test'
         );
         cy.get('.wikibase-dialog .dialog-footer button').contains('OK').click()
             .then( () => resetWikibases(savedValue))
@@ -137,21 +137,21 @@ describe(__filename, function () {
         cy.loadAndVisitProject('food.mini');
         getPreference('wikibase.manifests');
         cy.addWikibaseInstance(
-            'https://raw.githubusercontent.com/OpenRefine/wikibase-manifests/master/openrefine-wikibase-test-manifest.json'
+            'https://raw.githubusercontent.com/KLEAR/wikibase-manifests/master/klear-wikibase-test-manifest.json'
         );
 
         cy.get('#extension-bar-menu-container').contains('Wikibase').click();
         cy.get('.menu-container a').contains('Manage Wikibase instances').click();
 
         cy.get('.wikibase-dialog li')
-            .contains('OpenRefine Wikibase Test')
+            .contains('KLEAR Wikibase Test')
             .parents('li')
             .find('.wikibase-dialog-selector-delete')
             .click();
 
         cy.get('.wikibase-dialog').should(
             'not.to.contain',
-            'OpenRefine Wikibase Test'
+            'KLEAR Wikibase Test'
         );
 
         cy.get('.wikibase-dialog').should('to.contain', 'Wikibase');

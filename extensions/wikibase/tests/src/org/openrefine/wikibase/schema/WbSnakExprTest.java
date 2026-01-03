@@ -22,7 +22,7 @@
  * SOFTWARE.
  ******************************************************************************/
 
-package org.openrefine.wikibase.schema;
+package org.klear.wikibase.schema;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.testng.annotations.Test;
@@ -34,7 +34,7 @@ import com.google.refine.model.Column;
 import com.google.refine.model.ColumnModel;
 import com.google.refine.model.ModelException;
 
-import org.openrefine.wikibase.testing.JacksonSerializationTest;
+import org.klear.wikibase.testing.JacksonSerializationTest;
 
 public class WbSnakExprTest extends WbExpressionTest<Snak> {
 
