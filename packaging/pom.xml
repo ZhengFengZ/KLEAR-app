@@ -103,7 +103,6 @@
                 <id>package-distributions</id>
                 <configuration>
                   <descriptors>
-                    <descriptor>windows-without-jre.xml</descriptor>
                     <descriptor>windows-with-jre.xml</descriptor>
                   </descriptors>
                   <attach>false</attach>
