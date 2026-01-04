@@ -86,10 +86,10 @@
       <source>${rootdir}/conf/klear.l4j.ini</source>
     </file>
     <file>
-      <source>${rootdir}/refine.bat</source>
+      <source>${rootdir}/klear.bat</source>
     </file>
     <file>
-      <source>${rootdir}/refine.ini</source>
+      <source>${rootdir}/klear.ini</source>
     </file>
     <file>
       <source>${rootdir}/README.md</source>
