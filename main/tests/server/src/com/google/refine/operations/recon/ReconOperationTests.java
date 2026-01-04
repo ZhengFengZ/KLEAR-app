@@ -62,7 +62,7 @@ import org.testng.annotations.Test;
 
 import com.google.refine.RefineTest;
 import com.google.refine.browsing.EngineConfig;
-import com.google.refine.messages.KLEARMessage;
+import com.google.refine.messages.OpenRefineMessage;
 import com.google.refine.model.AbstractOperation;
 import com.google.refine.model.Cell;
 import com.google.refine.model.Column;
@@ -137,7 +137,7 @@ public class ReconOperationTests extends RefineTest {
             "           \"expression\" : \"forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \\\"(unreconciled)\\\", \\\"(blank)\\\"))\",\n"
             +
             "           \"name\" : \"researcher: " +
-            StringEscapeUtils.escapeJson(KLEARMessage.recon_operation_judgement_facet_name()) + "\"\n" +
+            StringEscapeUtils.escapeJson(OpenRefineMessage.recon_operation_judgement_facet_name()) + "\"\n" +
             "         },\n" +
             "         \"facetOptions\" : {\n" +
             "           \"scroll\" : true\n" +
@@ -150,7 +150,7 @@ public class ReconOperationTests extends RefineTest {
             "           \"expression\" : \"cell.recon.best.score\",\n" +
             "           \"mode\" : \"range\",\n" +
             "           \"name\" : \"researcher: " +
-            StringEscapeUtils.escapeJson(KLEARMessage.recon_operation_score_facet_name()) + "\"\n" +
+            StringEscapeUtils.escapeJson(OpenRefineMessage.recon_operation_score_facet_name()) + "\"\n" +
             "         },\n" +
             "         \"facetType\" : \"range\"\n" +
             "       } ],\n" +
