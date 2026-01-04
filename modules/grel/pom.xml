@@ -94,7 +94,7 @@
       <version>${univocity-csv.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.klear.dependencies</groupId>
+      <groupId>org.openrefine.dependencies</groupId>
       <artifactId>vicino</artifactId>
       <version>${vicino.version}</version>
       <exclusions>

@@ -61,7 +61,7 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.klear.dependencies</groupId>
+      <groupId>org.openrefine.dependencies</groupId>
       <artifactId>butterfly</artifactId>
       <version>${butterfly.version}</version>
       <exclusions>
@@ -128,7 +128,7 @@
       <version>1.5.7-6</version>
     </dependency>
     <dependency>
-      <groupId>org.klear.dependencies</groupId>
+      <groupId>org.openrefine.dependencies</groupId>
       <artifactId>vicino</artifactId>
       <version>${vicino.version}</version>
       <exclusions>

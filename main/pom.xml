@@ -193,7 +193,7 @@
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.klear.dependencies</groupId>
+      <groupId>org.openrefine.dependencies</groupId>
       <artifactId>butterfly</artifactId>
       <version>${butterfly.version}</version>
       <exclusions>
@@ -296,7 +296,7 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.klear.dependencies</groupId>
+      <groupId>org.openrefine.dependencies</groupId>
       <artifactId>vicino</artifactId>
       <version>${vicino.version}</version>
       <exclusions>
