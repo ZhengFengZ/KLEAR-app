@@ -1,5 +1,4 @@
-Copyright 2010, Google Inc. All rights reserved.
-Copyright 2010, OpenRefine contributors.
+Copyright 2026, KlearWin Pte Ltd. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 

@@ -3,8 +3,8 @@
 
 #define MyAppName "KLEAR"
 ;#define MyAppVersion "3.8-SNAPSHOT"
-#define MyAppPublisher "KLEAR"
-#define MyAppURL "https://klear.org/"
+#define MyAppPublisher "KlearWin Pte Ltd"
+#define MyAppURL "https://klearwin.com/"
 #define MyAppExeName "klear.exe"
 
 ;#define MyProgramFiles ".\packaging\target\klear-win-with-java-3.8-SNAPSHOT"
